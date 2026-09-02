@@ -82,7 +82,7 @@
 
 ### 📬 Direct Collaboration & Contact
 
-- 🌐 **Platform:** [straxonlabs10.vercel.app](https://straxonlabs10.vercel.app/)
+- 🌐 **Platform:** [straxonlabs.vercel.app](https://straxonlabs.vercel.app/)
 - 💬 **WhatsApp Direct:** [+91 8335846171](https://wa.me/918335846171)
 - ✉️ **Email:** [straxonlab@gmail.com](mailto:straxonlab@gmail.com)
 - 📍 **Focus Areas:** High-Scale Full-Stack SaaS, 3D Spatial Computing, Interactive WebGL Studios, Enterprise SOC Architecture
