@@ -28,6 +28,6 @@
 ---
 
 ### 📫 Connect with Me
-- **Website:** [straxonlabs10.vercel.app](https://straxonlabs10.vercel.app/)
+- **Website:** [straxonlabs.vercel.app](https://straxonlabs.vercel.app/)
 - **WhatsApp:** [+91 8335846171](https://wa.me/918335846171)
 - **Email:** [straxonlab@gmail.com](mailto:straxonlab@gmail.com)
