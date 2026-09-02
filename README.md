@@ -8,7 +8,7 @@
 <h3 align="center">Full-Stack Software Architect • Spatial Computing Engineer • Cyber Defense Researcher</h3>
 
 <p align="center">
-  <a href="https://straxonlabs10.vercel.app"><img src="https://img.shields.io/badge/Platform-StraxonLabs%20Ecosystem-00d2e6?style=for-the-badge&logo=vercel&logoColor=black" alt="StraxonLabs" /></a>
+  <a href="https://straxonlabs.vercel.app"><img src="https://img.shields.io/badge/Platform-StraxonLabs%20Ecosystem-00d2e6?style=for-the-badge&logo=vercel&logoColor=black" alt="StraxonLabs" /></a>
   <a href="https://wa.me/918335846171"><img src="https://img.shields.io/badge/WhatsApp-Connect%20Directly-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
   <a href="mailto:straxonlab@gmail.com"><img src="https://img.shields.io/badge/Email-straxonlab%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
@@ -23,7 +23,7 @@
 
 | Platform | Domain / Architecture | Live URL |
 | :--- | :--- | :--- |
-| **StraxonLabs** | 3D WebGL CAD Studio, Procedural GLSL Shaders, Web Audio Synthesizer & Autonomous PWA | [straxonlabs10.vercel.app](https://straxonlabs10.vercel.app/) |
+| **StraxonLabs** | 3D WebGL CAD Studio, Procedural GLSL Shaders, Web Audio Synthesizer & Autonomous PWA | [straxonlabs.vercel.app](https://straxonlabs.vercel.app/) |
 | **Straxon Secure** | Real-Time SOC Threat Visualizer, Hands-on Attack Labs & Cloudflare Edge Defense | [tanstack-start-app.hybridpython64.workers.dev](https://tanstack-start-app.hybridpython64.workers.dev/) |
 | **Straxon Command Center** | Centralized Enterprise OS, Dynamic SRS Documentation Generator & Encrypted Vaults | [straxon-command-center.onrender.com](https://straxon-command-center.onrender.com/) |
 | **Kshatra Code** | Cultural EdTech Platform with Military-Grade Anti-Piracy Hardware DRM Encryption | [kshatracode-frontend.onrender.com](https://kshatracode-frontend.onrender.com/) |
