@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 270" width="100%" height="auto">
+  <defs>
+    <linearGradient id="hudBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814" />
+      <stop offset="50%" stop-color="#091326" />
+      <stop offset="100%" stop-color="#04060d" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d182e" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#070c18" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="100%" stop-color="#7928ca" />
+    </linearGradient>
+
+    <linearGradient id="radarSweepGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00f5ff" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="hudGlow">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes radarSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    @keyframes pulseRing {
+      0% { r: 10; opacity: 0.8; }
+      100% { r: 55; opacity: 0; }
+    }
+    .radar-arm {
+      transform-origin: 875px 135px;
+      animation: radarSpin 4s linear infinite;
+    }
+    .pulse-ring {
+      animation: pulseRing 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+    .blinking {
+      animation: blink 1.5s infinite;
+    }
+    .hud-title {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      fill: #00f5ff;
+    }
+    .hud-key {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      fill: #64748b;
+    }
+    .hud-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      fill: #cbd5e1;
+      font-weight: 600;
+    }
+    .hud-val-accent {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      fill: #38bdf8;
+      font-weight: 600;
+    }
+    .hud-val-green {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      fill: #10b981;
+      font-weight: 600;
+    }
+  </style>
+
+  <!-- Shell Frame -->
+  <rect width="980" height="270" rx="10" fill="url(#hudBg)" stroke="#1e293b" stroke-width="1.2" />
+
+  <!-- Corner Brackets -->
+  <path d="M 12 28 L 12 12 L 28 12" fill="none" stroke="#00f5ff" stroke-width="1.8" />
+  <path d="M 968 28 L 968 12 L 952 12" fill="none" stroke="#00f5ff" stroke-width="1.8" />
+  <path d="M 12 242 L 12 258 L 28 258" fill="none" stroke="#00f5ff" stroke-width="1.8" />
+  <path d="M 968 242 L 968 258 L 952 258" fill="none" stroke="#00f5ff" stroke-width="1.8" />
+
+  <!-- Top Status Strip -->
+  <text x="32" y="28" class="hud-title">⚡ REAL-TIME ARCHITECTURE &amp; DEFENSE TELEMETRY</text>
+  <circle cx="480" cy="24" r="4" fill="#10b981" class="blinking" />
+  <text x="492" y="28" class="hud-key" fill="#10b981">LIVE EDGE FEED</text>
+  <text x="948" y="28" text-anchor="end" class="hud-key">SYS_ID: #STRAXON-NX9</text>
+  <line x1="30" y1="38" x2="950" y2="38" stroke="#1e293b" stroke-width="1" />
+
+  <!-- LEFT PANEL: Core Profile Architecture (x: 30 to 450) -->
+  <rect x="30" y="52" width="410" height="198" rx="6" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1" />
+  <text x="46" y="74" class="hud-title">01 // IDENTITY &amp; CORE STACK</text>
+  <line x1="46" y1="82" x2="424" y2="82" stroke="#1e293b" stroke-width="1" />
+
+  <g transform="translate(46, 102)">
+    <text x="0" y="0" class="hud-key">ARCHITECT:</text>
+    <text x="130" y="0" class="hud-val">Swaraj Panti</text>
+
+    <text x="0" y="22" class="hud-key">CODENAME:</text>
+    <text x="130" y="22" class="hud-val-accent">&lt;dark hat&gt;</text>
+
+    <text x="0" y="44" class="hud-key">ROLE:</text>
+    <text x="130" y="44" class="hud-val">Founder @ StraxonLabs</text>
+
+    <text x="0" y="66" class="hud-key">SECURITY LEVEL:</text>
+    <text x="130" y="66" class="hud-val-accent">Level 4 // Threat Research</text>
+
+    <text x="0" y="88" class="hud-key">ACTIVE DOMAINS:</text>
+    <text x="130" y="88" class="hud-val">SOC Defense • 3D Spatial • SaaS</text>
+
+    <text x="0" y="110" class="hud-key">PRIMARY WEAPONS:</text>
+    <text x="130" y="110" class="hud-val">TypeScript • Python • Three.js • GLSL</text>
+
+    <text x="0" y="132" class="hud-key">STATUS:</text>
+    <text x="130" y="132" class="hud-val-green">● DEPLOYING NEXT-GEN CODE</text>
+  </g>
+
+  <!-- CENTER PANEL: Production Capabilities (x: 455 to 770) -->
+  <rect x="455" y="52" width="315" height="198" rx="6" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1" />
+  <text x="471" y="74" class="hud-title">02 // DEFENSIVE PLATFORMS</text>
+  <line x1="471" y1="82" x2="754" y2="82" stroke="#1e293b" stroke-width="1" />
+
+  <g transform="translate(471, 102)">
+    <text x="0" y="0" class="hud-key">STRAXON SECURE:</text>
+    <text x="135" y="0" class="hud-val-green">Live SOC Visualizer</text>
+
+    <text x="0" y="22" class="hud-key">STRAXONLABS:</text>
+    <text x="135" y="22" class="hud-val-accent">3D CAD &amp; Synthesizer</text>
+
+    <text x="0" y="44" class="hud-key">COMMAND CENTER:</text>
+    <text x="135" y="44" class="hud-val">Enterprise SRS Vaults</text>
+
+    <text x="0" y="66" class="hud-key">KSHATRA CODE:</text>
+    <text x="135" y="66" class="hud-val-accent">Anti-Piracy DRM</text>
+
+    <text x="0" y="88" class="hud-key">ML ENGINE:</text>
+    <text x="135" y="88" class="hud-val">Isolation Forest EDR</text>
+
+    <text x="0" y="110" class="hud-key">EDGE DEFENSE:</text>
+    <text x="135" y="110" class="hud-val">Cloudflare Edge WAF</text>
+
+    <text x="0" y="132" class="hud-key">GLOBAL MESH:</text>
+    <text x="135" y="132" class="hud-val-green">Operational 24/7</text>
+  </g>
+
+  <!-- RIGHT PANEL: Radar Threat Scanner (x: 785 to 950) -->
+  <rect x="785" y="52" width="165" height="198" rx="6" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1" />
+  <text x="867" y="74" text-anchor="middle" class="hud-title">THREAT RADAR</text>
+  <line x1="797" y1="82" x2="938" y2="82" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Radar Scope -->
+  <g transform="translate(867, 150)">
+    <!-- Radar Rings -->
+    <circle cx="0" cy="0" r="50" fill="#040711" stroke="#1e293b" stroke-width="1" />
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#1e3a5f" stroke-width="1" stroke-dasharray="2,2" />
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#1e3a5f" stroke-width="1" />
+    <circle cx="0" cy="0" r="5" fill="#00f5ff" />
+
+    <!-- Pulse Ring Animation -->
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#00f5ff" stroke-width="1.5" class="pulse-ring" />
+
+    <!-- Axis Crosshairs -->
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#1e293b" stroke-width="1" />
+    <line x1="0" y1="-50" x2="0" y2="50" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Radar Sweep Arm -->
+    <g style="transform-origin: 0px 0px; animation: radarSpin 3.5s linear infinite;">
+      <path d="M 0 0 L 45 -22 A 50 50 0 0 1 50 0 Z" fill="url(#radarSweepGrad)" />
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#00f5ff" stroke-width="1.5" />
+    </g>
+
+    <!-- Detected Threat Blips -->
+    <circle cx="22" cy="-18" r="2.5" fill="#ef4444" class="blinking" />
+    <circle cx="-28" cy="24" r="2" fill="#00ff9d" />
+    <circle cx="15" cy="30" r="2" fill="#38bdf8" />
+  </g>
+
+  <text x="867" y="235" text-anchor="middle" class="hud-key" font-size="9" fill="#10b981">ZERO INTRUSIONS</text>
+</svg>
