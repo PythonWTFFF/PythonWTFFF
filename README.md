@@ -53,22 +53,6 @@
 
 <br/>
 
-```text
-┌──[ dark-hat@straxon-core ]──[ /sys/kernel/security/telemetry ]
-└──╼ $ neofetch --profile --threat-level zero-day
-
-       _--__g-VYY---`           NODE_ID        : straxon-defense-node-01
-    _-g\\\       \\o\\          ARCHITECT      : Swaraj Panti (dark hat / @PythonWTFFF)
-   |oo`           \gD\          ROLE           : Founder & Lead Systems Architect @ StraxonLabs
-   |o@    [0x7E]   \\Y\         SECURITY LEVEL : Level 4 // Offensive & Defensive Research
-   |oo             \\o\         SPECIALIZATION : Real-Time SOC EDR, 3D Spatial Graphics, WebLLM, DRM
-   |op             |o@          EDGE RUNTIMES  : Cloudflare Workers • Vercel Edge • Docker Container Meshes
-   !qoo/          /-V--g-.      ENGINE         : Three.js • WebGL 2.0 • WebGPU • GLSL Procedural Shaders
-      /4g_/       ----$---g     UPTIME         : 99.99% // Continuous Autonomous Innovation
-```
-
----
-
 ## 💼 Sovereign Capabilities // Enterprise Client Solutions
 
 <div align="center">
