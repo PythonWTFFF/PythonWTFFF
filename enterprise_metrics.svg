@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgMetrics" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040711" />
+      <stop offset="50%" stop-color="#081026" />
+      <stop offset="100%" stop-color="#03050c" />
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1938" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#060c1c" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Text Gradients -->
+    <linearGradient id="cyanText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="emeraldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <linearGradient id="purpleText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="amberText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+
+    <linearGradient id="roseText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#fb7185" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="cardGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.85); }
+    }
+    @keyframes cardScan {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .metric-title {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 10.5px;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    .metric-value {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+    }
+    .metric-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 1.2px;
+      fill: #94a3b8;
+    }
+    .metric-sub {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 9.5px;
+      fill: #64748b;
+    }
+    .live-dot {
+      animation: pulseDot 2s infinite ease-in-out;
+      transform-origin: center;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="1000" height="200" rx="12" fill="url(#bgMetrics)" stroke="#1e293b" stroke-width="1.2" />
+
+  <!-- Corner Brackets -->
+  <path d="M 14 26 L 14 14 L 26 14" fill="none" stroke="#00f5ff" stroke-width="1.8" />
+  <path d="M 986 26 L 986 14 L 974 14" fill="none" stroke="#00f5ff" stroke-width="1.8" />
+  <path d="M 14 174 L 14 186 L 26 186" fill="none" stroke="#00f5ff" stroke-width="1.8" />
+  <path d="M 986 174 L 986 186 L 974 186" fill="none" stroke="#00f5ff" stroke-width="1.8" />
+
+  <!-- Header Strip -->
+  <g transform="translate(30, 28)">
+    <circle cx="0" cy="0" r="4.5" fill="#10b981" class="live-dot" />
+    <text x="14" y="4" class="metric-title" fill="#00f5ff">⚡ ENTERPRISE CLIENT BENCHMARKS // SOVEREIGN SPECIFICATION</text>
+    <text x="940" y="4" text-anchor="end" class="metric-title" fill="#64748b">AUDITED SLA • 2026 ARCHITECTURE</text>
+  </g>
+  <line x1="26" y1="42" x2="974" y2="42" stroke="#1e293b" stroke-width="1" />
+
+  <!-- 5 METRIC CARDS -->
+  <!-- Card 1: Uptime & Availability -->
+  <g transform="translate(26, 54)">
+    <rect width="176" height="124" rx="8" fill="url(#cardGrad1)" stroke="#0e3a5f" stroke-width="1.2" />
+    <text x="16" y="24" class="metric-label" fill="#38bdf8">UPTIME SLA</text>
+    <text x="16" y="60" class="metric-value" fill="url(#emeraldText)">99.99%</text>
+    <text x="16" y="86" class="metric-sub">Zero Cold-Start</text>
+    <text x="16" y="104" class="metric-sub" fill="#34d399">● High Availability</text>
+    <line x1="16" y1="116" x2="160" y2="116" stroke="#10b981" stroke-width="2" stroke-opacity="0.8" />
+  </g>
+
+  <!-- Card 2: Edge Latency -->
+  <g transform="translate(216, 54)">
+    <rect width="176" height="124" rx="8" fill="url(#cardGrad1)" stroke="#0e3a5f" stroke-width="1.2" />
+    <text x="16" y="24" class="metric-label" fill="#38bdf8">EDGE LATENCY</text>
+    <text x="16" y="60" class="metric-value" fill="url(#cyanText)">&lt; 40ms</text>
+    <text x="16" y="86" class="metric-sub">Global Cloudflare Mesh</text>
+    <text x="16" y="104" class="metric-sub" fill="#38bdf8">● Sub-second TTFB</text>
+    <line x1="16" y1="116" x2="160" y2="116" stroke="#00f5ff" stroke-width="2" stroke-opacity="0.8" />
+  </g>
+
+  <!-- Card 3: 3D Spatial Frame Rate -->
+  <g transform="translate(406, 54)">
+    <rect width="176" height="124" rx="8" fill="url(#cardGrad1)" stroke="#0e3a5f" stroke-width="1.2" />
+    <text x="16" y="24" class="metric-label" fill="#38bdf8">SPATIAL 3D</text>
+    <text x="16" y="60" class="metric-value" fill="url(#purpleText)">60 FPS</text>
+    <text x="16" y="86" class="metric-sub">WebGL 2.0 &amp; WebGPU</text>
+    <text x="16" y="104" class="metric-sub" fill="#c084fc">● GLSL Raymarching</text>
+    <line x1="16" y1="116" x2="160" y2="116" stroke="#a855f7" stroke-width="2" stroke-opacity="0.8" />
+  </g>
+
+  <!-- Card 4: Security & OWASP -->
+  <g transform="translate(596, 54)">
+    <rect width="176" height="124" rx="8" fill="url(#cardGrad1)" stroke="#0e3a5f" stroke-width="1.2" />
+    <text x="16" y="24" class="metric-label" fill="#38bdf8">CYBER DEFENSE</text>
+    <text x="16" y="60" class="metric-value" fill="url(#roseText)">LEVEL 4</text>
+    <text x="16" y="86" class="metric-sub">Zero-Trust &amp; mTLS</text>
+    <text x="16" y="104" class="metric-sub" fill="#fb7185">● OWASP Top-10 Shield</text>
+    <line x1="16" y1="116" x2="160" y2="116" stroke="#f43f5e" stroke-width="2" stroke-opacity="0.8" />
+  </g>
+
+  <!-- Card 5: Neural AI Optimization -->
+  <g transform="translate(786, 54)">
+    <rect width="188" height="124" rx="8" fill="url(#cardGrad1)" stroke="#0e3a5f" stroke-width="1.2" />
+    <text x="16" y="24" class="metric-label" fill="#38bdf8">NEURAL INFERENCE</text>
+    <text x="16" y="60" class="metric-value" fill="url(#amberText)">$0 CLOUD</text>
+    <text x="16" y="86" class="metric-sub">WebLLM On-Device</text>
+    <text x="16" y="104" class="metric-sub" fill="#fbbf24">● Sub-ms Vector RAG</text>
+    <line x1="16" y1="116" x2="172" y2="116" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.8" />
+  </g>
+</svg>

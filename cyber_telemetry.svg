@@ -131,30 +131,30 @@
 
   <!-- CENTER PANEL: Production Capabilities (x: 455 to 770) -->
   <rect x="455" y="52" width="315" height="198" rx="6" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1" />
-  <text x="471" y="74" class="hud-title">02 // DEFENSIVE PLATFORMS</text>
+  <text x="471" y="74" class="hud-title">02 // SOVEREIGN PLATFORMS</text>
   <line x1="471" y1="82" x2="754" y2="82" stroke="#1e293b" stroke-width="1" />
 
-  <g transform="translate(471, 102)">
-    <text x="0" y="0" class="hud-key">STRAXON SECURE:</text>
-    <text x="135" y="0" class="hud-val-green">Live SOC Visualizer</text>
+  <g transform="translate(471, 100)">
+    <text x="0" y="0" class="hud-key">W NEURAL OS:</text>
+    <text x="135" y="0" class="hud-val-green">Edge AI Swarm &amp; RAG</text>
 
     <text x="0" y="22" class="hud-key">STRAXONLABS:</text>
     <text x="135" y="22" class="hud-val-accent">3D CAD &amp; Synthesizer</text>
 
-    <text x="0" y="44" class="hud-key">COMMAND CENTER:</text>
-    <text x="135" y="44" class="hud-val">Enterprise SRS Vaults</text>
+    <text x="0" y="44" class="hud-key">STRAXON SECURE:</text>
+    <text x="135" y="44" class="hud-val-green">Live SOC Visualizer</text>
 
-    <text x="0" y="66" class="hud-key">KSHATRA CODE:</text>
-    <text x="135" y="66" class="hud-val-accent">Anti-Piracy DRM</text>
+    <text x="0" y="66" class="hud-key">COMMAND CENTER:</text>
+    <text x="135" y="66" class="hud-val">Enterprise SRS Vaults</text>
 
-    <text x="0" y="88" class="hud-key">ML ENGINE:</text>
-    <text x="135" y="88" class="hud-val">Isolation Forest EDR</text>
+    <text x="0" y="88" class="hud-key">KSHATRA CODE:</text>
+    <text x="135" y="88" class="hud-val-accent">Hardware DRM Cipher</text>
 
-    <text x="0" y="110" class="hud-key">EDGE DEFENSE:</text>
-    <text x="135" y="110" class="hud-val">Cloudflare Edge WAF</text>
+    <text x="0" y="110" class="hud-key">ML ENGINE:</text>
+    <text x="135" y="110" class="hud-val">Isolation Forest EDR</text>
 
-    <text x="0" y="132" class="hud-key">GLOBAL MESH:</text>
-    <text x="135" y="132" class="hud-val-green">Operational 24/7</text>
+    <text x="0" y="132" class="hud-key">GLOBAL EDGE:</text>
+    <text x="135" y="132" class="hud-val-green">Sub-40ms Live Mesh</text>
   </g>
 
   <!-- RIGHT PANEL: Radar Threat Scanner (x: 785 to 950) -->
