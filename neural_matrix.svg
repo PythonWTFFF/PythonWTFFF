@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 180" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="matrixBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04060f" />
+      <stop offset="50%" stop-color="#080e21" />
+      <stop offset="100%" stop-color="#03050c" />
+    </linearGradient>
+
+    <!-- Card Compartment Gradient -->
+    <linearGradient id="compGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1733" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#050a17" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Spectrum Equalizer Gradient -->
+    <linearGradient id="eqGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ff007a" />
+    </linearGradient>
+
+    <!-- Pulse Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseNode {
+      0%, 100% { opacity: 0.3; r: 3; }
+      50% { opacity: 1; r: 5.5; }
+    }
+    @keyframes lineFlow {
+      0% { stroke-dashoffset: 40; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes eq1 { 0%, 100% { height: 10px; y: 110px; } 50% { height: 48px; y: 72px; } }
+    @keyframes eq2 { 0%, 100% { height: 35px; y: 85px; } 50% { height: 15px; y: 105px; } }
+    @keyframes eq3 { 0%, 100% { height: 20px; y: 100px; } 50% { height: 55px; y: 65px; } }
+    @keyframes eq4 { 0%, 100% { height: 50px; y: 70px; } 50% { height: 25px; y: 95px; } }
+    @keyframes eq5 { 0%, 100% { height: 15px; y: 105px; } 50% { height: 42px; y: 78px; } }
+    @keyframes eq6 { 0%, 100% { height: 40px; y: 80px; } 50% { height: 18px; y: 102px; } }
+    @keyframes eq7 { 0%, 100% { height: 28px; y: 92px; } 50% { height: 52px; y: 68px; } }
+    @keyframes eq8 { 0%, 100% { height: 45px; y: 75px; } 50% { height: 12px; y: 108px; } }
+
+    @keyframes rotateCube {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes blinkSOC {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+
+    .eq-bar-1 { animation: eq1 1.2s ease-in-out infinite; }
+    .eq-bar-2 { animation: eq2 0.9s ease-in-out infinite; }
+    .eq-bar-3 { animation: eq3 1.5s ease-in-out infinite; }
+    .eq-bar-4 { animation: eq4 1.1s ease-in-out infinite; }
+    .eq-bar-5 { animation: eq5 1.3s ease-in-out infinite; }
+    .eq-bar-6 { animation: eq6 0.8s ease-in-out infinite; }
+    .eq-bar-7 { animation: eq7 1.4s ease-in-out infinite; }
+    .eq-bar-8 { animation: eq8 1.0s ease-in-out infinite; }
+
+    .node-p1 { animation: pulseNode 1.8s infinite ease-in-out; }
+    .node-p2 { animation: pulseNode 2.2s infinite ease-in-out 0.4s; }
+    .node-p3 { animation: pulseNode 1.6s infinite ease-in-out 0.8s; }
+
+    .cube-rotate {
+      transform-origin: 120px 95px;
+      animation: rotateCube 12s linear infinite;
+    }
+    .soc-blinker {
+      animation: blinkSOC 1.4s infinite;
+    }
+
+    .matrix-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      fill: #00f5ff;
+    }
+    .comp-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      fill: #38bdf8;
+    }
+    .comp-sub {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 9px;
+      fill: #64748b;
+    }
+    .comp-stat {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8.5px;
+      font-weight: 600;
+      fill: #10b981;
+    }
+  </style>
+
+  <!-- Frame Background -->
+  <rect width="1000" height="180" rx="10" fill="url(#matrixBg)" stroke="#1e293b" stroke-width="1.2" />
+
+  <!-- Corner Tech Brackets -->
+  <path d="M 12 24 L 12 12 L 24 12" fill="none" stroke="#00f5ff" stroke-width="1.5" />
+  <path d="M 988 24 L 988 12 L 976 12" fill="none" stroke="#00f5ff" stroke-width="1.5" />
+  <path d="M 12 156 L 12 168 L 24 168" fill="none" stroke="#00f5ff" stroke-width="1.5" />
+  <path d="M 988 156 L 988 168 L 976 168" fill="none" stroke="#00f5ff" stroke-width="1.5" />
+
+  <!-- Top Strip -->
+  <g transform="translate(26, 25)">
+    <circle cx="0" cy="0" r="4" fill="#00f5ff" class="soc-blinker" />
+    <text x="12" y="3.5" class="matrix-title">🌌 AUTONOMOUS COMPUTATION MATRIX // 4 CORE ENGINES LIVE</text>
+    <text x="948" y="3.5" text-anchor="end" class="comp-title" fill="#a855f7">PARALLEL RUNTIME • 60 FPS • ZERO LATENCY</text>
+  </g>
+  <line x1="20" y1="36" x2="980" y2="36" stroke="#1e293b" stroke-width="1" />
+
+  <!-- COMPARTMENT 1: 3D SPATIAL COMPUTING (x: 20 to 250) -->
+  <g transform="translate(20, 44)">
+    <rect width="230" height="122" rx="6" fill="url(#compGrad)" stroke="#0e2a4a" stroke-width="1" />
+    <text x="14" y="20" class="comp-title">01 // 3D SPATIAL CAD</text>
+    
+    <!-- Rotating Isometric Geometry -->
+    <g class="cube-rotate">
+      <polygon points="120,70 145,85 120,100 95,85" fill="none" stroke="#00f5ff" stroke-width="1.2" />
+      <polygon points="120,100 145,85 145,115 120,130" fill="none" stroke="#38bdf8" stroke-width="1.2" />
+      <polygon points="120,100 95,85 95,115 120,130" fill="none" stroke="#7928ca" stroke-width="1.2" />
+      <circle cx="120" cy="100" r="2.5" fill="#00f5ff" />
+    </g>
+
+    <text x="14" y="104" class="comp-sub">WebGL 2.0 • WebGPU • GLSL</text>
+    <text x="14" y="116" class="comp-stat">● 60 FPS HARDWARE ACCELERATED</text>
+  </g>
+
+  <!-- COMPARTMENT 2: NEURAL VECTOR RAG (x: 260 to 490) -->
+  <g transform="translate(260, 44)">
+    <rect width="230" height="122" rx="6" fill="url(#compGrad)" stroke="#0e2a4a" stroke-width="1" />
+    <text x="14" y="20" class="comp-title">02 // NEURAL VECTOR RAG</text>
+
+    <!-- Neural Network Synapse Mesh -->
+    <g transform="translate(30, 40)">
+      <!-- Synapse Lines -->
+      <line x1="20" y1="20" x2="80" y2="10" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.7" />
+      <line x1="20" y1="20" x2="80" y2="35" stroke="#a855f7" stroke-width="0.8" stroke-opacity="0.7" />
+      <line x1="20" y1="45" x2="80" y2="10" stroke="#a855f7" stroke-width="0.8" stroke-opacity="0.7" />
+      <line x1="20" y1="45" x2="80" y2="35" stroke="#00f5ff" stroke-width="0.8" stroke-opacity="0.7" />
+      <line x1="80" y1="10" x2="140" y2="28" stroke="#10b981" stroke-width="1" stroke-opacity="0.8" />
+      <line x1="80" y1="35" x2="140" y2="28" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.8" />
+
+      <!-- Nodes Layer 1 -->
+      <circle cx="20" cy="20" r="4" fill="#00f5ff" class="node-p1" />
+      <circle cx="20" cy="45" r="4" fill="#38bdf8" class="node-p2" />
+
+      <!-- Nodes Layer 2 -->
+      <circle cx="80" cy="10" r="4" fill="#a855f7" class="node-p3" />
+      <circle cx="80" cy="35" r="4" fill="#c084fc" class="node-p1" />
+
+      <!-- Output Node Layer 3 -->
+      <circle cx="140" cy="28" r="5" fill="#10b981" class="node-p2" />
+    </g>
+
+    <text x="14" y="104" class="comp-sub">WebLLM On-Device • TF-IDF Cosine</text>
+    <text x="14" y="116" class="comp-stat">● SUB-MS VECTOR INFERENCE</text>
+  </g>
+
+  <!-- COMPARTMENT 3: WEB AUDIO SYNTHESIZER (x: 500 to 730) -->
+  <g transform="translate(500, 44)">
+    <rect width="230" height="122" rx="6" fill="url(#compGrad)" stroke="#0e2a4a" stroke-width="1" />
+    <text x="14" y="20" class="comp-title">03 // WEB AUDIO SYNTH</text>
+
+    <!-- Spectrum Equalizer Bars -->
+    <g transform="translate(20, -10)">
+      <rect x="15" width="12" rx="2" fill="url(#eqGrad)" class="eq-bar-1" />
+      <rect x="33" width="12" rx="2" fill="url(#eqGrad)" class="eq-bar-2" />
+      <rect x="51" width="12" rx="2" fill="url(#eqGrad)" class="eq-bar-3" />
+      <rect x="69" width="12" rx="2" fill="url(#eqGrad)" class="eq-bar-4" />
+      <rect x="87" width="12" rx="2" fill="url(#eqGrad)" class="eq-bar-5" />
+      <rect x="105" width="12" rx="2" fill="url(#eqGrad)" class="eq-bar-6" />
+      <rect x="123" width="12" rx="2" fill="url(#eqGrad)" class="eq-bar-7" />
+      <rect x="141" width="12" rx="2" fill="url(#eqGrad)" class="eq-bar-8" />
+    </g>
+
+    <text x="14" y="104" class="comp-sub">Polyphonic Synth • Biquad Filter</text>
+    <text x="14" y="116" class="comp-stat">● 48 kHz SPATIAL AUDIO MATRIX</text>
+  </g>
+
+  <!-- COMPARTMENT 4: ZERO-TRUST SOC DEFENSE (x: 740 to 980) -->
+  <g transform="translate(740, 44)">
+    <rect width="240" height="122" rx="6" fill="url(#compGrad)" stroke="#0e2a4a" stroke-width="1" />
+    <text x="14" y="20" class="comp-title">04 // ZERO-TRUST DEFENSE</text>
+
+    <!-- Shield & Hash Telemetry -->
+    <g transform="translate(20, 36)">
+      <!-- Cyber Shield -->
+      <path d="M 22 8 L 40 16 L 40 38 Q 40 54 22 62 Q 4 54 4 38 L 4 16 Z" fill="none" stroke="#10b981" stroke-width="1.8" />
+      <path d="M 12 34 L 18 40 L 32 26" fill="none" stroke="#00f5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+      <!-- Streaming Hash Stream -->
+      <g transform="translate(56, 18)">
+        <text x="0" y="0" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">HASH: 0x7E3A9F</text>
+        <text x="0" y="15" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10b981">mTLS: ENFORCED</text>
+        <text x="0" y="30" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8">OWASP: 100% PASS</text>
+      </g>
+    </g>
+
+    <text x="14" y="104" class="comp-sub">Isolation Forest EDR • Anti-Piracy</text>
+    <text x="14" y="116" class="comp-stat">● ZERO-DAY THREAT DEFLECTED</text>
+  </g>
+</svg>
