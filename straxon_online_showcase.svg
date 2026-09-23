@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="100%" height="auto" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040714" />
+      <stop offset="45%" stop-color="#09132c" />
+      <stop offset="85%" stop-color="#0c1a3e" />
+      <stop offset="100%" stop-color="#040611" />
+    </linearGradient>
+
+    <!-- Glowing Cyber Gradients -->
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#7928ca" stop-opacity="0.7" />
+      <stop offset="70%" stop-color="#ff007a" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#00f5ff" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="hudPill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d2347" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#08142b" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Core Filters -->
+    <filter id="neonBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseNeon {
+      0%, 100% { opacity: 0.95; }
+      50% { opacity: 0.5; }
+    }
+    .pulsing-dot { animation: pulseNeon 2s ease-in-out infinite; }
+    .title-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 900; }
+    .mono-font { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+  </style>
+
+  <!-- Outer Container Card with Glowing Cyber Border -->
+  <rect x="3" y="3" width="994" height="354" rx="16" fill="url(#cardBg)" stroke="url(#borderGrad)" stroke-width="2" />
+
+  <!-- Background Cyber Grid Mesh -->
+  <g opacity="0.12" stroke="#00f5ff" stroke-width="0.6">
+    <line x1="0" y1="70" x2="1000" y2="70" />
+    <line x1="0" y1="140" x2="1000" y2="140" />
+    <line x1="0" y1="210" x2="1000" y2="210" />
+    <line x1="0" y1="280" x2="1000" y2="280" />
+    <line x1="150" y1="45" x2="150" y2="360" />
+    <line x1="300" y1="45" x2="300" y2="360" />
+    <line x1="450" y1="45" x2="450" y2="360" />
+    <line x1="600" y1="45" x2="600" y2="360" />
+    <line x1="750" y1="45" x2="750" y2="360" />
+    <line x1="900" y1="45" x2="900" y2="360" />
+  </g>
+
+  <!-- TOP BROWSER / TELEMETRY HUD BAR -->
+  <path d="M 3 19 Q 3 3 19 3 L 981 3 Q 997 3 997 19 L 997 45 L 3 45 Z" fill="#050a18" />
+  <line x1="3" y1="45" x2="997" y2="45" stroke="#1e293b" stroke-width="1.2" />
+
+  <!-- Traffic Lights -->
+  <circle cx="24" cy="24" r="5.5" fill="#ef4444" />
+  <circle cx="42" cy="24" r="5.5" fill="#f59e0b" />
+  <circle cx="60" cy="24" r="5.5" fill="#10b981" />
+
+  <!-- Browser URL Pill -->
+  <g transform="translate(100, 11)">
+    <rect width="470" height="26" rx="13" fill="url(#hudPill)" stroke="#1e3a5f" stroke-width="1" />
+    <circle cx="18" cy="13" r="3.5" fill="#10b981" class="pulsing-dot" />
+    <text x="32" y="17" class="mono-font" font-size="12" font-weight="600" fill="#38bdf8">https://www.straxon.online</text>
+    <text x="246" y="17" class="mono-font" font-size="11" fill="#64748b">[OFFICIAL ENTERPRISE PLATFORM]</text>
+  </g>
+
+  <!-- Top Right Live Status Pill -->
+  <g transform="translate(740, 11)">
+    <rect width="236" height="26" rx="6" fill="#0b1a36" stroke="#00f5ff" stroke-width="0.8" stroke-opacity="0.6" />
+    <circle cx="14" cy="13" r="4" fill="#00ff9d" class="pulsing-dot" />
+    <text x="26" y="17" class="mono-font" font-size="10.5" font-weight="700" letter-spacing="1.2px" fill="#00ff9d">LIVE ECOSYSTEM // 99.99%</text>
+  </g>
+
+  <!-- LEFT VISUAL: 3D SPATIAL COMPUTING VIEWPORT -->
+  <g transform="translate(24, 65)">
+    <!-- Viewport Frame -->
+    <rect width="392" height="270" rx="12" fill="#030713" stroke="#15284f" stroke-width="1.5" />
+
+    <!-- Corner Target Reticles -->
+    <path d="M 12 24 L 12 12 L 24 12" fill="none" stroke="#00f5ff" stroke-width="2" />
+    <path d="M 380 24 L 380 12 L 368 12" fill="none" stroke="#00f5ff" stroke-width="2" />
+    <path d="M 12 246 L 12 258 L 24 258" fill="none" stroke="#00f5ff" stroke-width="2" />
+    <path d="M 380 246 L 380 258 L 368 258" fill="none" stroke="#00f5ff" stroke-width="2" />
+
+    <!-- 3D Spatial Wireframe Core -->
+    <g transform="translate(196, 130)">
+      <!-- Outer Orbit Rings -->
+      <ellipse cx="0" cy="0" rx="110" ry="40" fill="none" stroke="#00f5ff" stroke-width="1.8" stroke-dasharray="14, 6" opacity="0.8" transform="rotate(-20)" />
+      <ellipse cx="0" cy="0" rx="110" ry="40" fill="none" stroke="#a855f7" stroke-width="1.8" stroke-dasharray="16, 8" opacity="0.8" transform="rotate(40)" />
+      <ellipse cx="0" cy="0" rx="98" ry="98" fill="none" stroke="#0e2f5c" stroke-width="1" stroke-dasharray="4, 4" />
+
+      <!-- Isometric 3D Cube / Matrix Core -->
+      <!-- Top Face -->
+      <polygon points="0,-44 44,-22 0,2 -44,-22" fill="#00f5ff" fill-opacity="0.18" stroke="#00f5ff" stroke-width="2" />
+      <!-- Left Face -->
+      <polygon points="-44,-22 0,2 0,50 -44,28" fill="#7928ca" fill-opacity="0.25" stroke="#7928ca" stroke-width="2" />
+      <!-- Right Face -->
+      <polygon points="0,2 44,-22 44,28 0,50" fill="#38bdf8" fill-opacity="0.22" stroke="#38bdf8" stroke-width="2" />
+
+      <!-- Internal Laser Core Node -->
+      <circle cx="0" cy="2" r="7" fill="#00f5ff" filter="url(#neonBlur)" />
+      <circle cx="0" cy="2" r="3.5" fill="#ffffff" />
+
+      <!-- Vertex Data Points -->
+      <circle cx="0" cy="-44" r="3.5" fill="#38bdf8" />
+      <circle cx="44" cy="-22" r="3.5" fill="#00ff9d" />
+      <circle cx="-44" cy="-22" r="3.5" fill="#a855f7" />
+      <circle cx="0" cy="50" r="3.5" fill="#ff007a" />
+      <circle cx="-44" cy="28" r="3.5" fill="#38bdf8" />
+      <circle cx="44" cy="28" r="3.5" fill="#00f5ff" />
+    </g>
+
+    <!-- Floating HUD Badges inside 3D Viewport -->
+    <g transform="translate(16, 20)">
+      <rect width="154" height="20" rx="4" fill="#0b1730" stroke="#00f5ff" stroke-width="0.8" opacity="0.9" />
+      <text x="8" y="14" class="mono-font" font-size="9.5" font-weight="700" fill="#00f5ff">ENGINE: WebGL 2.0 / WebGPU</text>
+    </g>
+
+    <g transform="translate(254, 20)">
+      <rect width="122" height="20" rx="4" fill="#0b1730" stroke="#10b981" stroke-width="0.8" opacity="0.9" />
+      <text x="8" y="14" class="mono-font" font-size="9.5" font-weight="700" fill="#10b981">FPS: 60 LOCKED</text>
+    </g>
+
+    <g transform="translate(16, 232)">
+      <rect width="170" height="20" rx="4" fill="#0b1730" stroke="#a855f7" stroke-width="0.8" opacity="0.9" />
+      <text x="8" y="14" class="mono-font" font-size="9.5" font-weight="700" fill="#c084fc">AI: WebLLM + Vector RAG</text>
+    </g>
+
+    <g transform="translate(240, 232)">
+      <rect width="136" height="20" rx="4" fill="#0b1730" stroke="#38bdf8" stroke-width="0.8" opacity="0.9" />
+      <text x="8" y="14" class="mono-font" font-size="9.5" font-weight="700" fill="#38bdf8">PWA 2.0: OFFLINE CACHE</text>
+    </g>
+  </g>
+
+  <!-- RIGHT CONTENT: FLAGSHIP ARCHITECTURE & CALL-TO-ACTION -->
+  <g transform="translate(440, 65)">
+    <!-- Header Title -->
+    <text x="0" y="24" class="title-font" font-size="24" letter-spacing="1.5px" fill="url(#cyanGlow)">STRAXONLABS // WWW.STRAXON.ONLINE</text>
+    <text x="0" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="500" fill="#94a3b8">
+      Spatial 3D CAD Studio, Autonomous AI Swarms &amp; Sovereign PWA Ecosystem
+    </text>
+
+    <!-- 4 Structured Pillar Cards -->
+    <g transform="translate(0, 64)">
+      <!-- Pillar 1: 3D Spatial CAD -->
+      <g transform="translate(0, 0)">
+        <rect width="260" height="56" rx="8" fill="#081228" stroke="#162a50" stroke-width="1.2" />
+        <circle cx="18" cy="18" r="7" fill="#00f5ff" fill-opacity="0.2" />
+        <text x="11" y="22" class="mono-font" font-size="11" font-weight="900" fill="#00f5ff">3D</text>
+        <text x="34" y="21" class="title-font" font-size="12" font-weight="700" fill="#e2e8f0">Spatial 3D CAD Studio</text>
+        <text x="14" y="42" font-family="-apple-system, sans-serif" font-size="10.5" fill="#94a3b8">Parametric WebGL, GLSL Shaders &amp; 60 FPS</text>
+      </g>
+
+      <!-- Pillar 2: Autonomous AI Swarms -->
+      <g transform="translate(274, 0)">
+        <rect width="260" height="56" rx="8" fill="#081228" stroke="#162a50" stroke-width="1.2" />
+        <circle cx="18" cy="18" r="7" fill="#a855f7" fill-opacity="0.2" />
+        <text x="12" y="22" class="mono-font" font-size="11" font-weight="900" fill="#a855f7">AI</text>
+        <text x="34" y="21" class="title-font" font-size="12" font-weight="700" fill="#e2e8f0">Autonomous AI Swarms</text>
+        <text x="14" y="42" font-family="-apple-system, sans-serif" font-size="10.5" fill="#94a3b8">Private WebLLM &amp; Sub-ms Vector RAG</text>
+      </g>
+
+      <!-- Pillar 3: Defensive Cyber SOC -->
+      <g transform="translate(0, 68)">
+        <rect width="260" height="56" rx="8" fill="#081228" stroke="#162a50" stroke-width="1.2" />
+        <circle cx="18" cy="18" r="7" fill="#10b981" fill-opacity="0.2" />
+        <text x="8" y="22" class="mono-font" font-size="10" font-weight="900" fill="#10b981">SOC</text>
+        <text x="34" y="21" class="title-font" font-size="12" font-weight="700" fill="#e2e8f0">Defensive SOC &amp; DRM</text>
+        <text x="14" y="42" font-family="-apple-system, sans-serif" font-size="10.5" fill="#94a3b8">Real-Time EDR &amp; Anti-Piracy DRM</text>
+      </g>
+
+      <!-- Pillar 4: Universal PWA OS -->
+      <g transform="translate(274, 68)">
+        <rect width="260" height="56" rx="8" fill="#081228" stroke="#162a50" stroke-width="1.2" />
+        <circle cx="18" cy="18" r="7" fill="#38bdf8" fill-opacity="0.2" />
+        <text x="8" y="22" class="mono-font" font-size="9" font-weight="900" fill="#38bdf8">PWA</text>
+        <text x="34" y="21" class="title-font" font-size="12" font-weight="700" fill="#e2e8f0">Universal Cyber Dock</text>
+        <text x="14" y="42" font-family="-apple-system, sans-serif" font-size="10.5" fill="#94a3b8">Adaptive 320px–4K Ergonomics &amp; Cache</text>
+      </g>
+    </g>
+
+    <!-- Bottom Prominent Launch Call To Action -->
+    <g transform="translate(0, 206)">
+      <!-- Glow Underlay -->
+      <rect width="360" height="44" rx="22" fill="#00f5ff" opacity="0.25" filter="url(#neonBlur)" />
+      <!-- Main Button Body -->
+      <rect width="360" height="44" rx="22" fill="url(#btnGrad)" />
+      <text x="180" y="27" text-anchor="middle" class="title-font" font-size="14" font-weight="800" letter-spacing="1.2px" fill="#030712">
+        LAUNCH WWW.STRAXON.ONLINE ↗
+      </text>
+
+      <!-- Right Uptime Telemetry Indicator -->
+      <g transform="translate(380, 12)">
+        <circle cx="6" cy="10" r="4.5" fill="#10b981" class="pulsing-dot" />
+        <text x="18" y="14" class="mono-font" font-size="11" font-weight="600" fill="#10b981">SLA: 99.99% UP</text>
+      </g>
+    </g>
+  </g>
+</svg>
