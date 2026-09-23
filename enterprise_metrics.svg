@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" width="100%" height="auto" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bgMetrics" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -38,52 +38,41 @@
       <stop offset="0%" stop-color="#f43f5e" />
       <stop offset="100%" stop-color="#fb7185" />
     </linearGradient>
-
-    <!-- Neon Glow Filter -->
-    <filter id="cardGlow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
   </defs>
 
   <style>
     @keyframes pulseDot {
       0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.3; transform: scale(0.85); }
-    }
-    @keyframes cardScan {
-      0% { stroke-dashoffset: 200; }
-      100% { stroke-dashoffset: 0; }
+      50% { opacity: 0.35; transform: scale(0.85); }
     }
     .metric-title {
       font-family: 'JetBrains Mono', 'Fira Code', monospace;
-      font-size: 10.5px;
+      font-size: 11px;
       letter-spacing: 2px;
       font-weight: 700;
     }
     .metric-value {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-      font-size: 26px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Inter', sans-serif;
+      font-size: 27px;
       font-weight: 900;
       letter-spacing: 0.5px;
     }
     .metric-label {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 10px;
+      font-size: 11px;
+      font-weight: 700;
       letter-spacing: 1.2px;
       fill: #94a3b8;
     }
     .metric-sub {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      font-size: 9.5px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
       fill: #64748b;
     }
     .live-dot {
       animation: pulseDot 2s infinite ease-in-out;
-      transform-origin: center;
+      transform-origin: 30px 28px;
     }
   </style>
 

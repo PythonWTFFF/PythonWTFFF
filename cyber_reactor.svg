@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="100%" height="auto" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="reactorBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#03050c" />
+      <stop offset="50%" stop-color="#080e21" />
+      <stop offset="100%" stop-color="#020308" />
+    </linearGradient>
+
+    <!-- Plasma Core Glow -->
+    <radialGradient id="plasmaGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="25%" stop-color="#00f5ff" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#a855f7" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ff007a" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Ring Gradients -->
+    <linearGradient id="ringCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="50%" stop-color="#7928ca" />
+      <stop offset="100%" stop-color="#ff007a" />
+    </linearGradient>
+
+    <!-- Card Background -->
+    <linearGradient id="hudBox" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b162f" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#040814" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Blur Filter -->
+    <filter id="coreGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur1" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes spinClockwise {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes spinCounter {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+    @keyframes corePulse {
+      0%, 100% { transform: scale(0.92); opacity: 0.85; }
+      50% { transform: scale(1.1); opacity: 1; }
+    }
+    @keyframes beamFlow {
+      0% { stroke-dashoffset: 80; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .spin-cw {
+      transform-origin: 500px 120px;
+      animation: spinClockwise 16s linear infinite;
+    }
+    .spin-ccw {
+      transform-origin: 500px 120px;
+      animation: spinCounter 10s linear infinite;
+    }
+    .spin-fast {
+      transform-origin: 500px 120px;
+      animation: spinClockwise 5s linear infinite;
+    }
+    .pulse-core {
+      transform-origin: 500px 120px;
+      animation: corePulse 2.5s ease-in-out infinite;
+    }
+    .flow-line {
+      stroke-dasharray: 8, 8;
+      animation: beamFlow 1.8s linear infinite;
+    }
+    .hud-title-text {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 11px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      fill: #00f5ff;
+    }
+    .hud-stat-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 1.2px;
+      fill: #64748b;
+    }
+    .hud-stat-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      fill: #cbd5e1;
+    }
+    .hud-stat-green {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      fill: #10b981;
+    }
+  </style>
+
+  <!-- Shell Frame -->
+  <rect width="1000" height="240" rx="12" fill="url(#reactorBg)" stroke="#1e293b" stroke-width="1.2" />
+
+  <!-- Corner Brackets -->
+  <path d="M 14 26 L 14 14 L 26 14" fill="none" stroke="#00f5ff" stroke-width="1.8" />
+  <path d="M 986 26 L 986 14 L 974 14" fill="none" stroke="#00f5ff" stroke-width="1.8" />
+  <path d="M 14 214 L 14 226 L 26 226" fill="none" stroke="#00f5ff" stroke-width="1.8" />
+  <path d="M 986 214 L 986 226 L 974 226" fill="none" stroke="#00f5ff" stroke-width="1.8" />
+
+  <!-- Top Strip -->
+  <g transform="translate(30, 26)">
+    <circle cx="0" cy="0" r="4.5" fill="#ff007a" />
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#ff007a" stroke-width="1" opacity="0.6" />
+    <text x="16" y="4" class="hud-title-text">⚡ STRAXON QUANTUM REACTOR // SOVEREIGN ENGINE CORE</text>
+    <text x="940" y="4" text-anchor="end" class="hud-title-text" fill="#10b981">● RUNTIME LEVEL: APEX</text>
+  </g>
+  <line x1="24" y1="38" x2="976" y2="38" stroke="#1e293b" stroke-width="1" />
+
+  <!-- LEFT HUD WIDGET: REACTOR DIAGNOSTICS (x: 26 to 340) -->
+  <g transform="translate(26, 48)">
+    <rect width="320" height="174" rx="8" fill="url(#hudBox)" stroke="#0e2a4a" stroke-width="1.2" />
+    <text x="16" y="24" class="hud-title-text">REACTOR TELEMETRY</text>
+    <line x1="16" y1="32" x2="304" y2="32" stroke="#1e293b" stroke-width="1" />
+
+    <g transform="translate(16, 52)">
+      <text x="0" y="0" class="hud-stat-label">ENERGY DENSITY:</text>
+      <text x="135" y="0" class="hud-stat-val">1.21 GW // MAX LOAD</text>
+
+      <text x="0" y="24" class="hud-stat-label">CORE TEMPERATURE:</text>
+      <text x="135" y="24" class="hud-stat-green">0.4 K [SUPERCONDUCT]</text>
+
+      <text x="0" y="48" class="hud-stat-label">SWARM MESHES:</text>
+      <text x="135" y="48" class="hud-stat-val">128 Autonomous Nodes</text>
+
+      <text x="0" y="72" class="hud-stat-label">CIPHER SYSTEM:</text>
+      <text x="135" y="72" class="hud-stat-val">Post-Quantum Kyber-1024</text>
+
+      <text x="0" y="96" class="hud-stat-label">FAILOVER LATENCY:</text>
+      <text x="135" y="96" class="hud-stat-green">0.00ms // BGP Anycast</text>
+    </g>
+  </g>
+
+  <!-- CENTER: THE GLOWING QUANTUM ARC REACTOR (Center: 500, 135) -->
+  <!-- Energy Conduits / Connecting Cables -->
+  <line x1="346" y1="135" x2="415" y2="135" stroke="#00f5ff" stroke-width="1.5" class="flow-line" />
+  <line x1="585" y1="135" x2="654" y2="135" stroke="#00f5ff" stroke-width="1.5" class="flow-line" />
+
+  <g transform="translate(0, 15)">
+    <!-- Outer Static Stator Ring -->
+    <circle cx="500" cy="120" r="82" fill="none" stroke="#1e3a5f" stroke-width="1.5" />
+    <circle cx="500" cy="120" r="88" fill="none" stroke="#0e2242" stroke-width="1" stroke-dasharray="4, 8" />
+
+    <!-- Outer Segmented Ring (Rotating Clockwise) -->
+    <g class="spin-cw">
+      <circle cx="500" cy="120" r="72" fill="none" stroke="url(#ringCyan)" stroke-width="3.5" stroke-dasharray="35, 12, 18, 12, 45, 15" filter="url(#coreGlow)" />
+      <!-- Magnetic Flux Emitters -->
+      <circle cx="500" cy="48" r="3.5" fill="#00f5ff" />
+      <circle cx="500" cy="192" r="3.5" fill="#00f5ff" />
+      <circle cx="428" cy="120" r="3.5" fill="#ff007a" />
+      <circle cx="572" cy="120" r="3.5" fill="#ff007a" />
+    </g>
+
+    <!-- Intermediate Counter-Rotating Gear Ring -->
+    <g class="spin-ccw">
+      <circle cx="500" cy="120" r="54" fill="none" stroke="#a855f7" stroke-width="2" stroke-dasharray="20, 8, 30, 8" />
+      <line x1="470" y1="120" x2="530" y2="120" stroke="#00f5ff" stroke-width="1" />
+      <line x1="500" y1="90" x2="500" y2="150" stroke="#00f5ff" stroke-width="1" />
+    </g>
+
+    <!-- Fast Inner Tech Ring -->
+    <g class="spin-fast">
+      <circle cx="500" cy="120" r="36" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="14, 6" />
+    </g>
+
+    <!-- Glowing Core Singularity -->
+    <g class="pulse-core">
+      <circle cx="500" cy="120" r="24" fill="url(#plasmaGlow)" filter="url(#coreGlow)" />
+      <circle cx="500" cy="120" r="10" fill="#ffffff" />
+    </g>
+  </g>
+
+  <!-- RIGHT HUD WIDGET: AUTONOMOUS MATRIX LOG (x: 654 to 974) -->
+  <g transform="translate(654, 48)">
+    <rect width="320" height="174" rx="8" fill="url(#hudBox)" stroke="#0e2a4a" stroke-width="1.2" />
+    <text x="16" y="24" class="hud-title-text">SOVEREIGN ARCHITECTURE</text>
+    <line x1="16" y1="32" x2="304" y2="32" stroke="#1e293b" stroke-width="1" />
+
+    <g transform="translate(16, 52)">
+      <text x="0" y="0" class="hud-stat-label">DEFENSE NODE:</text>
+      <text x="135" y="0" class="hud-stat-val">Zero-Day Hardened</text>
+
+      <text x="0" y="24" class="hud-stat-label">SPATIAL RENDER:</text>
+      <text x="135" y="24" class="hud-stat-val">WebGPU Raymarching</text>
+
+      <text x="0" y="48" class="hud-stat-label">NEURAL INFERENCE:</text>
+      <text x="135" y="48" class="hud-stat-green">100% Client-Side Private</text>
+
+      <text x="0" y="72" class="hud-stat-label">GLOBAL EDGE:</text>
+      <text x="135" y="72" class="hud-stat-val">300+ Cities Anycast</text>
+
+      <text x="0" y="96" class="hud-stat-label">CITADEL STATUS:</text>
+      <text x="135" y="96" class="hud-stat-green">● IMPERVIOUS // OPERATIONAL</text>
+    </g>
+  </g>
+</svg>

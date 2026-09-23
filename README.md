@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,9,12,24&height=95&section=header" width="100%" />
+
 <!-- ═════════════════════════════════════════════════════════════════════════ -->
 <!-- 🚀 CYBERNETIC HERO BANNER & IDENTITY MATRIX -->
 <!-- ═════════════════════════════════════════════════════════════════════════ -->
@@ -8,32 +10,50 @@
   <img src="cyber_banner.svg" alt="Swaraj Panti // dark hat Cyber Banner" width="100%" />
 </a>
 
-<!-- Dynamic Animated Cyber Typing Headline -->
+<!-- Dynamic Animated Cyber Typing Headline (Responsive on Phones & Desktops) -->
 <a href="https://straxonlabs10.vercel.app/">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=2400&pause=1100&color=00F5FF&center=true&vCenter=true&multiline=true&repeat=true&width=860&height=65&lines=%5B%2B%5D+Founder+%26+Lead+Architect+%40+StraxonLabs;%5B%3E%5D+Spatial+3D+WebGL+%2F+WebGPU+Computing+%26+GLSL+Shaders;%5B%3E%5D+Autonomous+AI+Swarms+%E2%80%A2+Vector+RAG+%E2%80%A2+WebLLM;%5B%3E%5D+Defensive+SOC+Telemetry+%E2%80%A2+Zero-Trust+Mesh;%5B%3E%5D+Engineering+Sovereign+Full-Stack+Digital+Citadels" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=21&duration=2400&pause=1100&color=00F5FF&center=true&vCenter=true&multiline=true&repeat=true&width=780&height=65&lines=%5B%2B%5D+Founder+%26+Lead+Architect+%40+StraxonLabs;%5B%3E%5D+Spatial+3D+CAD+%E2%80%A2+WebGL+2.0+%2F+WebGPU+%E2%80%A2+GLSL;%5B%3E%5D+Autonomous+AI+Swarms+%E2%80%A2+WebLLM+%E2%80%A2+Vector+RAG;%5B%3E%5D+Defensive+Cyber+SOC+%E2%80%A2+Zero-Trust+mTLS+%E2%80%A2+DRM;%5B%3E%5D+Available+for+Enterprise+Contracts+%26+Advisory" alt="Typing Headline" />
 </a>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Security_Clearance-Level_4_%5BDark_Hat%5D-7928ca?style=for-the-badge&logo=matrix&logoColor=00f5ff" alt="Clearance" />
-  <a href="https://straxonlabs10.vercel.app/"><img src="https://img.shields.io/badge/Platform-StraxonLabs_v3.0_Ultra-00d2e6?style=for-the-badge&logo=vercel&logoColor=black" alt="StraxonLabs" /></a>
-  <img src="https://img.shields.io/badge/Status-🟢_Online_%26_Building-00f0ff?style=for-the-badge&logo=statuspage&logoColor=black" alt="Status" />
+  <a href="https://straxonlabs10.vercel.app/"><img src="https://img.shields.io/badge/Flagship-StraxonLabs_v3.0_Ultra-00d2e6?style=for-the-badge&logo=vercel&logoColor=black" alt="StraxonLabs" /></a>
+  <img src="https://img.shields.io/badge/Status-🟢_Available_for_Contracts-00f0ff?style=for-the-badge&logo=statuspage&logoColor=black" alt="Status" />
   <img src="https://komarev.com/ghpvc/?username=PythonWTFFF&style=for-the-badge&color=00d2e6&label=SYSTEM+ACCESSES" alt="Access Count" />
   <img src="https://img.shields.io/badge/Location-Kolkata%2C_India_%7C_Global_Remote-181717?style=for-the-badge&logo=googlemaps&logoColor=red" alt="Location" />
 </p>
 
-<!-- Quick Action Navigation Capsules -->
+<!-- Recruiter & Client Priority Quick-Action Launchpad -->
 <p align="center">
-  <a href="https://straxonlabs10.vercel.app/"><b>🚀 Flagship Platform</b></a> •
+  <a href="https://wa.me/918335846171?text=Hello%20Swaraj,%20I%20would%20like%20to%20discuss%20a%20high-impact%20project%20architecture."><img src="https://img.shields.io/badge/💬_WhatsApp-Direct_Priority_Consultation-25D366?style=flat-square&logo=whatsapp&logoColor=white" alt="WhatsApp Direct" /></a>
+  <a href="mailto:straxonlab@gmail.com"><img src="https://img.shields.io/badge/✉️_Email-straxonlab@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email Direct" /></a>
+  <a href="https://www.straxon.online/"><img src="https://img.shields.io/badge/🌐_Official_Web-straxon.online-00f0ff?style=flat-square&logo=googlechrome&logoColor=black" alt="straxon.online" /></a>
+  <a href="https://straxonlabs10.vercel.app/"><img src="https://img.shields.io/badge/🚀_Live_Platform-StraxonLabs_v3-7928ca?style=flat-square&logo=vercel&logoColor=white" alt="Live Platform" /></a>
+</p>
+
+<!-- Platform Uplinks Bar -->
+<p align="center">
+  <a href="https://straxonlabs10.vercel.app/"><b>🚀 StraxonLabs Ultra</b></a> •
   <a href="https://www.straxon.online/"><b>🌐 straxon.online</b></a> •
   <a href="https://w.swaraj-0aa.workers.dev/"><b>🤖 W Neural OS</b></a> •
-  <a href="https://tanstack-start-app.hybridpython64.workers.dev/"><b>🛡️ Cyber SOC</b></a> •
+  <a href="https://tanstack-start-app.hybridpython64.workers.dev/"><b>🛡️ Straxon Cyber SOC</b></a> •
   <a href="https://straxon-command-center.onrender.com/"><b>⚡ Command Suite</b></a> •
-  <a href="https://wa.me/918335846171?text=Hello%20Swaraj,%20I%20would%20like%20to%20discuss%20a%20high-impact%20project%20architecture."><b>💬 WhatsApp Direct</b></a>
+  <a href="https://kshatracode-frontend.onrender.com/"><b>🔒 Kshatra Code DRM</b></a>
 </p>
 
 ---
 
 </div>
+
+## ⚡ Straxon Quantum Arc Reactor // Sovereign Engine Core
+
+<div align="center">
+  <img src="cyber_reactor.svg" alt="Straxon Quantum Arc Reactor // Sovereign Engine Core" width="100%" />
+</div>
+
+<br/>
+
+---
 
 ## ⚡ Enterprise Client Benchmarks // Audited SLA
 
@@ -45,10 +65,30 @@
 
 ---
 
+## 🤝 Enterprise Client Commitments // Verified Architecture SLA
+
+<div align="center">
+  <img src="client_architecture_sla.svg" alt="Enterprise Client Commitments // Verified Architecture SLA" width="100%" />
+</div>
+
+<br/>
+
+---
+
 ## 🌌 Autonomous Computation Matrix // 4 Live Engines
 
 <div align="center">
   <img src="neural_matrix.svg" alt="Autonomous Computation Matrix // 4 Live Engines" width="100%" />
+</div>
+
+<br/>
+
+---
+
+## 🎯 Architectural Proficiency Matrix // Live Competency Levels
+
+<div align="center">
+  <img src="skill_matrix_bars.svg" alt="Architectural Proficiency Matrix // Live Competency Levels" width="100%" />
 </div>
 
 <br/>
@@ -72,7 +112,7 @@
    |oo`           \gD\          ROLE           : Founder & Lead Systems Architect @ StraxonLabs
    |o@    [0x7E]   \\Y\         SECURITY LEVEL : Level 4 // Offensive & Defensive Research
    |oo             \\o\         SPECIALIZATION : Real-Time SOC EDR, 3D Spatial Graphics, WebLLM, DRM
-   |op             |o@          EDGE RUNTIMES  : Cloudflare Workers • Vercel Edge • Docker Container Meshes
+   |op             |o@          EDGE RUNTIMES  : Cloudflare Workers • Vercel Edge • Docker Meshes
    !qoo/          /-V--g-.      ENGINE         : Three.js • WebGL 2.0 • WebGPU • GLSL Procedural Shaders
       /4g_/       ----$---g     UPTIME         : 99.99% // Continuous Autonomous Innovation
 ```
@@ -85,7 +125,7 @@
 
 | Capability Domain | What I Deliver to Clients & Enterprises | Core Tech Stack |
 | :--- | :--- | :--- |
-| **01. Full-Stack SaaS & Cloud Architecture** | Turnkey 0-to-1 web platforms, multi-tenant RBAC, automated Stripe billing, distributed microservices, and sub-100ms worldwide API endpoints. | TypeScript, React 19, Next.js, FastAPI, Node, PostgreSQL, Supabase |
+| **01. Full-Stack SaaS & Cloud Architecture** | Turnkey 0-to-1 web platforms, multi-tenant RBAC, automated Stripe/UPI billing, distributed microservices, and sub-100ms worldwide API endpoints. | TypeScript, React 19, Next.js, FastAPI, Node, PostgreSQL, Supabase |
 | **02. 3D Spatial Computing & WebGL/WebGPU** | Photorealistic CAD modelers, interactive 3D configurators, custom GLSL procedural raymarching shaders, locked 60 FPS across desktop and mobile PWAs. | Three.js, React Three Fiber, WebGL 2.0, WebGPU, GLSL Shaders |
 | **03. Autonomous AI Swarms & Vector RAG** | Zero-cloud-cost on-device WebLLM inference, sub-millisecond TF-IDF vector retrieval, multi-agent automated orchestration, and enterprise document intelligence. | WebLLM, ChromaDB, TF-IDF Vector RAG, OpenAI API, Edge Streaming |
 | **04. Defensive Cybersecurity & EDR SOC** | Full-stack vulnerability audits, automated OWASP Top-10 mitigations, Zero-Trust mTLS, hardware-level anti-piracy DRM & dynamic steganographic watermarks. | Python EDR, Cloudflare WAF, Isolation Forest ML, Hardware Canvas DRM |
@@ -116,20 +156,16 @@
 
 <div align="center">
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                               STRAXON AUTONOMOUS SAAS ENGINE SUITE                               │
-├────┬─────────────────────────────┬───────────────────────────────────────────────────────────────┤
-│ 01 │ 📐 Spatial 3D CAD Studio    │ Parametric geometry, GLSL raymarching & WebGPU compute        │
-│ 02 │ 🎛️ Web Audio Synth Matrix   │ Polyphonic synth, custom oscillators & low-pass biquad filters│
-│ 03 │ 🛡️ Real-Time SOC Telemetry   │ 3D geospatial attack visualizer & zero-trust packet inspector │
-│ 04 │ 🧠 Neural Vector RAG Engine │ In-browser vector TF-IDF cosine similarity & sub-ms retrieval │
-│ 05 │ 📋 IEEE 830 SRS Architect   │ Automated software requirement specification compiler         │
-│ 06 │ 🔒 Hardware DRM Matrix      │ Biometric canvas fingerprinting & forensic anti-leak tracing  │
-│ 07 │ 🔍 Zero-Trust Vulnerability │ Automated OWASP Top-10 audit & TLS 1.3 handshake verification │
-│ 08 │ 📱 Universal Cyber Dock     │ Responsive 320px–4K navigation ergonomics & tactile haptics   │
-└────┴─────────────────────────────┴───────────────────────────────────────────────────────────────┘
-```
+| # | Engine Name | Core Technical Capability |
+| :---: | :--- | :--- |
+| **01** | **📐 Spatial 3D CAD Studio** | Parametric geometry, GLSL raymarching & WebGPU compute pipeline |
+| **02** | **🎛️ Web Audio Synth Matrix** | Polyphonic synthesizer, custom oscillators & low-pass biquad filters |
+| **03** | **🛡️ Real-Time SOC Telemetry** | 3D geospatial attack visualizer & zero-trust packet inspector |
+| **04** | **🧠 Neural Vector RAG Engine** | In-browser vector TF-IDF cosine similarity & sub-ms retrieval |
+| **05** | **📋 IEEE 830 SRS Architect** | Automated software requirement specification compiler |
+| **06** | **🔒 Hardware DRM Matrix** | Biometric canvas fingerprinting & forensic anti-leak tracing |
+| **07** | **🔍 Zero-Trust Vulnerability** | Automated OWASP Top-10 audit & TLS 1.3 handshake verification |
+| **08** | **📱 Universal Cyber Dock** | Responsive 320px–4K navigation ergonomics & tactile haptics |
 
 </div>
 
@@ -204,27 +240,27 @@
 
 <div align="center">
 
-<!-- GitHub Stats & Languages Side by Side (Responsive Flex Layout for Mobile, Tablet & Desktop) -->
+<!-- Multi-Device Balanced Telemetry Cards -->
 <p align="center">
   <a href="https://github.com/PythonWTFFF">
-    <img src="https://github-readme-stats.vercel.app/api?username=PythonWTFFF&show_icons=true&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&title_color=00f0ff&icon_color=00f0ff&text_color=c0caf5&bg_color=0a0f1a" alt="Swaraj Panti GitHub Stats" width="49%" />
+    <img src="https://github-readme-stats.vercel.app/api?username=PythonWTFFF&show_icons=true&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&title_color=00f0ff&icon_color=00f0ff&text_color=c0caf5&bg_color=0a0f1a&border_color=1e293b" alt="Swaraj Panti GitHub Stats" />
   </a>
   <a href="https://github.com/PythonWTFFF">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PythonWTFFF&layout=compact&theme=tokyonight&hide_border=false&title_color=00f0ff&text_color=c0caf5&bg_color=0a0f1a" alt="Top Languages" width="48%" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PythonWTFFF&layout=compact&theme=tokyonight&hide_border=false&title_color=00f0ff&text_color=c0caf5&bg_color=0a0f1a&border_color=1e293b" alt="Top Languages" />
   </a>
 </p>
 
 <!-- GitHub Streak Stats -->
 <p align="center">
   <a href="https://github.com/PythonWTFFF">
-    <img src="https://streak-stats.demolab.com?user=PythonWTFFF&theme=tokyonight&hide_border=false&background=0a0f1a&ring=00f0ff&fire=00f0ff&currStreakNum=00f0ff&sideNums=c0caf5&currStreakLabel=00f0ff&dates=64748b" alt="GitHub Streak Stats" width="98%" />
+    <img src="https://streak-stats.demolab.com?user=PythonWTFFF&theme=tokyonight&hide_border=false&background=0a0f1a&ring=00f0ff&fire=00f0ff&currStreakNum=00f0ff&sideNums=c0caf5&currStreakLabel=00f0ff&dates=64748b&border=1e293b" alt="GitHub Streak Stats" width="100%" />
   </a>
 </p>
 
 <!-- Dynamic Activity Graph -->
 <p align="center">
   <a href="https://github.com/PythonWTFFF">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=PythonWTFFF&theme=tokyo-night&hide_border=false&area=true&color=00f0ff&bg_color=0a0f1a" alt="Activity Graph" width="98%" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=PythonWTFFF&theme=tokyo-night&hide_border=false&area=true&color=00f0ff&bg_color=0a0f1a" alt="Activity Graph" width="100%" />
   </a>
 </p>
 
@@ -263,17 +299,39 @@ flowchart LR
 
 ---
 
+## 💻 Interactive Terminal CLI // Citadel Control Plane
+
+```bash
+┌──[ dark-hat@straxon-mainframe ]──[ ~ ]
+└──╼ $ straxon-ctl deploy --cluster sovereign-edge --zero-trust
+[✔] Initializing W Neural OS Edge Agent Swarm (Cloudflare Workers)... [READY]
+[✔] Allocating 60 FPS WebGPU Spatial CAD Pipeline (Three.js & GLSL)... [LOCKED]
+[✔] Binding Post-Quantum Kyber-1024 mTLS Encryption Layer... [ENFORCED]
+[✔] Activating 8 Autonomous SaaS Micro-Engines across 300+ Edge Nodes... [ACTIVE]
+[✔] Auditing OWASP Top-10 Attack Vectors & Isolation Forest EDR... [0 VULNERABILITIES]
+[*] CITADEL LIVE GLOBALLY: 38ms Edge Latency • 99.99% Uptime • Sovereign Execution.
+```
+
+---
+
 ## 🚀 Client High-Impact Sprint Process // 3-Stage Delivery
 
 ```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                             HIGH-VELOCITY SPRINT ROADMAP (14 DAYS)                               │
-├─────────────────────┬────────────────────────────────────────────────────────────────────────────┤
-│ 01. THREAT & SPEC   │ Day 1–2: Complete architecture blueprint, threat modeling & tech audit.   │
-│ 02. ACCELERATION    │ Day 3–9: 3D spatial scenes, agent swarms, database schemas & edge APIs.   │
-│ 03. HARDENING & SLA │ Day 10–14: Zero-Trust mTLS, OWASP Top-10 defense, automated CI/CD & CDN.   │
-└─────────────────────┴────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                      HIGH-VELOCITY SPRINT ROADMAP (14 DAYS)                   │
+├───────────────────┬───────────────────────────────────────────────────────────┤
+│ 01. THREAT & SPEC │ Day 1–2: Architecture blueprint, threat modeling & audit. │
+│ 02. ACCELERATION  │ Day 3–9: 3D spatial scenes, agent swarms & edge APIs.     │
+│ 03. HARDENING/SLA │ Day 10–14: Zero-Trust mTLS, OWASP defense, CI/CD & CDN.   │
+└───────────────────┴───────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 📜 Sovereign Founder Manifesto
+
+> *"We don't build software to conform to the boundaries of yesterday's internet. We engineer sovereign digital citadels, spatial 3D realities, and autonomous neural swarms designed to survive, scale, and dominate at the absolute edge."*  
+> — **Swaraj Panti (`@PythonWTFFF`)**, *Founder & Lead Systems Architect @ StraxonLabs*
 
 ---
 
@@ -319,7 +377,7 @@ Whether you need to architect an **enterprise SaaS platform**, integrate **3D We
 </p>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,9,12,24&height=100&section=footer" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,9,12,24&height=110&section=footer" width="100%" />
 </div>
 
 <p align="center">
