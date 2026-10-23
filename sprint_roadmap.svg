@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" width="100%" height="auto" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="roadmapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040713" />
+      <stop offset="50%" stop-color="#081126" />
+      <stop offset="100%" stop-color="#03050e" />
+    </linearGradient>
+
+    <!-- Phase Card Gradients -->
+    <linearGradient id="phaseCard1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b38" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#060c1c" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Border Gradients -->
+    <linearGradient id="cyanBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="purpleBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <linearGradient id="greenBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <!-- Connector Pulse Gradient -->
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <filter id="glowPulse">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseBeam {
+      0% { stroke-dashoffset: 40; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes liveDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.85); }
+    }
+    .flow-bus { stroke-dasharray: 6, 6; animation: pulseBeam 1.8s linear infinite; }
+    .live-indicator { animation: liveDot 2s ease-in-out infinite; }
+    .title-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; }
+    .mono-font { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="1000" height="230" rx="14" fill="url(#roadmapBg)" stroke="#1e293b" stroke-width="1.4" />
+
+  <!-- Corner Brackets -->
+  <path d="M 14 26 L 14 14 L 26 14" fill="none" stroke="#00f5ff" stroke-width="2" />
+  <path d="M 986 26 L 986 14 L 974 14" fill="none" stroke="#00f5ff" stroke-width="2" />
+  <path d="M 14 204 L 14 216 L 26 216" fill="none" stroke="#00f5ff" stroke-width="2" />
+  <path d="M 986 204 L 986 216 L 974 216" fill="none" stroke="#00f5ff" stroke-width="2" />
+
+  <!-- Header Strip -->
+  <g transform="translate(30, 28)">
+    <circle cx="0" cy="0" r="4.5" fill="#00f5ff" class="live-indicator" />
+    <text x="14" y="4" class="mono-font" font-size="12" font-weight="700" fill="#00f5ff" letter-spacing="1.5px">
+      🚀 HIGH-IMPACT 14-DAY DELIVERY COMMITMENT // SPRINT ARCHITECTURE
+    </text>
+    <text x="940" y="4" text-anchor="end" class="mono-font" font-size="11" font-weight="600" fill="#94a3b8">
+      GUARANTEED VELOCITY • ZERO ACCUMULATED DEBT
+    </text>
+  </g>
+  <line x1="24" y1="42" x2="976" y2="42" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Connecting Bus Lines Between Phases -->
+  <line x1="324" y1="128" x2="352" y2="128" stroke="url(#pulseGrad)" stroke-width="2.5" class="flow-bus" filter="url(#glowPulse)" />
+  <line x1="650" y1="128" x2="678" y2="128" stroke="url(#pulseGrad)" stroke-width="2.5" class="flow-bus" filter="url(#glowPulse)" />
+
+  <!-- ========================================== -->
+  <!-- PHASE 01: Threat Spec & Blueprint (Days 1-2) -->
+  <!-- ========================================== -->
+  <g transform="translate(24, 54)">
+    <rect width="300" height="152" rx="10" fill="url(#phaseCard1)" stroke="#0284c7" stroke-width="1.4" />
+    <rect x="0" y="0" width="300" height="4" rx="2" fill="url(#cyanBorder)" />
+
+    <!-- Phase Badge -->
+    <rect x="14" y="14" width="115" height="20" rx="4" fill="#0369a1" fill-opacity="0.35" stroke="#0284c7" stroke-width="1" />
+    <text x="22" y="28" class="mono-font" font-size="10" font-weight="800" fill="#38bdf8" letter-spacing="1px">PHASE 01 // DAYS 1–2</text>
+
+    <!-- Title -->
+    <text x="14" y="54" class="title-font" font-size="15" fill="#f8fafc">THREAT SPEC &amp; BLUEPRINT</text>
+
+    <!-- Details -->
+    <text x="14" y="76" class="mono-font" font-size="10.5" fill="#cbd5e1">• Complete architecture blueprint</text>
+    <text x="14" y="94" class="mono-font" font-size="10.5" fill="#cbd5e1">• Threat modeling &amp; IEEE 830 SRS</text>
+    <text x="14" y="112" class="mono-font" font-size="10.5" fill="#cbd5e1">• PostgreSQL schemas &amp; Edge APIs</text>
+
+    <!-- Deliverable Status -->
+    <line x1="14" y1="124" x2="286" y2="124" stroke="#162e54" stroke-width="1" />
+    <circle cx="20" cy="138" r="3.5" fill="#00f5ff" />
+    <text x="28" y="141" class="mono-font" font-size="9.5" font-weight="700" fill="#00f5ff">DELIVERABLE: ARCHITECTURE LOCKED</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- PHASE 02: Acceleration & Core (Days 3-9) -->
+  <!-- ========================================== -->
+  <g transform="translate(350, 54)">
+    <rect width="300" height="152" rx="10" fill="url(#phaseCard1)" stroke="#7c3aed" stroke-width="1.4" />
+    <rect x="0" y="0" width="300" height="4" rx="2" fill="url(#purpleBorder)" />
+
+    <!-- Phase Badge -->
+    <rect x="14" y="14" width="115" height="20" rx="4" fill="#6d28d9" fill-opacity="0.35" stroke="#7c3aed" stroke-width="1" />
+    <text x="22" y="28" class="mono-font" font-size="10" font-weight="800" fill="#c084fc" letter-spacing="1px">PHASE 02 // DAYS 3–9</text>
+
+    <!-- Title -->
+    <text x="14" y="54" class="title-font" font-size="15" fill="#f8fafc">ACCELERATION &amp; CORE BUILD</text>
+
+    <!-- Details -->
+    <text x="14" y="76" class="mono-font" font-size="10.5" fill="#cbd5e1">• 3D spatial scenes &amp; GLSL shaders</text>
+    <text x="14" y="94" class="mono-font" font-size="10.5" fill="#cbd5e1">• On-device WebLLM &amp; vector search</text>
+    <text x="14" y="112" class="mono-font" font-size="10.5" fill="#cbd5e1">• Universal mobile-responsive UI</text>
+
+    <!-- Deliverable Status -->
+    <line x1="14" y1="124" x2="286" y2="124" stroke="#162e54" stroke-width="1" />
+    <circle cx="20" cy="138" r="3.5" fill="#c084fc" />
+    <text x="28" y="141" class="mono-font" font-size="9.5" font-weight="700" fill="#c084fc">DELIVERABLE: INTERACTIVE PROTOTYPE</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- PHASE 03: Hardening & SLA (Days 10-14) -->
+  <!-- ========================================== -->
+  <g transform="translate(676, 54)">
+    <rect width="300" height="152" rx="10" fill="url(#phaseCard1)" stroke="#059669" stroke-width="1.4" />
+    <rect x="0" y="0" width="300" height="4" rx="2" fill="url(#greenBorder)" />
+
+    <!-- Phase Badge -->
+    <rect x="14" y="14" width="125" height="20" rx="4" fill="#047857" fill-opacity="0.35" stroke="#059669" stroke-width="1" />
+    <text x="22" y="28" class="mono-font" font-size="10" font-weight="800" fill="#34d399" letter-spacing="1px">PHASE 03 // DAYS 10–14</text>
+
+    <!-- Title -->
+    <text x="14" y="54" class="title-font" font-size="15" fill="#f8fafc">HARDENING &amp; GLOBAL SLA</text>
+
+    <!-- Details -->
+    <text x="14" y="76" class="mono-font" font-size="10.5" fill="#cbd5e1">• Zero-Trust mTLS &amp; OWASP defense</text>
+    <text x="14" y="94" class="mono-font" font-size="10.5" fill="#cbd5e1">• Automated CI/CD &amp; Vitest coverage</text>
+    <text x="14" y="112" class="mono-font" font-size="10.5" fill="#cbd5e1">• Cloudflare global Anycast CDN</text>
+
+    <!-- Deliverable Status -->
+    <line x1="14" y1="124" x2="286" y2="124" stroke="#162e54" stroke-width="1" />
+    <circle cx="20" cy="138" r="3.5" fill="#10b981" />
+    <text x="28" y="141" class="mono-font" font-size="9.5" font-weight="700" fill="#10b981">DELIVERABLE: PRODUCTION HARDENED</text>
+  </g>
+</svg>

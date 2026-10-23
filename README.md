@@ -23,10 +23,13 @@
 
 <!-- Recruiter & Client Priority Quick-Action Launchpad (Mobile & Desktop Responsive) -->
 <p align="center">
+  <a href="https://wa.me/918335846171?text=Hello%20Swaraj,%20I%20would%20like%20to%20discuss%20a%20high-impact%20project%20architecture."><img src="https://img.shields.io/badge/💬_WhatsApp-Priority_Consultation-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Direct" /></a>
+  <a href="mailto:pantiswaraj@gmail.com"><img src="https://img.shields.io/badge/✉️_Email-Direct_Consultation-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Direct" /></a>
+  <a href="https://share.google/ioWTTPZ84rcw81iVs"><img src="https://img.shields.io/badge/⭐_Client_Reviews-5.0_★_(48_Verified)-FBBC05?style=for-the-badge&logo=google&logoColor=black" alt="Google 5.0 Star Reviews" /></a>
+</p>
+
+<p align="center">
   <a href="https://www.straxon.online/"><img src="https://img.shields.io/badge/🌐_Flagship_App-www.straxon.online-00f0ff?style=flat-square&logo=googlechrome&logoColor=black" alt="straxon.online" /></a>
-  <a href="https://share.google/ioWTTPZ84rcw81iVs"><img src="https://img.shields.io/badge/⭐_Client_Reviews-5.0_★_(48_Verified)-FBBC05?style=flat-square&logo=google&logoColor=black" alt="Google 5.0 Star Reviews" /></a>
-  <a href="https://wa.me/918335846171?text=Hello%20Swaraj,%20I%20would%20like%20to%20discuss%20a%20high-impact%20project%20architecture."><img src="https://img.shields.io/badge/💬_WhatsApp-Priority_Consultation-25D366?style=flat-square&logo=whatsapp&logoColor=white" alt="WhatsApp Direct" /></a>
-  <a href="mailto:pantiswaraj@gmail.com"><img src="https://img.shields.io/badge/✉️_Email-pantiswaraj@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email Direct" /></a>
   <a href="https://tanstack-start-app.hybridpython64.workers.dev/"><img src="https://img.shields.io/badge/🛡️_Cyber_SOC-Live_Visualizer-7928ca?style=flat-square&logo=cloudflare&logoColor=white" alt="Cyber SOC" /></a>
   <a href="https://w.swaraj-0aa.workers.dev/"><img src="https://img.shields.io/badge/🤖_Neural_OS-Edge_Agent_Mesh-3b82f6?style=flat-square&logo=robot&logoColor=white" alt="Neural OS" /></a>
   <a href="https://kshatracode-frontend.onrender.com/"><img src="https://img.shields.io/badge/🔒_KshatraCode-EdTech_DRM-10b981?style=flat-square&logo=render&logoColor=white" alt="Kshatra Code" /></a>
@@ -108,12 +111,12 @@ I am a **Systems Architect, Full-Stack Engineer, and Cybersecurity Specialist** 
 
 <div align="center">
 
-| Domain | What I Deliver to Clients & Organizations | Key Frameworks & Runtimes |
-| :--- | :--- | :--- |
-| **01. Spatial 3D & Graphics** | In-browser CAD studios, 3D configurators, custom GLSL raymarching shaders, locked 60 FPS across desktop & mobile devices. | Three.js, WebGL 2.0, WebGPU, GLSL Shaders, React Three Fiber, Blender |
-| **02. Full-Stack SaaS & Edge** | High-velocity 0-to-1 platforms, multi-tenant RBAC, automated Stripe billing, sub-40ms global API edge endpoints. | TypeScript 5.8, React 19, Next.js 15, FastAPI, Node.js, Cloudflare Workers, PostgreSQL |
-| **03. Autonomous AI & Vector RAG** | Zero-cloud-cost on-device WebLLM inference, sub-ms cosine vector retrieval, multi-agent automated orchestration. | WebLLM, TF-IDF Vector RAG, ChromaDB, OpenAI API, Multi-Agent Swarms |
-| **04. Defensive Cyber & SOC** | Real-time EDR attack matrix, hardware canvas fingerprinting, anti-tamper memory hooks, Zero-Trust mTLS & OWASP compliance. | Python EDR, Cloudflare WAF, Isolation Forest ML, Hardware DRM, WireGuard |
+| Core Architecture Domain & Weapons | Production Client Deliverables & Frameworks |
+| :--- | :--- |
+| **01. Spatial 3D & Graphics**<br/>`Three.js • WebGL 2.0 • WebGPU • GLSL • Blender` | **In-Browser CAD Studios & 3D Configurators:** Custom GLSL raymarching shaders, procedural mesh generation, and locked 60 FPS across desktop & mobile devices. |
+| **02. Full-Stack SaaS & Edge**<br/>`TypeScript 5.8 • React 19 • Next.js 15 • FastAPI • Cloudflare` | **High-Velocity 0-to-1 Platforms:** Multi-tenant RBAC, automated Stripe billing pipelines, and sub-40ms global API edge endpoints via Cloudflare Anycast. |
+| **03. Autonomous AI & Vector RAG**<br/>`WebLLM • Vector RAG • ChromaDB • OpenAI Swarms` | **Zero-Cloud-Cost On-Device AI:** Local browser-native inference, sub-millisecond cosine vector retrieval, and multi-agent mesh task orchestration. |
+| **04. Defensive Cyber & SOC**<br/>`Isolation Forest EDR • mTLS • OWASP Shield • Hardware DRM` | **Enterprise Cyber Hardening:** Real-time attack telemetry, hardware canvas fingerprinting, anti-tamper memory hooks, and Zero-Trust mTLS defense. |
 
 </div>
 
@@ -153,12 +156,12 @@ I am a **Systems Architect, Full-Stack Engineer, and Cybersecurity Specialist** 
 
 <div align="center">
 
-| Platform & Status | Domain & Core Architectural Innovations | Production Uplink |
-| :--- | :--- | :--- |
-| **🛡️ Straxon Cyber SOC**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-10b981?style=flat-square&logo=cloudflare" alt="Live" /> | **Enterprise SOC Threat Visualizer & Defense Mesh:** 3D interactive cyber attack origin globe, ML-powered EDR telemetry (Isolation Forest anomaly detection), live DDoS simulation & Zero-Trust mTLS. | [**🛡️ Launch Cyber SOC ↗**](https://tanstack-start-app.hybridpython64.workers.dev/)<br/><sub>[GitHub Repo (StraxonSecure) ↗](https://github.com/PythonWTFFF/StraxonSecure)</sub> |
-| **🤖 W Neural OS v3.0**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-10b981?style=flat-square&logo=cloudflare" alt="Live" /> | **Autonomous Multi-Agent AI Operating System:** Cloudflare Edge Worker AI orchestration, browser-native WebLLM inference, task handoff state machines & sub-millisecond TF-IDF vector RAG retrieval. | [**🤖 Launch Neural OS ↗**](https://w.swaraj-0aa.workers.dev/) |
-| **⚡ Straxon Command Suite**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-10b981?style=flat-square&logo=render" alt="Live" /> | **Full-Stack Enterprise Operations Suite:** High-velocity distributed control plane, dynamic IEEE 830 SRS documentation generator, client milestone escrow & team RBAC governance. | [**⚡ Launch Command ↗**](https://straxon-command-center.onrender.com/) |
-| **🐠 The Fish World**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-10b981?style=flat-square&logo=vercel" alt="Live" /> | **High-Velocity Marine Livestock Commerce:** Real-time inventory sync engine, sub-second checkout pipeline, Stripe API payments & interactive marine specimen telemetry. | [**🐠 Visit The Fish World ↗**](https://thefishworld.vercel.app/) |
+| Production Platform & Status | Architectural Innovations & Direct Uplinks |
+| :--- | :--- |
+| **🛡️ Straxon Cyber SOC**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-10b981?style=flat-square&logo=cloudflare" alt="Live" /><br/><sub>Cloudflare Edge Anycast</sub> | **Enterprise SOC Threat Visualizer & Defense Mesh:** 3D interactive cyber attack origin globe, ML-powered EDR telemetry (Isolation Forest), live DDoS simulation & Zero-Trust mTLS.<br/>[**🛡️ Launch Cyber SOC ↗**](https://tanstack-start-app.hybridpython64.workers.dev/) • [**Source Code ↗**](https://github.com/PythonWTFFF/StraxonSecure) |
+| **🤖 W Neural OS v3.0**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-10b981?style=flat-square&logo=cloudflare" alt="Live" /><br/><sub>Edge AI Agent Mesh</sub> | **Autonomous Multi-Agent AI Operating System:** Cloudflare Edge Worker AI orchestration, browser-native WebLLM inference, task handoff state machines & sub-millisecond TF-IDF vector RAG retrieval.<br/>[**🤖 Launch Neural OS ↗**](https://w.swaraj-0aa.workers.dev/) |
+| **⚡ Straxon Command Suite**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-10b981?style=flat-square&logo=render" alt="Live" /><br/><sub>Control Plane & SRS</sub> | **Full-Stack Enterprise Operations Suite:** High-velocity distributed control plane, dynamic IEEE 830 SRS documentation generator, client milestone escrow & team RBAC governance.<br/>[**⚡ Launch Command Suite ↗**](https://straxon-command-center.onrender.com/) |
+| **🐠 The Fish World**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-10b981?style=flat-square&logo=vercel" alt="Live" /><br/><sub>Sub-Second Commerce</sub> | **High-Velocity Marine Livestock Commerce:** Real-time inventory sync engine, sub-second checkout pipeline, Stripe API payments & interactive marine specimen telemetry.<br/>[**🐠 Visit The Fish World ↗**](https://thefishworld.vercel.app/) |
 
 </div>
 
@@ -181,17 +184,7 @@ I am a **Systems Architect, Full-Stack Engineer, and Cybersecurity Specialist** 
 ## 🚀 High-Velocity Sprint Architecture // 14-Day Delivery Commitment
 
 <div align="center">
-
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                             HIGH-IMPACT SPRINT PROCESS (14 DAYS)                                 │
-├─────────────────────┬────────────────────────────────────────────────────────────────────────────┤
-│ 01. THREAT & SPEC   │ Day 1–2: Complete architecture blueprint, threat modeling & SRS spec.     │
-│ 02. ACCELERATION    │ Day 3–9: 3D spatial scenes, AI agents, database schemas & edge APIs.       │
-│ 03. HARDENING & SLA │ Day 10–14: Zero-Trust mTLS, OWASP defense, automated CI/CD & global CDN.   │
-└─────────────────────┴────────────────────────────────────────────────────────────────────────────┘
-```
-
+  <img src="sprint_roadmap.svg" alt="High-Velocity Sprint Architecture // 14-Day Delivery Commitment" width="100%" />
 </div>
 
 ---
@@ -202,11 +195,11 @@ I am a **Systems Architect, Full-Stack Engineer, and Cybersecurity Specialist** 
 
 > Promote your developer tool, SaaS, AI engine, or cybersecurity platform directly to **45,000+ monthly software engineers, CTOs, and technical founders** browsing [**www.straxon.online**](https://www.straxon.online/).
 
-| Placement Slot | Audience Reach | Format & Impact | Self-Serve Booking |
-| :--- | :--- | :--- | :--- |
-| **⭐ Flagship Hero Spotlight** | 45,000+ views/mo | Top-fold interactive 3D hero rotation & sticky mobile banner | [**Explore Sponsorships ↗**](https://www.straxon.online/advertise) |
-| **🛠️ SaaS HyperTools Capsule** | 30,000+ views/mo | Embedded in 14+ high-utility developer tools | [**Explore Sponsorships ↗**](https://www.straxon.online/advertise) |
-| **🛡️ Cyber SOC Telemetry Node** | 25,000+ views/mo | Branded defense node in real-time 3D cyber visualizer | [**Explore Sponsorships ↗**](https://www.straxon.online/advertise) |
+| Placement Slot & Format | Monthly Reach & Self-Serve Booking |
+| :--- | :--- |
+| **⭐ Flagship Hero Spotlight**<br/><sub>Top-fold interactive 3D hero rotation & sticky mobile banner</sub> | **45,000+ views/mo**<br/>[**Reserve Slot on Straxon.online ↗**](https://www.straxon.online/advertise) |
+| **🛠️ SaaS HyperTools Capsule**<br/><sub>Embedded across 14+ high-utility developer tools</sub> | **30,000+ views/mo**<br/>[**Reserve Slot on Straxon.online ↗**](https://www.straxon.online/advertise) |
+| **🛡️ Cyber SOC Telemetry Node**<br/><sub>Branded defense node in real-time 3D cyber visualizer</sub> | **25,000+ views/mo**<br/>[**Reserve Slot on Straxon.online ↗**](https://www.straxon.online/advertise) |
 
 <p align="center">
   <a href="https://www.straxon.online/advertise"><img src="https://img.shields.io/badge/📣_Explore_Tech_Ad_Network-Reach_45K+_Engineers-FF6B6B?style=for-the-badge&logo=googleads&logoColor=white" alt="Explore Ad Network" /></a>
@@ -223,16 +216,19 @@ I am a **Systems Architect, Full-Stack Engineer, and Cybersecurity Specialist** 
 
 <p align="center">
   <a href="https://github.com/PythonWTFFF">
-    <img src="https://github-readme-stats.vercel.app/api?username=PythonWTFFF&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&title_color=00f0ff&icon_color=00f0ff&text_color=c0caf5&bg_color=050814" alt="Swaraj Panti GitHub Stats" width="49%" />
-  </a>
-  <a href="https://github.com/PythonWTFFF">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PythonWTFFF&layout=compact&theme=tokyonight&hide_border=true&title_color=00f0ff&text_color=c0caf5&bg_color=050814" alt="Top Languages" width="48%" />
+    <img src="https://github-readme-stats.vercel.app/api?username=PythonWTFFF&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&title_color=00f0ff&icon_color=00f0ff&text_color=c0caf5&bg_color=050814" alt="Swaraj Panti GitHub Stats" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/PythonWTFFF">
-    <img src="https://streak-stats.demolab.com?user=PythonWTFFF&theme=tokyonight&hide_border=true&background=050814&ring=00f0ff&fire=00f0ff&currStreakNum=00f0ff&sideNums=c0caf5&currStreakLabel=00f0ff&dates=64748b" alt="GitHub Streak Stats" width="98%" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PythonWTFFF&layout=compact&theme=tokyonight&hide_border=true&title_color=00f0ff&text_color=c0caf5&bg_color=050814" alt="Top Languages" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/PythonWTFFF">
+    <img src="https://streak-stats.demolab.com?user=PythonWTFFF&theme=tokyonight&hide_border=true&background=050814&ring=00f0ff&fire=00f0ff&currStreakNum=00f0ff&sideNums=c0caf5&currStreakLabel=00f0ff&dates=64748b" alt="GitHub Streak Stats" />
   </a>
 </p>
 

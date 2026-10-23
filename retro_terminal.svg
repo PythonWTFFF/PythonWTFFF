@@ -124,27 +124,27 @@
       </g>
 
       <!-- Badge Metadata Inside Left Panel -->
-      <g transform="translate(18, 195)" class="term-font" font-size="10.5">
-        <text x="0" y="0" fill="#64748b">NODE ID:</text>
-        <text x="80" y="0" fill="#00f5ff" font-weight="700">STRAXON-01-PRIME</text>
+      <g transform="translate(18, 195)" class="term-font" font-size="11.5">
+        <text x="0" y="0" fill="#94a3b8">NODE ID:</text>
+        <text x="88" y="0" fill="#00f5ff" font-weight="800">STRAXON-PRIME</text>
 
-        <text x="0" y="18" fill="#64748b">PROTOCOL:</text>
-        <text x="80" y="18" fill="#38bdf8" font-weight="700">Zero-Trust mTLS</text>
+        <text x="0" y="18" fill="#94a3b8">PROTOCOL:</text>
+        <text x="88" y="18" fill="#38bdf8" font-weight="800">Zero-Trust mTLS</text>
 
-        <text x="0" y="36" fill="#64748b">GRAPHICS:</text>
-        <text x="80" y="36" fill="#a855f7" font-weight="700">WebGL 2.0 / WebGPU</text>
+        <text x="0" y="36" fill="#94a3b8">GRAPHICS:</text>
+        <text x="88" y="36" fill="#a855f7" font-weight="800">WebGL 2.0 / WebGPU</text>
 
-        <text x="0" y="54" fill="#64748b">AI INFERENCE:</text>
-        <text x="80" y="54" fill="#fbbf24" font-weight="700">WebLLM / Vector RAG</text>
+        <text x="0" y="54" fill="#94a3b8">AI SWARM:</text>
+        <text x="88" y="54" fill="#fbbf24" font-weight="800">WebLLM / Vector RAG</text>
 
-        <text x="0" y="72" fill="#64748b">LOCATION:</text>
-        <text x="80" y="72" fill="#10b981" font-weight="700">Global Anycast Mesh</text>
+        <text x="0" y="72" fill="#94a3b8">LOCATION:</text>
+        <text x="88" y="72" fill="#10b981" font-weight="800">Global Anycast Mesh</text>
 
-        <text x="0" y="90" fill="#64748b">UPTIME:</text>
-        <text x="80" y="90" fill="#34d399" font-weight="700">99.99% Guaranteed</text>
+        <text x="0" y="90" fill="#94a3b8">UPTIME:</text>
+        <text x="88" y="90" fill="#34d399" font-weight="800">99.99% Guaranteed</text>
 
-        <text x="0" y="108" fill="#64748b">STATUS:</text>
-        <text x="80" y="108" fill="#00f5ff" font-weight="800">● 100% OPERATIONAL</text>
+        <text x="0" y="108" fill="#94a3b8">STATUS:</text>
+        <text x="88" y="108" fill="#00f5ff" font-weight="800">● 100% OPERATIONAL</text>
       </g>
     </g>
 
@@ -167,11 +167,11 @@
       <line x1="20" y1="36" x2="600" y2="36" stroke="#1e293b" stroke-width="1" />
 
       <!-- Neofetch Telemetry Data -->
-      <g transform="translate(20, 58)" class="term-font" font-size="11.5">
+      <g transform="translate(20, 56)" class="term-font" font-size="12">
         <!-- Entry 1: OS -->
         <text x="0" y="0" font-weight="700" fill="#00f5ff">OS</text>
-        <text x="145" y="0" fill="#64748b">...................</text>
-        <text x="235" y="0" font-weight="600" fill="#e2e8f0">StraxonOS 2026.4 LTS (x86_64 Sovereign Linux)</text>
+        <text x="145" y="0" fill="#475569">...................</text>
+        <text x="235" y="0" font-weight="600" fill="#f8fafc">StraxonOS 2026.4 LTS (x86_64 Sovereign Linux)</text>
 
         <!-- Entry 2: Architect -->
         <text x="0" y="20" font-weight="700" fill="#00f5ff">Architect</text>
