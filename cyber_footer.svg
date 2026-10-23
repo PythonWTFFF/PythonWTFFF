@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" width="100%" height="auto" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <defs>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814" />
+      <stop offset="50%" stop-color="#0a1228" />
+      <stop offset="100%" stop-color="#03050c" />
+    </linearGradient>
+
+    <linearGradient id="neonWave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="35%" stop-color="#38bdf8" />
+      <stop offset="70%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ff007a" />
+    </linearGradient>
+
+    <linearGradient id="waveFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#04060e" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes wavePulse {
+      0%, 100% { opacity: 0.85; }
+      50% { opacity: 0.45; }
+    }
+    .wave-line { animation: wavePulse 3s ease-in-out infinite; }
+    .foot-text { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 10px; letter-spacing: 2px; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1000" height="100" fill="url(#footerBg)" />
+
+  <!-- Wave Fills -->
+  <path d="M 0 15 C 250 55 450 -10 700 35 C 850 60 950 20 1000 30 L 1000 100 L 0 100 Z" fill="url(#waveFill)" />
+
+  <!-- Neon Wave Lines -->
+  <path d="M 0 15 C 250 55 450 -10 700 35 C 850 60 950 20 1000 30" fill="none" stroke="url(#neonWave)" stroke-width="2.5" class="wave-line" />
+  <path d="M 0 35 C 220 70 480 15 720 50 C 880 70 960 40 1000 45" fill="none" stroke="#00f5ff" stroke-width="1" opacity="0.3" />
+
+  <!-- Cyber Node Indicators -->
+  <circle cx="200" cy="90" r="3" fill="#00f5ff" />
+  <circle cx="500" cy="90" r="3" fill="#10b981" />
+  <circle cx="800" cy="90" r="3" fill="#a855f7" />
+
+  <text x="500" y="85" text-anchor="middle" class="foot-text" fill="#64748b">
+    STRAXON LABS SOVEREIGN ARCHITECTURE // SECURE RUNTIME DEPLOYMENT
+  </text>
+</svg>

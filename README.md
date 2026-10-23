@@ -4,10 +4,8 @@
 <!-- 🚀 CYBERNETIC HERO BANNER & IDENTITY MATRIX -->
 <!-- ======================================================================= -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:040714,50:09132c,100:00f0ff&height=220&section=header&text=Swaraj%20Panti&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Founder%20%26%20Lead%20Architect%20@%20StraxonLabs%20%7C%20Creator%20of%20KshatraCode&descAlignY=58&descSize=18" alt="Swaraj Panti Banner" width="100%" />
-
 <a href="https://www.straxon.online/">
-  <img src="cyber_banner.svg" alt="Swaraj Panti // Enterprise Systems Architect & Cybersecurity Engineer" width="100%" />
+  <img src="cyber_banner.svg" alt="Swaraj Panti // Founder & Lead Systems Architect @ StraxonLabs" width="100%" />
 </a>
 
 <!-- Dynamic Animated Cyber Typing Headline -->
@@ -272,7 +270,7 @@ curl -sL https://www.straxon.online/connect | sh
 </p>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f0ff,50:09132c,100:040714&height=120&section=footer" width="100%" />
+  <img src="cyber_footer.svg" alt="Straxon Labs Sovereign Architecture Footer" width="100%" />
 </div>
 
 <p align="center">
