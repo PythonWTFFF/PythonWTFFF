@@ -178,10 +178,10 @@
         <text x="145" y="20" fill="#64748b">............</text>
         <text x="235" y="20" font-weight="700" fill="#38bdf8">Swaraj Panti <tspan fill="#94a3b8" font-weight="500">[Founder &amp; Principal Systems Architect]</tspan></text>
 
-        <!-- Entry 3: Institutional Partner -->
-        <text x="0" y="40" font-weight="700" fill="#00f5ff">Enterprise Client</text>
+        <!-- Entry 3: Security EdTech -->
+        <text x="0" y="40" font-weight="700" fill="#00f5ff">Security EdTech</text>
         <text x="145" y="40" fill="#64748b">....</text>
-        <text x="235" y="40" font-weight="700" fill="#10b981">MAKAUT University <tspan fill="#cbd5e1" font-weight="500">(Adopted KshatraCode DRM)</tspan></text>
+        <text x="235" y="40" font-weight="700" fill="#10b981">KshatraCode <tspan fill="#cbd5e1" font-weight="500">[Hardware Device DRM &amp; Anti-Piracy]</tspan></text>
 
         <!-- Entry 4: Flagship Platform -->
         <text x="0" y="60" font-weight="700" fill="#00f5ff">Flagship Platform</text>
@@ -201,7 +201,7 @@
         <!-- Entry 7: Academic Pedigree -->
         <text x="0" y="120" font-weight="700" fill="#00f5ff">Education</text>
         <text x="145" y="120" fill="#64748b">............</text>
-        <text x="235" y="120" font-weight="600" fill="#cbd5e1">BCA Graduate (2021–2024) • Post-Grad @ MAKAUT</text>
+        <text x="235" y="120" font-weight="600" fill="#cbd5e1">BCA Graduate (2021–2024) • Systems &amp; Security</text>
 
         <!-- Entry 8: Verified Client Reputation -->
         <text x="0" y="140" font-weight="700" fill="#00f5ff">Verified Reviews</text>

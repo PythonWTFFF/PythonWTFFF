@@ -12,7 +12,7 @@
 
 <!-- Dynamic Animated Cyber Typing Headline -->
 <a href="https://www.straxon.online/">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=19&duration=3000&pause=1100&color=00F5FF&center=true&vCenter=true&multiline=true&repeat=true&width=860&height=70&lines=%5B%2B%5D+Founder+%26+Lead+Architect+%40+StraxonLabs+(www.straxon.online);%5B%3E%5D+Creator+of+KshatraCode+(Institutional+Customer%3A+MAKAUT);%5B%3E%5D+Spatial+3D+CAD+%E2%80%A2+WebGL+2.0+%2F+WebGPU+%E2%80%A2+GLSL+Shaders;%5B%3E%5D+Autonomous+AI+Swarms+%E2%80%A2+Private+Vector+RAG+%E2%80%A2+WebLLM;%5B%3E%5D+Zero-Trust+Cybersecurity+%E2%80%A2+Defensive+SOC+%E2%80%A2+Hardware+DRM;%5B%3E%5D+Open+to+High-Impact+Enterprise+Contracts+%26+Advisory" alt="Typing Intro" width="100%" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=19&duration=3000&pause=1100&color=00F5FF&center=true&vCenter=true&multiline=true&repeat=true&width=860&height=70&lines=%5B%2B%5D+Founder+%26+Lead+Architect+%40+StraxonLabs+(www.straxon.online);%5B%3E%5D+Creator+of+KshatraCode+(Hardware+Device+DRM);%5B%3E%5D+Spatial+3D+CAD+%E2%80%A2+WebGL+2.0+%2F+WebGPU+%E2%80%A2+GLSL+Shaders;%5B%3E%5D+Autonomous+AI+Swarms+%E2%80%A2+Private+Vector+RAG+%E2%80%A2+WebLLM;%5B%3E%5D+Zero-Trust+Cybersecurity+%E2%80%A2+Defensive+SOC+%E2%80%A2+Hardware+DRM;%5B%3E%5D+Open+to+High-Impact+Enterprise+Contracts+%26+Advisory" alt="Typing Intro" width="100%" />
 </a>
 
 <p align="center">
@@ -37,7 +37,7 @@
 <p align="center">
   <a href="https://www.straxon.online/"><b>🌐 www.straxon.online</b></a> •
   <a href="https://share.google/ioWTTPZ84rcw81iVs"><b>⭐ Google Reviews (5.0 ★)</b></a> •
-  <a href="https://kshatracode-frontend.onrender.com/"><b>🔒 KshatraCode (MAKAUT)</b></a> •
+  <a href="https://kshatracode-frontend.onrender.com/"><b>🔒 KshatraCode (Hardware DRM)</b></a> •
   <a href="https://tanstack-start-app.hybridpython64.workers.dev/"><b>🛡️ Straxon Cyber SOC</b></a> •
   <a href="https://w.swaraj-0aa.workers.dev/"><b>🤖 W Neural OS v3.0</b></a> •
   <a href="https://thefishworld.vercel.app/"><b>🐠 The Fish World</b></a> •
@@ -60,12 +60,12 @@
 
 ---
 
-## 👨‍💻 Executive Summary & Institutional Proof
+## 👨‍💻 Executive Summary & Core Competencies
 
 I am a **Systems Architect, Full-Stack Engineer, and Cybersecurity Specialist** based in West Bengal, India. I specialize in turning complex technological challenges into locked-frame-rate, zero-cloud-overhead, production-hardened web applications and distributed architectures.
 
-- 🎓 **Education & Academic Pedigree**: Final-semester student at **Maulana Abul Kalam Azad University of Technology (MAKAUT)**, West Bengal, India. **BCA Graduate (2021–2024)** with a deep passion for sovereign, resilient software systems.
-- 🏛️ **Institutional Customer**: Creator of **[KshatraCode](https://kshatracode-frontend.onrender.com/)**, an EdTech platform whose first institutional customer is **MAKAUT University**. Features anti-piracy hardware device fingerprinting, anti-tamper memory hooks, and encrypted video streaming.
+- 🎓 **Education & Background**: **BCA Graduate (2021–2024)** with a deep passion for sovereign, resilient software systems, high-performance web runtimes, and defensive cybersecurity architecture.
+- 🔒 **Creator of [KshatraCode](https://kshatracode-frontend.onrender.com/)**: High-security EdTech platform engineered with client hardware device fingerprinting, anti-tamper memory hooks, dynamic steganographic watermark injection, and encrypted video streaming.
 - 🚀 **Founder & Principal Architect**: **[StraxonLabs](https://www.straxon.online/)**, an engineering laboratory pioneering spatial 3D CAD platforms, autonomous AI swarms, and high-velocity digital ecosystems.
 - ⭐ **Client-Verified Reputation**: **[5.0 ★ Verified Rating across 48+ Reviews on Google Business](https://share.google/ioWTTPZ84rcw81iVs)** for production software engineering, reliable delivery, and architectural advisory.
 - 💼 **Engagement Model**: Available for **High-Impact Enterprise Contracts**, **Fractional CTO / Architectural Advisory**, and **0-to-1 MVP Engineering**.
@@ -143,13 +143,13 @@ I am a **Systems Architect, Full-Stack Engineer, and Cybersecurity Specialist** 
 ---
 
 ### 2. 🔒 KshatraCode // Cultural EdTech with Anti-Piracy Hardware DRM
-> **Adopted by Maulana Abul Kalam Azad University of Technology (MAKAUT)** as its first institutional customer. Features client hardware canvas & WebGL fingerprinting, anti-tamper memory hooks, dynamic steganographic watermark injection, and encrypted media streaming.
+> **Enterprise Anti-Piracy EdTech Platform**: Engineered with client hardware canvas & WebGL device fingerprinting, anti-tamper memory hooks, dynamic steganographic watermark injection, and encrypted media streaming.
 
 <div align="center">
   <p>
     <a href="https://kshatracode-frontend.onrender.com/"><img src="https://img.shields.io/badge/🔒_LAUNCH_KSHATRA_CODE-Live_Production-10b981?style=for-the-badge&logo=render&logoColor=white" alt="Launch KshatraCode" /></a>
-    <img src="https://img.shields.io/badge/🏛️_Institutional_Customer-MAKAUT_University-blue?style=for-the-badge&logo=civicrm&logoColor=white" alt="Institutional Customer MAKAUT" />
-    <img src="https://img.shields.io/badge/Security-Hardware_Device_DRM-7928ca?style=for-the-badge&logo=shield&logoColor=white" alt="Hardware DRM" />
+    <img src="https://img.shields.io/badge/🛡️_Anti--Piracy-Hardware_Device_DRM-blue?style=for-the-badge&logo=shield&logoColor=white" alt="Anti-Piracy DRM" />
+    <img src="https://img.shields.io/badge/Security-Dynamic_Steganography-7928ca?style=for-the-badge&logo=matrix&logoColor=white" alt="Steganography" />
   </p>
 </div>
 

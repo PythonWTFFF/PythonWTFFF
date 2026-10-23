@@ -110,8 +110,8 @@
     <text x="0" y="0" class="hud-key">ARCHITECT:</text>
     <text x="130" y="0" class="hud-val">Swaraj Panti</text>
 
-    <text x="0" y="22" class="hud-key">INSTITUTION:</text>
-    <text x="130" y="22" class="hud-val-accent">MAKAUT Graduate</text>
+    <text x="0" y="22" class="hud-key">FOUNDATION:</text>
+    <text x="130" y="22" class="hud-val-accent">BCA Graduate</text>
 
     <text x="0" y="44" class="hud-key">ROLE:</text>
     <text x="130" y="44" class="hud-val">Founder @ StraxonLabs</text>
