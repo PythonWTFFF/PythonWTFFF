@@ -110,23 +110,23 @@
     <text x="0" y="0" class="hud-key">ARCHITECT:</text>
     <text x="130" y="0" class="hud-val">Swaraj Panti</text>
 
-    <text x="0" y="22" class="hud-key">CODENAME:</text>
-    <text x="130" y="22" class="hud-val-accent">&lt;dark hat&gt;</text>
+    <text x="0" y="22" class="hud-key">INSTITUTION:</text>
+    <text x="130" y="22" class="hud-val-accent">MAKAUT Graduate</text>
 
     <text x="0" y="44" class="hud-key">ROLE:</text>
     <text x="130" y="44" class="hud-val">Founder @ StraxonLabs</text>
 
     <text x="0" y="66" class="hud-key">SECURITY LEVEL:</text>
-    <text x="130" y="66" class="hud-val-accent">Level 4 // Threat Research</text>
+    <text x="130" y="66" class="hud-val-accent">Zero-Trust mTLS &amp; EDR</text>
 
     <text x="0" y="88" class="hud-key">ACTIVE DOMAINS:</text>
-    <text x="130" y="88" class="hud-val">SOC Defense • 3D Spatial • SaaS</text>
+    <text x="130" y="88" class="hud-val">Spatial 3D • SOC Defense • AI</text>
 
-    <text x="0" y="110" class="hud-key">PRIMARY WEAPONS:</text>
+    <text x="0" y="110" class="hud-key">CORE ARSENAL:</text>
     <text x="130" y="110" class="hud-val">TypeScript • Python • Three.js • GLSL</text>
 
-    <text x="0" y="132" class="hud-key">STATUS:</text>
-    <text x="130" y="132" class="hud-val-green">● DEPLOYING NEXT-GEN CODE</text>
+    <text x="0" y="132" class="hud-key">AVAILABILITY:</text>
+    <text x="130" y="132" class="hud-val-green">● OPEN FOR CONTRACTS</text>
   </g>
 
   <!-- CENTER PANEL: Production Capabilities (x: 455 to 770) -->

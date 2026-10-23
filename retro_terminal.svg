@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="100%" height="auto" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="crtBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050813" />
+      <stop offset="40%" stop-color="#091124" />
+      <stop offset="80%" stop-color="#0b1730" />
+      <stop offset="100%" stop-color="#04060e" />
+    </linearGradient>
+
+    <!-- Glowing Cyber Gradients -->
+    <linearGradient id="crtCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="crtPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <linearGradient id="crtGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <linearGradient id="crtAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <linearGradient id="windowBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#7928ca" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#00f5ff" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Scanline Pattern for CRT Screen Texture -->
+    <pattern id="scanlines" width="100%" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="1000" y2="0" stroke="#000000" stroke-width="1.2" opacity="0.32" />
+    </pattern>
+
+    <!-- Phosphor Glow Filter -->
+    <filter id="phosphorGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes blinkCursor {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes crtFlicker {
+      0%, 100% { opacity: 0.98; }
+      50% { opacity: 0.95; }
+    }
+    @keyframes sweepLine {
+      0% { transform: translateY(0px); opacity: 0.15; }
+      50% { opacity: 0.4; }
+      100% { transform: translateY(420px); opacity: 0.15; }
+    }
+    .crt-screen { animation: crtFlicker 0.15s infinite; }
+    .term-font { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Courier New', monospace; }
+    .term-cursor { animation: blinkCursor 0.9s infinite; }
+    .scan-beam { animation: sweepLine 6s linear infinite; }
+  </style>
+
+  <!-- Outer Window Shell with Glowing Neon Border -->
+  <rect x="2" y="2" width="996" height="416" rx="14" fill="url(#crtBg)" stroke="url(#windowBorder)" stroke-width="1.6" />
+
+  <!-- Window Title Bar -->
+  <path d="M 3 16 C 3 8.268 9.268 2 17 2 L 983 2 C 990.732 2 997 8.268 997 16 L 997 38 L 3 38 Z" fill="#080e1c" stroke="#1e293b" stroke-width="1" />
+  
+  <!-- Window Control Buttons (Vintage Mac/Unix) -->
+  <circle cx="22" cy="20" r="6" fill="#ff5f56" stroke="#e0443e" stroke-width="0.8" />
+  <circle cx="42" cy="20" r="6" fill="#ffbd2e" stroke="#dea123" stroke-width="0.8" />
+  <circle cx="62" cy="20" r="6" fill="#27c93f" stroke="#1aab29" stroke-width="0.8" />
+
+  <!-- Terminal Window Title -->
+  <text x="500" y="24" text-anchor="middle" class="term-font" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1px">
+    swaraj@straxon-prime:~ (tty1) — Sovereign Neofetch Console [80x28]
+  </text>
+  <text x="975" y="24" text-anchor="end" class="term-font" font-size="10.5" font-weight="600" fill="#00f5ff">
+    ● 60 FPS CRT
+  </text>
+
+  <!-- Interior Terminal Screen Area -->
+  <g class="crt-screen">
+    <!-- Subtle Background Scanlines Overlay -->
+    <rect x="4" y="39" width="992" height="377" fill="url(#scanlines)" pointer-events="none" />
+
+    <!-- Animated Horizontal CRT Beam -->
+    <line x1="4" y1="40" x2="996" y2="40" stroke="#00f5ff" stroke-width="2" class="scan-beam" opacity="0.3" pointer-events="none" />
+
+    <!-- ======================================================== -->
+    <!-- LEFT COLUMN: Retro ASCII Cyber Matrix Crest (x: 24 to 340) -->
+    <!-- ======================================================== -->
+    <g transform="translate(24, 60)">
+      <!-- Panel Boundary -->
+      <rect x="0" y="0" width="310" height="340" rx="8" fill="#060c18" fill-opacity="0.7" stroke="#162e54" stroke-width="1.2" />
+      
+      <!-- ASCII Header -->
+      <text x="155" y="22" text-anchor="middle" class="term-font" font-size="11" font-weight="700" fill="#00f5ff" letter-spacing="2px">
+        [ SYSTEM ARCHITECTURE ]
+      </text>
+      <line x1="16" y1="30" x2="294" y2="30" stroke="#162e54" stroke-width="1" />
+
+      <!-- High-Precision Retro ASCII Cyber Shield Crest -->
+      <g transform="translate(20, 42)" class="term-font" font-size="10" font-weight="700">
+        <text x="0" y="14" fill="#00f5ff">      .---.  .---.  .---.      </text>
+        <text x="0" y="28" fill="#00f5ff">     / / \ \/ / \ \/ / \ \     </text>
+        <text x="0" y="42" fill="#38bdf8">    | |   || |   || |   | |    </text>
+        <text x="0" y="56" fill="#38bdf8">   / /     \\     \\     \ \   </text>
+        <text x="0" y="70" fill="#a855f7">  | |  [+]  ||   ||  [+]  | |  </text>
+        <text x="0" y="84" fill="#a855f7">   \ \     //     \\     / /   </text>
+        <text x="0" y="98" fill="#c084fc">    | |___|| |___|| |___| |    </text>
+        <text x="0" y="112" fill="#ff007a">     \___/  \___/  \___/     </text>
+        <text x="0" y="126" fill="#ff007a">   =======================     </text>
+      </g>
+
+      <!-- Badge Metadata Inside Left Panel -->
+      <g transform="translate(18, 195)" class="term-font" font-size="10.5">
+        <text x="0" y="0" fill="#64748b">NODE ID:</text>
+        <text x="80" y="0" fill="#00f5ff" font-weight="700">STRAXON-01-PRIME</text>
+
+        <text x="0" y="18" fill="#64748b">PROTOCOL:</text>
+        <text x="80" y="18" fill="#38bdf8" font-weight="700">Zero-Trust mTLS</text>
+
+        <text x="0" y="36" fill="#64748b">GRAPHICS:</text>
+        <text x="80" y="36" fill="#a855f7" font-weight="700">WebGL 2.0 / WebGPU</text>
+
+        <text x="0" y="54" fill="#64748b">AI INFERENCE:</text>
+        <text x="80" y="54" fill="#fbbf24" font-weight="700">WebLLM / Vector RAG</text>
+
+        <text x="0" y="72" fill="#64748b">LOCATION:</text>
+        <text x="80" y="72" fill="#10b981" font-weight="700">Global Anycast Mesh</text>
+
+        <text x="0" y="90" fill="#64748b">UPTIME:</text>
+        <text x="80" y="90" fill="#34d399" font-weight="700">99.99% Guaranteed</text>
+
+        <text x="0" y="108" fill="#64748b">STATUS:</text>
+        <text x="80" y="108" fill="#00f5ff" font-weight="800">● 100% OPERATIONAL</text>
+      </g>
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- RIGHT COLUMN: Neofetch Profile & Telemetry (x: 354 to 975) -->
+    <!-- ======================================================== -->
+    <g transform="translate(354, 60)">
+      <!-- Panel Boundary -->
+      <rect x="0" y="0" width="620" height="340" rx="8" fill="#060c18" fill-opacity="0.7" stroke="#162e54" stroke-width="1.2" />
+
+      <!-- Terminal Command Line Prompt -->
+      <g transform="translate(20, 26)" class="term-font">
+        <text x="0" y="0" font-size="13" font-weight="800" fill="#10b981">swaraj@straxon-prime</text>
+        <text x="180" y="0" font-size="13" font-weight="600" fill="#64748b">:</text>
+        <text x="190" y="0" font-size="13" font-weight="800" fill="#38bdf8">~</text>
+        <text x="205" y="0" font-size="13" font-weight="800" fill="#f8fafc">$</text>
+        <text x="220" y="0" font-size="13" font-weight="700" fill="#f1f5f9">neofetch --profile --sovereign</text>
+      </g>
+
+      <line x1="20" y1="36" x2="600" y2="36" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Neofetch Telemetry Data -->
+      <g transform="translate(20, 58)" class="term-font" font-size="11.5">
+        <!-- Entry 1: OS -->
+        <text x="0" y="0" font-weight="700" fill="#00f5ff">OS</text>
+        <text x="145" y="0" fill="#64748b">...................</text>
+        <text x="235" y="0" font-weight="600" fill="#e2e8f0">StraxonOS 2026.4 LTS (x86_64 Sovereign Linux)</text>
+
+        <!-- Entry 2: Architect -->
+        <text x="0" y="20" font-weight="700" fill="#00f5ff">Architect</text>
+        <text x="145" y="20" fill="#64748b">............</text>
+        <text x="235" y="20" font-weight="700" fill="#38bdf8">Swaraj Panti <tspan fill="#94a3b8" font-weight="500">[Founder &amp; Principal Systems Architect]</tspan></text>
+
+        <!-- Entry 3: Institutional Partner -->
+        <text x="0" y="40" font-weight="700" fill="#00f5ff">Enterprise Client</text>
+        <text x="145" y="40" fill="#64748b">....</text>
+        <text x="235" y="40" font-weight="700" fill="#10b981">MAKAUT University <tspan fill="#cbd5e1" font-weight="500">(Adopted KshatraCode DRM)</tspan></text>
+
+        <!-- Entry 4: Flagship Platform -->
+        <text x="0" y="60" font-weight="700" fill="#00f5ff">Flagship Platform</text>
+        <text x="145" y="60" fill="#64748b">....</text>
+        <text x="235" y="60" font-weight="700" fill="#c084fc">www.straxon.online <tspan fill="#94a3b8" font-weight="500">[Spatial 3D CAD &amp; AI Swarms]</tspan></text>
+
+        <!-- Entry 5: Core Arsenal -->
+        <text x="0" y="80" font-weight="700" fill="#00f5ff">Core Stack</text>
+        <text x="145" y="80" fill="#64748b">............</text>
+        <text x="235" y="80" font-weight="600" fill="#e2e8f0">TypeScript 5.8 • React 19 • Three.js • WebGPU • Cloudflare</text>
+
+        <!-- Entry 6: Cyber Defense -->
+        <text x="0" y="100" font-weight="700" fill="#00f5ff">Security Mesh</text>
+        <text x="145" y="100" fill="#64748b">.........</text>
+        <text x="235" y="100" font-weight="600" fill="#e2e8f0">Zero-Trust mTLS • Anti-Tamper DRM • Isolation Forest EDR</text>
+
+        <!-- Entry 7: Academic Pedigree -->
+        <text x="0" y="120" font-weight="700" fill="#00f5ff">Education</text>
+        <text x="145" y="120" fill="#64748b">............</text>
+        <text x="235" y="120" font-weight="600" fill="#cbd5e1">BCA Graduate (2021–2024) • Post-Grad @ MAKAUT</text>
+
+        <!-- Entry 8: Verified Client Reputation -->
+        <text x="0" y="140" font-weight="700" fill="#00f5ff">Verified Reviews</text>
+        <text x="145" y="140" fill="#64748b">.....</text>
+        <text x="235" y="140" font-weight="800" fill="#fbbf24">5.0 ★ (48+ Verified Client Reviews on Google)</text>
+
+        <!-- Entry 9: Performance Benchmarks -->
+        <text x="0" y="160" font-weight="700" fill="#00f5ff">Performance SLA</text>
+        <text x="145" y="160" fill="#64748b">......</text>
+        <text x="235" y="160" font-weight="700" fill="#34d399">Locked 60 FPS (3D) • &lt; 40ms Edge Latency • 99.99% Uptime</text>
+
+        <!-- Entry 10: Client Availability -->
+        <text x="0" y="180" font-weight="700" fill="#00f5ff">Availability</text>
+        <text x="145" y="180" fill="#64748b">.........</text>
+        <text x="235" y="180" font-weight="800" fill="#00f5ff">🟢 Open for Enterprise Contracts, Advisory &amp; 0-to-1 Builds</text>
+      </g>
+
+      <!-- Second Terminal Command Line (Interactive Quick-Connect) -->
+      <g transform="translate(20, 274)" class="term-font">
+        <line x1="0" y1="-8" x2="580" y2="-8" stroke="#1e293b" stroke-width="1" />
+        <text x="0" y="12" font-size="12.5" font-weight="800" fill="#10b981">swaraj@straxon-prime</text>
+        <text x="175" y="12" font-size="12.5" font-weight="600" fill="#64748b">:</text>
+        <text x="185" y="12" font-size="12.5" font-weight="800" fill="#38bdf8">~</text>
+        <text x="198" y="12" font-size="12.5" font-weight="800" fill="#f8fafc">$</text>
+        <text x="212" y="12" font-size="12.5" font-weight="700" fill="#f1f5f9">curl -sL https://www.straxon.online/connect</text>
+        <!-- Blinking Retro Cursor Block -->
+        <rect x="520" y="-1" width="8" height="15" fill="#00f5ff" class="term-cursor" />
+      </g>
+
+      <!-- Retro 8-Bit Terminal Color Palette Blocks -->
+      <g transform="translate(20, 312)">
+        <rect x="0" y="0" width="34" height="12" rx="2" fill="#00f5ff" />
+        <rect x="42" y="0" width="34" height="12" rx="2" fill="#38bdf8" />
+        <rect x="84" y="0" width="34" height="12" rx="2" fill="#818cf8" />
+        <rect x="126" y="0" width="34" height="12" rx="2" fill="#a855f7" />
+        <rect x="168" y="0" width="34" height="12" rx="2" fill="#ff007a" />
+        <rect x="210" y="0" width="34" height="12" rx="2" fill="#10b981" />
+        <rect x="252" y="0" width="34" height="12" rx="2" fill="#f59e0b" />
+        <rect x="294" y="0" width="34" height="12" rx="2" fill="#f8fafc" />
+
+        <text x="350" y="10" class="term-font" font-size="10.5" font-weight="600" fill="#64748b">
+          CRT COLOR MATRIX // RETRO TERMINAL EMULATION ACTIVE
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

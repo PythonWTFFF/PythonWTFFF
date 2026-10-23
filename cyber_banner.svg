@@ -120,14 +120,14 @@
   </g>
 
   <g transform="translate(964, 30)" text-anchor="end">
-    <text x="0" y="-5" class="hud-label" fill="#cbd5e1">CLEARANCE: LEVEL-4 <tspan fill="#a855f7">[DARK_HAT]</tspan></text>
+    <text x="0" y="-5" class="hud-label" fill="#cbd5e1">SECURITY: <tspan fill="#00f5ff">[ZERO-TRUST SOC ARCHITECT]</tspan></text>
   </g>
 
   <!-- Hero Identity -->
   <text x="500" y="105" text-anchor="middle" fill="url(#cyanGradient)" font-size="44" class="title-text">SWARAJ PANTI</text>
   
   <text x="500" y="139" text-anchor="middle" class="mono-text" font-size="14.5" font-weight="700" letter-spacing="2.5px" fill="#38bdf8">
-    [ CODENAME: &lt;dark_hat&gt; ] // FOUNDER &amp; LEAD SYSTEMS ARCHITECT @ STRAXONLABS
+    FOUNDER &amp; LEAD SYSTEMS ARCHITECT @ STRAXONLABS
   </text>
   
   <text x="500" y="167" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif" font-size="14" font-weight="500" fill="#94a3b8" letter-spacing="1px">
