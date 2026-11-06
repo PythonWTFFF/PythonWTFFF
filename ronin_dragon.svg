@@ -2,59 +2,61 @@
   <defs>
     <!-- Deep Obsidian Void Gradient -->
     <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#02040a" />
-      <stop offset="40%" stop-color="#050a18" />
-      <stop offset="75%" stop-color="#09122c" />
-      <stop offset="100%" stop-color="#020409" />
+      <stop offset="0%" stop-color="#020409" />
+      <stop offset="35%" stop-color="#050a18" />
+      <stop offset="70%" stop-color="#09132e" />
+      <stop offset="100%" stop-color="#02040a" />
     </linearGradient>
 
-    <!-- Japanese Neo-Eclipse Sun Gradient -->
+    <!-- Neo Eclipse Solar Core -->
     <radialGradient id="eclipseSun" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ff0055" />
-      <stop offset="60%" stop-color="#b8003f" />
-      <stop offset="90%" stop-color="#3d0016" />
+      <stop offset="55%" stop-color="#b8003f" />
+      <stop offset="85%" stop-color="#3d0016" />
       <stop offset="100%" stop-color="#050a18" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Sun Halo Outer Glow -->
+    <!-- Solar Halo Corona -->
     <radialGradient id="sunHalo" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff007a" stop-opacity="0.45" />
-      <stop offset="50%" stop-color="#ffb829" stop-opacity="0.18" />
+      <stop offset="0%" stop-color="#ff007a" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#ffb829" stop-opacity="0.22" />
+      <stop offset="80%" stop-color="#8052ff" stop-opacity="0.08" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Holo Blade Energy Gradient -->
+    <!-- High-Frequency Katana Blade Energy -->
     <linearGradient id="bladeLaser" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="30%" stop-color="#00f5ff" />
-      <stop offset="70%" stop-color="#8052ff" />
+      <stop offset="25%" stop-color="#00f5ff" />
+      <stop offset="65%" stop-color="#8052ff" />
       <stop offset="100%" stop-color="#ff007a" />
     </linearGradient>
 
-    <!-- Dragon Scale Shading Gradient -->
+    <!-- Dragon Cyber Armor Plates -->
     <linearGradient id="scaleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c1836" />
-      <stop offset="45%" stop-color="#142859" />
-      <stop offset="85%" stop-color="#1f3f8c" />
+      <stop offset="0%" stop-color="#0b1736" />
+      <stop offset="40%" stop-color="#142859" />
+      <stop offset="80%" stop-color="#1f4294" />
       <stop offset="100%" stop-color="#00f5ff" />
     </linearGradient>
 
-    <!-- Dragon Underbelly Plate Gradient -->
+    <!-- Underbelly Plasma Reactor -->
     <linearGradient id="bellyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffb829" />
-      <stop offset="50%" stop-color="#ff5500" />
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="20%" stop-color="#ffb829" />
+      <stop offset="65%" stop-color="#ff4400" />
       <stop offset="100%" stop-color="#7a0026" />
     </linearGradient>
 
-    <!-- Neon Text Gradient -->
+    <!-- Holographic Text Neon -->
     <linearGradient id="textNeon" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="35%" stop-color="#00f5ff" />
-      <stop offset="70%" stop-color="#8052ff" />
+      <stop offset="30%" stop-color="#00f5ff" />
+      <stop offset="70%" stop-color="#a855f7" />
       <stop offset="100%" stop-color="#ff007a" />
     </linearGradient>
 
-    <!-- Glow Filter -->
+    <!-- Intense Bloom Filters -->
     <filter id="intenseGlow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="4" result="b1" />
       <feGaussianBlur stdDeviation="12" result="b2" />
@@ -73,7 +75,7 @@
       </feMerge>
     </filter>
 
-    <!-- Cyber Grid Pattern -->
+    <!-- Cyber Horizon Grid Pattern -->
     <pattern id="horizonGrid" width="40" height="20" patternUnits="userSpaceOnUse">
       <line x1="0" y1="20" x2="40" y2="20" stroke="#8052ff" stroke-width="0.8" opacity="0.3" />
       <line x1="20" y1="0" x2="20" y2="20" stroke="#00f5ff" stroke-width="0.8" opacity="0.25" />
@@ -81,116 +83,128 @@
   </defs>
 
   <style>
-    @keyframes dragonLevitate {
+    @keyframes dragonFloat {
       0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-8px) rotate(0.6deg); }
+      50% { transform: translateY(-9px) rotate(0.8deg); }
     }
     @keyframes bladePulse {
-      0% { stroke-dashoffset: 600; opacity: 0.3; }
+      0% { stroke-dashoffset: 700; opacity: 0.4; }
       50% { opacity: 1; }
-      100% { stroke-dashoffset: 0; opacity: 0.7; }
+      100% { stroke-dashoffset: 0; opacity: 0.8; }
     }
     @keyframes eyeFlicker {
       0%, 100% { opacity: 1; filter: drop-shadow(0 0 8px #00f5ff); }
       48% { opacity: 0.95; }
-      50% { opacity: 0.3; }
+      50% { opacity: 0.35; }
       52% { opacity: 1; filter: drop-shadow(0 0 16px #ff0055); }
     }
-    @keyframes sakuraDrift1 {
-      0% { transform: translate(0, 0) rotate(0deg) scale(0.7); opacity: 0; }
-      20% { opacity: 0.85; }
+    @keyframes emberDrift1 {
+      0% { transform: translate(0, 0) scale(0.6); opacity: 0; }
+      20% { opacity: 0.9; }
       80% { opacity: 0.7; }
-      100% { transform: translate(-100px, -160px) rotate(180deg) scale(1.1); opacity: 0; }
+      100% { transform: translate(-120px, -180px) scale(1.2); opacity: 0; }
     }
-    @keyframes sakuraDrift2 {
-      0% { transform: translate(0, 0) rotate(0deg) scale(0.6); opacity: 0; }
-      25% { opacity: 0.9; }
+    @keyframes emberDrift2 {
+      0% { transform: translate(0, 0) scale(0.7); opacity: 0; }
+      25% { opacity: 0.95; }
       85% { opacity: 0.65; }
-      100% { transform: translate(80px, -190px) rotate(-140deg) scale(1.3); opacity: 0; }
+      100% { transform: translate(90px, -210px) scale(1.3); opacity: 0; }
     }
     @keyframes sunPulse {
-      0%, 100% { transform: scale(1); opacity: 0.85; }
-      50% { transform: scale(1.04); opacity: 1; }
+      0%, 100% { transform: scale(1); opacity: 0.88; }
+      50% { transform: scale(1.05); opacity: 1; }
     }
     @keyframes scanSweep {
       0% { transform: translateY(0); opacity: 0; }
-      20% { opacity: 0.45; }
-      80% { opacity: 0.45; }
+      20% { opacity: 0.4; }
+      80% { opacity: 0.4; }
       100% { transform: translateY(360px); opacity: 0; }
     }
-    .dragon-unit { animation: dragonLevitate 6s ease-in-out infinite; transform-origin: 720px 180px; }
-    .blade-sparkle { stroke-dasharray: 300; animation: bladePulse 3.2s linear infinite; }
-    .eye-laser { animation: eyeFlicker 3.8s infinite; }
-    .sakura-1 { animation: sakuraDrift1 5.5s linear infinite; }
-    .sakura-2 { animation: sakuraDrift2 6.8s linear infinite 1.8s; }
-    .sun-glow { animation: sunPulse 7s ease-in-out infinite; transform-origin: 730px 170px; }
-    .scan-beam { animation: scanSweep 5.5s ease-in-out infinite; }
+    @keyframes conduitFlow {
+      0% { stroke-dashoffset: 100; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .dragon-unit { animation: dragonFloat 6s ease-in-out infinite; transform-origin: 730px 180px; }
+    .blade-sparkle { stroke-dasharray: 350; animation: bladePulse 3s linear infinite; }
+    .eye-laser { animation: eyeFlicker 3.6s infinite; }
+    .ember-1 { animation: emberDrift1 5.2s linear infinite; }
+    .ember-2 { animation: emberDrift2 6.5s linear infinite 1.5s; }
+    .sun-glow { animation: sunPulse 6.8s ease-in-out infinite; transform-origin: 730px 170px; }
+    .scan-beam { animation: scanSweep 5s ease-in-out infinite; }
+    .conduit-line { stroke-dasharray: 6 4; animation: conduitFlow 2s linear infinite; }
   </style>
 
   <!-- Deep Obsidian Background -->
   <rect width="1000" height="360" rx="16" fill="url(#skyGrad)" />
   <rect width="1000" height="360" rx="16" fill="none" stroke="url(#textNeon)" stroke-width="1.2" stroke-opacity="0.45" />
 
-  <!-- Japanese Cyber Eclipse (Sun in the Mist) -->
-  <circle cx="730" cy="170" r="180" fill="url(#sunHalo)" class="sun-glow" />
+  <!-- Neo Eclipse Sun (Cyber Horizon) -->
+  <circle cx="730" cy="170" r="185" fill="url(#sunHalo)" class="sun-glow" />
   <circle cx="730" cy="170" r="115" fill="url(#eclipseSun)" stroke="#ff0055" stroke-width="2.5" filter="url(#intenseGlow)" />
 
   <!-- Cyber Horizon Grid Floor -->
-  <g opacity="0.25">
+  <g opacity="0.28">
     <rect x="0" y="280" width="1000" height="80" fill="url(#horizonGrid)" />
     <line x1="0" y1="280" x2="1000" y2="280" stroke="#00f5ff" stroke-width="1.5" />
     <line x1="0" y1="305" x2="1000" y2="305" stroke="#8052ff" stroke-width="1" />
     <line x1="0" y1="335" x2="1000" y2="335" stroke="#ff007a" stroke-width="1" />
   </g>
 
-  <!-- Distant Cyber Torii Gate & Pagoda Silhouette -->
-  <g opacity="0.28" transform="translate(640, 185) scale(0.65)">
-    <!-- Torii Gate Pillars & Lintels -->
-    <path d="M 0 60 L 0 140 M 80 60 L 80 140" stroke="#00f5ff" stroke-width="5" />
-    <path d="M -15 70 L 95 70" stroke="#00f5ff" stroke-width="6" />
-    <path d="M -25 52 C 20 58, 60 58, 105 52" fill="none" stroke="#ff007a" stroke-width="8" stroke-linecap="round" />
-    <rect x="35" y="52" width="10" height="18" fill="#ffb829" />
+  <!-- High-Tech Cyber Spire & Array Silhouette (Distant Backdrop) -->
+  <g opacity="0.32" transform="translate(630, 175) scale(0.7)">
+    <line x1="50" y1="30" x2="50" y2="150" stroke="#00f5ff" stroke-width="4" />
+    <line x1="10" y1="60" x2="90" y2="60" stroke="#8052ff" stroke-width="3" />
+    <line x1="25" y1="85" x2="75" y2="85" stroke="#00f5ff" stroke-width="2" />
+    <polygon points="50,15 42,32 58,32" fill="#ffb829" filter="url(#bladeGlow)" />
+    <circle cx="50" cy="15" r="4" fill="#00f5ff" filter="url(#intenseGlow)" />
   </g>
 
   <!-- Laser Scanline Beam -->
-  <line x1="0" y1="0" x2="1000" y2="0" stroke="#00f5ff" stroke-width="1.2" opacity="0.3" class="scan-beam" />
+  <line x1="0" y1="0" x2="1000" y2="0" stroke="#00f5ff" stroke-width="1.2" opacity="0.35" class="scan-beam" />
 
   <!-- ═══════════════════════════════════════════════════════════════ -->
-  <!-- LEFT COCKPIT: IDENTITY, STATUS & CALLIGRAPHIC BUSHIDO MATRIX    -->
+  <!-- LEFT COCKPIT: IDENTITY, PROTOCOL & CYBER RONIN CREED MATRIX     -->
   <!-- ═══════════════════════════════════════════════════════════════ -->
-  <g transform="translate(48, 45)">
-    <!-- Watermark Kanji Background Art -->
-    <g opacity="0.10">
-      <text x="320" y="190" font-family="'Noto Serif JP', 'Yu Mincho', serif" font-weight="900" font-size="160" fill="#8052ff">龍</text>
-      <text x="210" y="260" font-family="'Noto Serif JP', 'Yu Mincho', serif" font-weight="900" font-size="120" fill="#ffb829">浪人</text>
+  <g transform="translate(48, 42)">
+    <!-- Watermark Circuit Grid Accents -->
+    <g opacity="0.08" stroke="#00f5ff" stroke-width="1">
+      <path d="M 0 30 L 120 30 L 150 60 L 380 60" fill="none" />
+      <path d="M 50 120 L 220 120 L 250 150 L 400 150" fill="none" />
+      <circle cx="150" cy="60" r="3" fill="#00f5ff" />
+      <circle cx="250" cy="150" r="3" fill="#ff007a" />
     </g>
 
-    <!-- Protocol Version Pill -->
+    <!-- Protocol Status Pill -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="295" height="24" rx="12" fill="#8052ff" fill-opacity="0.18" stroke="#8052ff" stroke-width="1.2" />
+      <rect x="0" y="0" width="310" height="24" rx="12" fill="#8052ff" fill-opacity="0.18" stroke="#8052ff" stroke-width="1.2" />
       <circle cx="12" cy="12" r="4" fill="#00f5ff">
         <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite" />
       </circle>
       <text x="24" y="16" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9.5" font-weight="bold" fill="#00f5ff" letter-spacing="1.5">
-        STRAXON // CYBER RONIN ARCHITECT
+        STRAXON // CYBER RONIN PROTOCOL
       </text>
     </g>
 
-    <!-- Main Name Title -->
+    <!-- Main Title & Lead Architect Badge -->
     <g transform="translate(0, 56)">
       <text x="0" y="0" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="36" fill="url(#textNeon)" letter-spacing="-0.5">
         SWARAJ PANTI
       </text>
-      <!-- Red Japanese Hanko Seal Stamp -->
-      <g transform="translate(290, -28)">
-        <rect x="0" y="0" width="30" height="30" rx="6" fill="#b91c1c" stroke="#f87171" stroke-width="1" />
-        <text x="15" y="21" font-family="'Noto Serif JP', serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">龍</text>
+      <!-- Cyber Holographic Badge -->
+      <g transform="translate(295, -28)">
+        <rect x="0" y="0" width="118" height="30" rx="8" fill="#0f172a" stroke="#00f5ff" stroke-width="1.2" filter="url(#bladeGlow)" />
+        <circle cx="12" cy="15" r="3" fill="#10b981">
+          <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite" />
+        </circle>
+        <text x="22" y="19" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" fill="#00f5ff" letter-spacing="1">
+          LEAD ARCHITECT
+        </text>
       </g>
     </g>
 
     <!-- Subtitle Role -->
     <text x="0" y="82" font-family="'JetBrains Mono', monospace" font-size="12.5" font-weight="700" fill="#38bdf8" letter-spacing="0.8">
-      FOUNDER &amp; LEAD SYSTEMS ARCHITECT @ STRAXONLABS
+      FOUNDER &amp; CHIEF SYSTEMS ARCHITECT @ STRAXONLABS
     </text>
 
     <!-- Weaponry & Runtimes Pill Strip -->
@@ -198,50 +212,50 @@
       Spatial 3D CAD • Autonomous AI Swarms • Zero-Trust SOC Defense
     </text>
 
-    <!-- Divider Line with Saffron Spark -->
+    <!-- Divider Line with Saffron Energy Spark -->
     <g transform="translate(0, 118)">
       <line x1="0" y1="0" x2="420" y2="0" stroke="url(#bladeLaser)" stroke-width="1.5" />
       <polygon points="420,-3 426,0 420,3" fill="#00f5ff" />
       <circle cx="0" cy="0" r="3" fill="#ffb829" />
     </g>
 
-    <!-- Bushido Engineering Principles Grid (4 Pillars) -->
+    <!-- Cyber Ronin 4 Architectural Pillars (Zero Japanese Typo, 100% English Cyber Terminology) -->
     <g transform="translate(0, 136)">
       <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="bold" fill="#c084fc" letter-spacing="2">
-        [ THE CODE OF THE CYBER RONIN // 侍の規律 ]
+        [ THE CYBER RONIN CREED // ZERO COMPROMISE ]
       </text>
 
       <g transform="translate(0, 22)">
-        <!-- 義 GI -->
+        <!-- 1. PRECISION -->
         <g transform="translate(0, 0)">
-          <rect x="0" y="0" width="98" height="42" rx="7" fill="#060b18" stroke="#8052ff" stroke-width="1" stroke-opacity="0.45" />
-          <text x="8" y="18" font-family="'Noto Serif JP', serif" font-weight="bold" font-size="13" fill="#ffb829">義 GI</text>
-          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Integrity</text>
+          <rect x="0" y="0" width="100" height="42" rx="7" fill="#060b18" stroke="#ffb829" stroke-width="1" stroke-opacity="0.6" />
+          <text x="8" y="17" font-family="'JetBrains Mono', monospace" font-weight="900" font-size="11" fill="#ffb829">PRECISION</text>
+          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Sub-ms Edge</text>
         </g>
-        <!-- 勇 YU -->
-        <g transform="translate(106, 0)">
-          <rect x="0" y="0" width="98" height="42" rx="7" fill="#060b18" stroke="#8052ff" stroke-width="1" stroke-opacity="0.45" />
-          <text x="8" y="18" font-family="'Noto Serif JP', serif" font-weight="bold" font-size="13" fill="#00f5ff">勇 YU</text>
-          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Courage</text>
+        <!-- 2. VALOR -->
+        <g transform="translate(108, 0)">
+          <rect x="0" y="0" width="100" height="42" rx="7" fill="#060b18" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.6" />
+          <text x="8" y="17" font-family="'JetBrains Mono', monospace" font-weight="900" font-size="11" fill="#00f5ff">VALOR</text>
+          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Spatial 3D CAD</text>
         </g>
-        <!-- 仁 JIN -->
-        <g transform="translate(212, 0)">
-          <rect x="0" y="0" width="98" height="42" rx="7" fill="#060b18" stroke="#8052ff" stroke-width="1" stroke-opacity="0.45" />
-          <text x="8" y="18" font-family="'Noto Serif JP', serif" font-weight="bold" font-size="13" fill="#ff007a">仁 JIN</text>
-          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Mastery</text>
+        <!-- 3. SOVEREIGN -->
+        <g transform="translate(216, 0)">
+          <rect x="0" y="0" width="100" height="42" rx="7" fill="#060b18" stroke="#ff007a" stroke-width="1" stroke-opacity="0.6" />
+          <text x="8" y="17" font-family="'JetBrains Mono', monospace" font-weight="900" font-size="11" fill="#ff007a">SOVEREIGN</text>
+          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">100% IP Handover</text>
         </g>
-        <!-- 誠 MAKOTO -->
-        <g transform="translate(318, 0)">
-          <rect x="0" y="0" width="98" height="42" rx="7" fill="#060b18" stroke="#8052ff" stroke-width="1" stroke-opacity="0.45" />
-          <text x="8" y="18" font-family="'Noto Serif JP', serif" font-weight="bold" font-size="13" fill="#10b981">誠 MAKOTO</text>
-          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Truth</text>
+        <!-- 4. SECURITY -->
+        <g transform="translate(324, 0)">
+          <rect x="0" y="0" width="100" height="42" rx="7" fill="#060b18" stroke="#10b981" stroke-width="1" stroke-opacity="0.6" />
+          <text x="8" y="17" font-family="'JetBrains Mono', monospace" font-weight="900" font-size="11" fill="#10b981">SECURITY</text>
+          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Zero-Trust SOC</text>
         </g>
       </g>
     </g>
 
     <!-- Telemetry Status Cockpit -->
-    <g transform="translate(0, 218)">
-      <rect x="0" y="0" width="416" height="52" rx="8" fill="#040813" stroke="#1e293b" stroke-width="1" />
+    <g transform="translate(0, 220)">
+      <rect x="0" y="0" width="424" height="52" rx="8" fill="#040813" stroke="#1e293b" stroke-width="1" />
       <!-- Col 1 -->
       <g transform="translate(14, 12)">
         <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b" letter-spacing="1">FLAGSHIP</text>
@@ -266,29 +280,30 @@
   <!-- RIGHT HERO CANVAS: THE MAJESTIC ANIMATED CYBER RONIN DRAGON    -->
   <!-- ═══════════════════════════════════════════════════════════════ -->
   <g class="dragon-unit">
-    <!-- Floating Cyber Sakura Petals & Embers -->
-    <g opacity="0.85">
-      <!-- Sakura Petals -->
-      <path d="M 0 0 C 4 -6, 12 -6, 14 0 C 12 8, 4 10, 0 0 Z" fill="#ff007a" class="sakura-1" transform="translate(680, 260)" />
-      <path d="M 0 0 C 4 -6, 12 -6, 14 0 C 12 8, 4 10, 0 0 Z" fill="#ffb829" class="sakura-2" transform="translate(740, 290)" />
-      <path d="M 0 0 C 4 -6, 12 -6, 14 0 C 12 8, 4 10, 0 0 Z" fill="#00f5ff" class="sakura-1" transform="translate(820, 240)" />
-      <path d="M 0 0 C 4 -6, 12 -6, 14 0 C 12 8, 4 10, 0 0 Z" fill="#8052ff" class="sakura-2" transform="translate(890, 270)" />
-      <circle cx="710" cy="180" r="2.5" fill="#00f5ff" class="sakura-1" />
-      <circle cx="780" cy="220" r="2" fill="#ffb829" class="sakura-2" />
-      <circle cx="860" cy="190" r="3" fill="#ff007a" class="sakura-1" />
+    <!-- Floating Cyber Embers & Energy Sparks -->
+    <g opacity="0.9">
+      <circle cx="680" cy="260" r="3.5" fill="#ff007a" class="ember-1" />
+      <circle cx="740" cy="290" r="2.5" fill="#ffb829" class="ember-2" />
+      <circle cx="820" cy="240" r="3" fill="#00f5ff" class="ember-1" />
+      <circle cx="890" cy="270" r="3.5" fill="#8052ff" class="ember-2" />
+      <circle cx="710" cy="180" r="2.5" fill="#00f5ff" class="ember-1" />
+      <circle cx="780" cy="220" r="2.5" fill="#ffb829" class="ember-2" />
+      <circle cx="860" cy="190" r="3" fill="#ff007a" class="ember-1" />
+      <polygon points="695,210 701,213 695,216 689,213" fill="#00f5ff" class="ember-2" />
+      <polygon points="840,150 845,153 840,156 835,153" fill="#ffb829" class="ember-1" />
     </g>
 
     <!-- ── DRAGON BODY SERPENTINE COILS ── -->
     <!-- Lower Tail Coil (S-Curve Backstage) -->
     <path d="M 940 310 C 990 260, 970 190, 910 160 C 850 130, 780 160, 750 210 C 720 260, 750 320, 810 330 C 870 340, 910 300, 920 240"
-          fill="none" stroke="url(#scaleGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" />
+          fill="none" stroke="url(#scaleGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" opacity="0.65" />
 
     <!-- Tail Fin Spikes -->
-    <polygon points="950,290 975,275 960,305" fill="#ff007a" opacity="0.8" />
-    <polygon points="965,245 990,230 975,260" fill="#ffb829" opacity="0.8" />
-    <polygon points="940,185 965,160 950,200" fill="#00f5ff" opacity="0.8" />
-    <polygon points="880,140 895,110 885,150" fill="#8052ff" opacity="0.8" />
-    <polygon points="800,145 810,115 805,155" fill="#ff007a" opacity="0.8" />
+    <polygon points="950,290 975,275 960,305" fill="#ff007a" opacity="0.85" />
+    <polygon points="965,245 990,230 975,260" fill="#ffb829" opacity="0.85" />
+    <polygon points="940,185 965,160 950,200" fill="#00f5ff" opacity="0.85" />
+    <polygon points="880,140 895,110 885,150" fill="#8052ff" opacity="0.85" />
+    <polygon points="800,145 810,115 805,155" fill="#ff007a" opacity="0.85" />
 
     <!-- Main Torso Arch (Sweeps across the solar eclipse) -->
     <path d="M 720 230 C 670 280, 600 290, 560 250 C 520 210, 540 140, 600 100 C 670 60, 780 70, 840 120 C 880 155, 880 210, 850 260 C 820 310, 740 330, 670 320"
@@ -296,7 +311,11 @@
 
     <!-- Glowing Underbelly Scales (Gold-Crimson Fire Armor) -->
     <path d="M 710 220 C 665 265, 605 275, 570 240 C 535 205, 552 145, 608 110 C 670 75, 770 85, 825 130 C 860 160, 860 205, 835 250"
-          fill="none" stroke="url(#bellyGrad)" stroke-width="10" stroke-linecap="round" opacity="0.85" />
+          fill="none" stroke="url(#bellyGrad)" stroke-width="11" stroke-linecap="round" opacity="0.9" />
+
+    <!-- Cyber Circuit Conduit running along the torso -->
+    <path d="M 705 220 C 660 265, 600 270, 565 240 C 535 205, 555 145, 610 110 C 670 75, 765 85, 820 130"
+          fill="none" stroke="#00f5ff" stroke-width="1.8" class="conduit-line" opacity="0.85" />
 
     <!-- Dorsal Spines (Bioluminescent Neon Crystal Fins) -->
     <polygon points="615,85 625,45 635,90" fill="#00f5ff" filter="url(#intenseGlow)" />
@@ -314,13 +333,13 @@
       <polygon points="-25,75 -28,102 -14,80" fill="#8052ff" filter="url(#bladeGlow)" />
     </g>
 
-    <!-- ── DRAGON HEAD (Fierce Japanese Ryu with Kabuto Horns) ── -->
+    <!-- ── DRAGON HEAD (Fierce Cyber Mecha Ryu with Crest Horns) ── -->
     <g transform="translate(830, 115)">
       <!-- Skull Base Armor Plate -->
       <path d="M -15 -10 C 15 -35, 75 -25, 110 10 C 130 30, 145 70, 120 95 C 95 115, 40 110, 10 98 C -15 90, -40 70, -50 40 C -60 10, -40 -2, -15 -10 Z"
             fill="#081024" stroke="url(#textNeon)" stroke-width="3" filter="url(#bladeGlow)" />
 
-      <!-- Golden Samurai Crest (Kabuto Maedate Crescent Horn) -->
+      <!-- Golden Cybernetic Crest Horn -->
       <path d="M 15 -25 C 50 -85, 120 -105, 160 -80 C 110 -70, 65 -50, 35 -15 Z"
             fill="url(#bellyGrad)" filter="url(#intenseGlow)" />
       <!-- Secondary Antler Branch -->
@@ -342,27 +361,29 @@
       <polygon points="118,96 124,78 130,98" fill="#ffffff" />
       <polygon points="146,94 152,76 158,96" fill="#ffb829" />
 
-      <!-- Piercing Neon Cyan Dragon Eye -->
+      <!-- Piercing Neon Cyan Dragon Eye with HUD Reticle -->
       <g transform="translate(80, 32)">
         <polygon points="0,8 30,0 40,10 20,16" fill="#020612" stroke="#00f5ff" stroke-width="1.8" />
         <ellipse cx="20" cy="9" rx="11" ry="5" fill="#00f5ff" class="eye-laser" />
         <circle cx="20" cy="9" r="3" fill="#ffffff" />
         <!-- Horn Brow Ridge -->
         <path d="M -6 6 L 32 -4 L 46 8" fill="none" stroke="#ffb829" stroke-width="2.5" stroke-linecap="round" />
+        <!-- Micro Reticle Crosshair -->
+        <circle cx="20" cy="9" r="7" fill="none" stroke="#ff007a" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.8" />
       </g>
 
       <!-- Whiskers (Drifting Plasma Arcs) -->
       <path d="M 135 60 C 185 45, 230 80, 260 120 C 275 140, 280 180, 255 200 C 230 220, 200 200, 195 170"
             fill="none" stroke="#00f5ff" stroke-width="2.5" stroke-linecap="round" opacity="0.9" filter="url(#bladeGlow)" />
       <path d="M 120 72 C 160 72, 195 110, 210 150 C 220 185, 205 220, 180 235"
-            fill="none" stroke="#ffb829" stroke-width="1.8" stroke-linecap="round" opacity="0.75" />
+            fill="none" stroke="#ffb829" stroke-width="1.8" stroke-linecap="round" opacity="0.8" />
     </g>
 
-    <!-- ── THE RONIN KATANA: DIAGONAL HIGH-FREQUENCY LASER BLADE ── -->
+    <!-- ── THE CYBER KATANA: HIGH-FREQUENCY PLASMA BLADE ── -->
     <g transform="translate(510, 275) rotate(-32)">
       <!-- Plasma Aura Beam -->
-      <line x1="-60" y1="0" x2="380" y2="0" stroke="#00f5ff" stroke-width="9" stroke-linecap="round" opacity="0.35" filter="url(#intenseGlow)" />
-      <!-- Razor Blade Steel -->
+      <line x1="-60" y1="0" x2="380" y2="0" stroke="#00f5ff" stroke-width="10" stroke-linecap="round" opacity="0.4" filter="url(#intenseGlow)" />
+      <!-- Razor Blade High-Carbon Steel -->
       <line x1="-60" y1="0" x2="380" y2="0" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
       <!-- Animated Plasma Streak Passing Over Edge -->
       <line x1="-60" y1="0" x2="380" y2="0" stroke="url(#bladeLaser)" stroke-width="5" stroke-linecap="round" class="blade-sparkle" />
@@ -371,7 +392,7 @@
       <ellipse cx="-60" cy="0" rx="11" ry="19" fill="#060c1c" stroke="#ffb829" stroke-width="2.5" />
       <ellipse cx="-60" cy="0" rx="5" ry="11" fill="#ffb829" opacity="0.6" />
 
-      <!-- Tsuka (Braided Samurai Hilt) -->
+      <!-- Tsuka (Braided Cyber Hilt) -->
       <rect x="-160" y="-6.5" width="100" height="13" rx="3" fill="#040711" stroke="#8052ff" stroke-width="1.5" />
       <!-- Diamond Menuki Wraps -->
       <polygon points="-150,0 -142,-5 -134,0 -142,5" fill="#ffb829" />
@@ -392,11 +413,11 @@
   <path d="M 12 324 L 12 348 L 36 348" fill="none" stroke="#8052ff" stroke-width="2" />
   <path d="M 964 348 L 988 348 L 988 324" fill="none" stroke="#00f5ff" stroke-width="2" />
 
-  <!-- Bottom Telemetry HUD Line -->
+  <!-- Bottom Telemetry HUD Line (100% English Cyber Terminology) -->
   <g transform="translate(48, 342)" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b">
     <text x="0" y="0">SYSTEM: <tspan fill="#10b981">OPERATIONAL</tspan></text>
     <text x="120" y="0">GPU SHADERS: <tspan fill="#00f5ff">10 ACTIVE (WARP TUNNEL)</tspan></text>
-    <text x="360" y="0">BUSHIDO: <tspan fill="#ffb829">義 • 勇 • 仁 • 誠</tspan></text>
-    <text x="600" y="0">COPYRIGHT © 2026 SWARAJ PANTI // STRAXONLABS</text>
+    <text x="360" y="0">CREED: <tspan fill="#ffb829">PRECISION • VALOR • SOVEREIGNTY • INTEGRITY</tspan></text>
+    <text x="690" y="0">COPYRIGHT © 2026 SWARAJ PANTI // STRAXONLABS</text>
   </g>
 </svg>

@@ -55,18 +55,18 @@
 
 ---
 
-## ⚔️ The Bushido Code of Software Engineering // 侍の規律
+## ⚔️ The Cyber Ronin Creed of Software Engineering // Zero Compromise
 
 <div align="center">
 
 > *"Like a masterless Ronin walking the digital frontier, code must possess unyielding discipline, razor sharpness, and absolute loyalty to flawless execution."*
 
-| Kanji & Principle | Engineering Pillar | Production SLA & Real-World Commitment |
+| Core Principle | Engineering Pillar | Production SLA & Real-World Commitment |
 | :---: | :--- | :--- |
-| **義 (GI)**<br/>*Integrity* | **Zero Third-Party Fragility** | Pure architecture engineered from first principles. Locked 60 FPS GPU canvas, zero bloat, and defensive mTLS. |
-| **勇 (YU)**<br/>*Courage* | **Fearless Innovation** | Pioneer relativistic 3D WebGL warp tunnels, local browser-native WebLLM inference, and autonomous edge multi-agent swarms. |
-| **仁 (JIN)**<br/>*Benevolence* | **Client Sovereignty** | Uncompromising UX empathy. Sub-50ms latency, high-converting tactile ergonomics, and instant production export. |
-| **誠 (MAKOTO)**<br/>*Truth* | **Unbreakable Execution** | 14-day delivery SLA commitment. Complete IEEE 830 SRS blueprinting, zero technical debt, and 100% test coverage. |
+| **PRECISION**<br/>*Sub-ms Edge* | **Zero Third-Party Fragility** | Pure architecture engineered from first principles. Locked 60 FPS GPU canvas, zero bloat, and defensive mTLS. |
+| **VALOR**<br/>*Fearless Innovation* | **Frontier Spatial Computing** | Pioneer relativistic 3D WebGL warp tunnels, local browser-native WebLLM inference, and autonomous edge multi-agent swarms. |
+| **SOVEREIGNTY**<br/>*Client Autonomy* | **100% IP & Source Ownership** | Uncompromising UX empathy. Sub-50ms latency, high-converting tactile ergonomics, and instant production export. |
+| **INTEGRITY**<br/>*Unbreakable Truth* | **Cryptographic Verification** | 14-day delivery SLA commitment. Complete IEEE 830 SRS blueprinting, zero technical debt, and 100% test coverage. |
 
 </div>
 
