@@ -1,43 +1,41 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,9,12,24&height=95&section=header" width="100%" />
-
 <!-- ======================================================================= -->
-<!-- 🐉 ANIMATED CYBER RONIN DRAGON HERO BANNER & IDENTITY MATRIX           -->
+<!-- 🐉 ANIMATED CYBER RONIN DRAGON HERO BANNER                              -->
 <!-- ======================================================================= -->
 
 <a href="https://www.straxon.online/">
   <img src="ronin_dragon.svg" alt="Swaraj Panti // Animated Cyber Ronin Dragon // StraxonLabs" width="100%" />
 </a>
 
+<br/>
+
 <!-- Dynamic Animated Cyber Typing Headline -->
 <a href="https://www.straxon.online/">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2400&pause=1100&color=00F5FF&center=true&vCenter=true&multiline=true&repeat=true&width=880&height=65&lines=%5B%2B%5D+Founder+%26+Lead+Architect+%40+StraxonLabs+(www.straxon.online);%5B%3E%5D+Spatial+3D+CAD+%E2%80%A2+WebGL+2.0+%2F+WebGPU+%E2%80%A2+10+GPU+Shaders;%5B%3E%5D+Masterless+Cyber+Ronin+%E2%80%A2+High-Impact+Contracts+%26+Advisory;%5B%3E%5D+Autonomous+AI+Swarms+%E2%80%A2+Private+Vector+RAG+%E2%80%A2+WebLLM;%5B%3E%5D+Defensive+SOC+Telemetry+%E2%80%A2+Zero-Trust+mTLS+%E2%80%A2+Hardware+DRM" alt="Typing Headline" width="100%" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2400&pause=1100&color=00F5FF&center=true&vCenter=true&multiline=true&repeat=true&width=880&height=65&lines=%5B%2B%5D+Founder+%26+Lead+Architect+%40+StraxonLabs+(www.straxon.online);%5B%3E%5D+Spatial+3D+CAD+%E2%80%A2+WebGL+2.0+%2F+WebGPU+%E2%80%A2+10+GPU+Shaders;%5B%3E%5D+Masterless+Cyber+Ronin+%E2%80%A2+High-Impact+Contracts+%E2%80%A2+Advisory;%5B%3E%5D+Autonomous+AI+Swarms+%E2%80%A2+Private+Vector+RAG+%E2%80%A2+WebLLM;%5B%3E%5D+Defensive+SOC+Telemetry+%E2%80%A2+Zero-Trust+mTLS+%E2%80%A2+Hardware+DRM" alt="Typing Headline" width="100%" />
 </a>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Security_Clearance-Level_4_%5BCyber_Ronin%5D-7928ca?style=for-the-badge&logo=matrix&logoColor=00f5ff" alt="Clearance" />
-  <a href="https://www.straxon.online/"><img src="https://img.shields.io/badge/Flagship_Ecosystem-straxon.online-00d2e6?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Straxon Online" /></a>
   <a href="https://share.google/ioWTTPZ84rcw81iVs"><img src="https://img.shields.io/badge/Google_Verified-5.0_★_(48_Reviews)-FBBC05?style=for-the-badge&logo=google&logoColor=black" alt="Google 5.0 Star Reviews" /></a>
-  <img src="https://img.shields.io/github/followers/PythonWTFFF?style=for-the-badge&logo=github&color=1f6feb" alt="Followers" />
+  <a href="https://www.straxon.online/"><img src="https://img.shields.io/badge/Flagship_Ecosystem-straxon.online-00d2e6?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Straxon Online" /></a>
+  <img src="https://img.shields.io/badge/Security_Clearance-Level_4_%5BCyber_Ronin%5D-7928ca?style=for-the-badge&logo=matrix&logoColor=00f5ff" alt="Clearance" />
+  <a href="https://wa.me/918335846171?text=Hello%20Swaraj,%20I%20would%20like%20to%20discuss%20a%20high-impact%20project%20architecture."><img src="https://img.shields.io/badge/Status-🟢_Available_for_Contracts-00f0ff?style=for-the-badge&logo=statuspage&logoColor=black" alt="Status" /></a>
   <img src="https://komarev.com/ghpvc/?username=PythonWTFFF&style=for-the-badge&color=00d2e6&label=SYSTEM+ACCESSES" alt="Access Count" />
-  <img src="https://img.shields.io/badge/Location-Kolkata%2C_India_%7C_Global_Remote-181717?style=for-the-badge&logo=googlemaps&logoColor=red" alt="Location" />
 </p>
 
 <!-- Recruiter & Client Priority Quick-Action Launchpad -->
 <p align="center">
-  <a href="https://www.straxon.online/"><img src="https://img.shields.io/badge/🌐_Flagship_App-www.straxon.online-00f0ff?style=for-the-badge&logo=googlechrome&logoColor=black" alt="straxon.online" /></a>
-  <a href="https://www.straxon.online/site-customizer"><img src="https://img.shields.io/badge/🎨_Live_Store_Designer-10_GPU_Shaders-8052ff?style=for-the-badge&logo=three.js&logoColor=white" alt="Live Store Designer" /></a>
-  <a href="https://wa.me/918335846171?text=Hello%20Swaraj,%20I%20would%20like%20to%20discuss%20a%20high-impact%20project%20architecture."><img src="https://img.shields.io/badge/💬_WhatsApp-Direct_Founder_Line-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Direct" /></a>
-  <a href="mailto:straxonlab@gmail.com"><img src="https://img.shields.io/badge/✉️_Email-straxonlab@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Direct" /></a>
-  <a href="https://share.google/ioWTTPZ84rcw81iVs"><img src="https://img.shields.io/badge/⭐_Client_Reviews-5.0_★_(48_Verified)-FBBC05?style=for-the-badge&logo=google&logoColor=black" alt="Google 5.0 Star Reviews" /></a>
-  <a href="https://tanstack-start-app.hybridpython64.workers.dev/"><img src="https://img.shields.io/badge/🛡️_Cyber_SOC-Live_Threat_Matrix-7928ca?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cyber SOC" /></a>
-  <a href="https://w.swaraj-0aa.workers.dev/"><img src="https://img.shields.io/badge/🤖_Neural_OS-Autonomous_Agents-3b82f6?style=for-the-badge&logo=robot&logoColor=white" alt="Neural OS" /></a>
+  <a href="https://www.straxon.online/"><img src="https://img.shields.io/badge/🌐_Flagship_App-www.straxon.online-00f0ff?style=flat-square&logo=googlechrome&logoColor=black" alt="straxon.online" /></a>
+  <a href="https://www.straxon.online/site-customizer"><img src="https://img.shields.io/badge/🎨_Live_Store_Designer-10_GPU_Shaders-8052ff?style=flat-square&logo=three.js&logoColor=white" alt="Live Store Designer" /></a>
+  <a href="https://wa.me/918335846171?text=Hello%20Swaraj,%20I%20would%20like%20to%20discuss%20a%20high-impact%20project%20architecture."><img src="https://img.shields.io/badge/💬_WhatsApp-Direct_Founder_Line-25D366?style=flat-square&logo=whatsapp&logoColor=white" alt="WhatsApp Direct" /></a>
+  <a href="mailto:straxonlab@gmail.com"><img src="https://img.shields.io/badge/✉️_Email-straxonlab@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email Direct" /></a>
+  <a href="https://tanstack-start-app.hybridpython64.workers.dev/"><img src="https://img.shields.io/badge/🛡️_Cyber_SOC-Live_Threat_Matrix-7928ca?style=flat-square&logo=cloudflare&logoColor=white" alt="Cyber SOC" /></a>
+  <a href="https://w.swaraj-0aa.workers.dev/"><img src="https://img.shields.io/badge/🤖_Neural_OS-Autonomous_Agents-3b82f6?style=flat-square&logo=robot&logoColor=white" alt="Neural OS" /></a>
 </p>
 
 <p align="center">
   <a href="https://www.straxon.online/"><b>🌐 www.straxon.online</b></a> •
-  <a href="https://www.straxon.online/site-customizer"><b>🎨 Live Site Studio</b></a> •
+  <a href="https://www.straxon.online/site-customizer"><b>🎨 Live 3D Studio</b></a> •
   <a href="https://straxonlabs10.vercel.app/"><b>🚀 Mirror Platform</b></a> •
   <a href="https://w.swaraj-0aa.workers.dev/"><b>🤖 W Neural OS</b></a> •
   <a href="https://tanstack-start-app.hybridpython64.workers.dev/"><b>🛡️ Straxon Cyber SOC</b></a> •
@@ -45,9 +43,17 @@
   <a href="https://kshatracode-frontend.onrender.com/"><b>🔒 Kshatra Code DRM</b></a>
 </p>
 
+</div>
+
 ---
 
+## 💻 Sovereign Neofetch Console // Real-Time Telemetry
+
+<div align="center">
+  <img src="retro_terminal.svg" alt="Sovereign Neofetch Console Telemetry" width="100%" />
 </div>
+
+---
 
 ## ⚔️ The Bushido Code of Software Engineering // 侍の規律
 
@@ -96,6 +102,12 @@
 <br/>
 
 <div align="center">
+  <img src="skill_matrix_bars.svg" alt="Skill Matrix Breakdown" width="100%" />
+</div>
+
+<br/>
+
+<div align="center">
 
 | Domain | What I Deliver to Clients & Organizations | Key Weapons & Runtimes |
 | :--- | :--- | :--- |
@@ -132,7 +144,13 @@
   <img src="cyber_telemetry.svg" alt="Real-Time Architecture &amp; Defense Telemetry" width="100%" />
 </div>
 
-<br/>
+---
+
+## 🚀 High-Velocity Sprint Architecture // 14-Day Delivery Commitment
+
+<div align="center">
+  <img src="sprint_roadmap.svg" alt="14-Day High-Impact Sprint Roadmap" width="100%" />
+</div>
 
 ---
 
@@ -142,36 +160,18 @@
 
 <p align="center">
   <a href="https://github.com/PythonWTFFF">
-    <img src="https://github-readme-stats.vercel.app/api?username=PythonWTFFF&show_icons=true&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&title_color=00f0ff&icon_color=00f0ff&text_color=c0caf5&bg_color=050814&border_color=1e293b" alt="Swaraj Panti GitHub Stats" width="49%" />
+    <img src="https://github-readme-stats.vercel.app/api?username=PythonWTFFF&show_icons=true&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&title_color=00f0ff&icon_color=00f0ff&text_color=c0caf5&bg_color=040713&border_color=162e54" alt="Swaraj Panti GitHub Stats" width="49%" />
   </a>
   <a href="https://github.com/PythonWTFFF">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PythonWTFFF&layout=compact&theme=tokyonight&hide_border=false&title_color=00f0ff&text_color=c0caf5&bg_color=050814&border_color=1e293b" alt="Top Languages" width="48%" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PythonWTFFF&layout=compact&theme=tokyonight&hide_border=false&title_color=00f0ff&text_color=c0caf5&bg_color=040713&border_color=162e54" alt="Top Languages" width="48%" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/PythonWTFFF">
-    <img src="https://streak-stats.demolab.com?user=PythonWTFFF&theme=tokyonight&hide_border=false&background=050814&ring=00f0ff&fire=00f0ff&currStreakNum=00f0ff&sideNums=c0caf5&currStreakLabel=00f0ff&dates=64748b&border=1e293b" alt="GitHub Streak Stats" width="98%" />
+    <img src="https://streak-stats.demolab.com?user=PythonWTFFF&theme=tokyonight&hide_border=false&background=040713&ring=00f0ff&fire=00f0ff&currStreakNum=00f0ff&sideNums=c0caf5&currStreakLabel=00f0ff&dates=64748b&border=162e54" alt="GitHub Streak Stats" width="98%" />
   </a>
 </p>
-
-</div>
-
----
-
-## 🚀 High-Velocity Sprint Architecture // 14-Day Delivery Commitment
-
-<div align="center">
-
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                             HIGH-IMPACT SPRINT PROCESS (14 DAYS)                                 │
-├─────────────────────┬────────────────────────────────────────────────────────────────────────────┤
-│ 01. THREAT & SPEC   │ Day 1–2: Complete architecture blueprint, threat modeling & SRS spec.     │
-│ 02. ACCELERATION    │ Day 3–9: 3D spatial scenes, AI agents, database schemas & edge APIs.       │
-│ 03. HARDENING & SLA │ Day 10–14: Zero-Trust mTLS, OWASP defense, automated CI/CD & global CDN.   │
-└─────────────────────┴────────────────────────────────────────────────────────────────────────────┘
-```
 
 </div>
 
@@ -192,9 +192,9 @@ Whether you need to architect a **production full-stack SaaS platform**, enginee
   <a href="https://github.com/PythonWTFFF"><img src="https://img.shields.io/badge/GitHub-@PythonWTFFF-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" /></a>
 </p>
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,9,12,24&height=95&section=footer" width="100%" />
-</div>
+<a href="https://www.straxon.online/">
+  <img src="cyber_footer.svg" alt="Straxon Cyber Footer" width="100%" />
+</a>
 
 <p align="center">
   <sub><code>[SECURE HASH: 0x7E3A9F_RONIN // STRAXON SOVEREIGN ENTERPRISE ARCHITECTURE]</code></sub><br/>
