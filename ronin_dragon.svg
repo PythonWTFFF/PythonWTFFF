@@ -1,0 +1,413 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="auto" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <defs>
+    <!-- Deep Space Void Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020308" />
+      <stop offset="35%" stop-color="#060914" />
+      <stop offset="70%" stop-color="#0a0f24" />
+      <stop offset="100%" stop-color="#020308" />
+    </linearGradient>
+
+    <!-- Electric Iris & Cyber Saffron Hologram Gradient -->
+    <linearGradient id="dragonHoloGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="25%" stop-color="#8052ff" />
+      <stop offset="60%" stop-color="#ff007a" />
+      <stop offset="90%" stop-color="#ffb829" />
+      <stop offset="100%" stop-color="#00f5ff" />
+    </linearGradient>
+
+    <!-- Cyber Katana Blade Laser Gradient -->
+    <linearGradient id="katanaBeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="30%" stop-color="#00f5ff" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#8052ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ff007a" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Gold Fire Gradient -->
+    <linearGradient id="goldFire" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff0055" />
+      <stop offset="50%" stop-color="#ffb829" />
+      <stop offset="100%" stop-color="#fff8db" />
+    </linearGradient>
+
+    <!-- Scale Shading Gradient -->
+    <linearGradient id="scaleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0c1836" />
+      <stop offset="50%" stop-color="#182d63" />
+      <stop offset="100%" stop-color="#00f5ff" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="coreGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur1" />
+      <feGaussianBlur stdDeviation="14" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="laserGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Radial Dragon Energy Core -->
+    <radialGradient id="dragonEyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#00f5ff" />
+      <stop offset="70%" stop-color="#8052ff" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+
+    <radialGradient id="nebulaPulse" cx="65%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#8052ff" stop-opacity="0.22" />
+      <stop offset="40%" stop-color="#00f5ff" stop-opacity="0.12" />
+      <stop offset="75%" stop-color="#ff007a" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    @keyframes pulseNebula {
+      0%, 100% { opacity: 0.7; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.06); }
+    }
+    @keyframes dragonBreath {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(0.8deg); }
+    }
+    @keyframes eyeFlicker {
+      0%, 100% { opacity: 1; filter: drop-shadow(0 0 10px #00f5ff); }
+      48% { opacity: 0.95; }
+      50% { opacity: 0.3; }
+      52% { opacity: 1; filter: drop-shadow(0 0 18px #ff007a); }
+      75% { opacity: 0.85; }
+    }
+    @keyframes bladeEnergy {
+      0% { stroke-dashoffset: 800; opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 0.8; }
+    }
+    @keyframes emberDrift1 {
+      0% { transform: translate(0, 0) scale(0.8); opacity: 0; }
+      20% { opacity: 0.9; }
+      80% { opacity: 0.7; }
+      100% { transform: translate(-90px, -180px) scale(1.2); opacity: 0; }
+    }
+    @keyframes emberDrift2 {
+      0% { transform: translate(0, 0) scale(0.6); opacity: 0; }
+      25% { opacity: 0.8; }
+      85% { opacity: 0.6; }
+      100% { transform: translate(70px, -210px) scale(1.4); opacity: 0; }
+    }
+    @keyframes scanRay {
+      0% { transform: translateY(0); opacity: 0; }
+      15% { opacity: 0.5; }
+      85% { opacity: 0.5; }
+      100% { transform: translateY(480px); opacity: 0; }
+    }
+    @keyframes kanjiGlow {
+      0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 8px #ffb829); }
+      50% { opacity: 1; filter: drop-shadow(0 0 18px #00f5ff); }
+    }
+    @keyframes circuitPulse {
+      0%, 100% { stroke-opacity: 0.25; }
+      50% { stroke-opacity: 0.85; stroke: #00f5ff; }
+    }
+
+    .nebula-bg { animation: pulseNebula 8s ease-in-out infinite; transform-origin: 65% 45%; }
+    .dragon-rig { animation: dragonBreath 6s ease-in-out infinite; transform-origin: 700px 240px; }
+    .eye-pulse { animation: eyeFlicker 4s infinite; }
+    .blade-spark { stroke-dasharray: 400; animation: bladeEnergy 3.5s linear infinite; }
+    .ember-1 { animation: emberDrift1 5s linear infinite; }
+    .ember-2 { animation: emberDrift2 6.5s linear infinite 1.5s; }
+    .ember-3 { animation: emberDrift1 5.8s linear infinite 2.8s; }
+    .scan-line { animation: scanRay 6s ease-in-out infinite; }
+    .kanji-text { animation: kanjiGlow 5s ease-in-out infinite; }
+    .circuit-line { animation: circuitPulse 4s ease-in-out infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="480" rx="20" fill="url(#bgGrad)" />
+  <rect width="1200" height="480" rx="20" fill="none" stroke="url(#dragonHoloGrad)" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- Relativistic Nebula Energy Core -->
+  <circle cx="780" cy="220" r="320" fill="url(#nebulaPulse)" class="nebula-bg" />
+
+  <!-- Cyber Grid Horizon Ground -->
+  <g opacity="0.22">
+    <line x1="0" y1="410" x2="1200" y2="410" stroke="#8052ff" stroke-width="1" />
+    <line x1="0" y1="430" x2="1200" y2="430" stroke="#8052ff" stroke-width="1" />
+    <line x1="0" y1="455" x2="1200" y2="455" stroke="#00f5ff" stroke-width="1.5" />
+    <!-- Perspective Rays -->
+    <line x1="600" y1="380" x2="100" y2="480" stroke="#8052ff" stroke-width="1" />
+    <line x1="600" y1="380" x2="300" y2="480" stroke="#8052ff" stroke-width="1" />
+    <line x1="600" y1="380" x2="500" y2="480" stroke="#8052ff" stroke-width="1" />
+    <line x1="600" y1="380" x2="700" y2="480" stroke="#8052ff" stroke-width="1" />
+    <line x1="600" y1="380" x2="900" y2="480" stroke="#8052ff" stroke-width="1" />
+    <line x1="600" y1="380" x2="1100" y2="480" stroke="#8052ff" stroke-width="1" />
+  </g>
+
+  <!-- Laser Scanline Sweep -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="#00f5ff" stroke-width="1.5" opacity="0.3" class="scan-line" />
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- LEFT COCKPIT: IDENTITY, BUSHIDO MATRIX & HIGH-TECH TELEMETRY -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <g transform="translate(60, 60)">
+    <!-- Ronin Kanji Seal & Watermark -->
+    <g opacity="0.14">
+      <text x="360" y="240" font-family="'Noto Serif JP', 'Yu Mincho', 'Songti SC', serif" font-weight="900" font-size="210" fill="#8052ff">龍</text>
+      <text x="210" y="320" font-family="'Noto Serif JP', 'Yu Mincho', 'Songti SC', serif" font-weight="900" font-size="160" fill="#ffb829">浪人</text>
+    </g>
+
+    <!-- Security Protocol Badge -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="280" height="26" rx="13" fill="#8052ff" fill-opacity="0.15" stroke="#8052ff" stroke-width="1" />
+      <circle cx="14" cy="13" r="4.5" fill="#00f5ff">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="26" y="17" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" font-weight="bold" fill="#00f5ff" letter-spacing="1.5">RONIN PROTOCOL // v4.1.0 ULTRA</text>
+    </g>
+
+    <!-- Main Calligraphic Cyber Title -->
+    <text x="0" y="65" font-family="'Inter', 'Montserrat', -apple-system, sans-serif" font-weight="900" font-size="38" fill="#ffffff" letter-spacing="-0.5">
+      SWARAJ PANTI
+    </text>
+    <text x="310" y="65" font-family="'Noto Serif JP', serif" font-weight="bold" font-size="28" fill="#ffb829" class="kanji-text">
+      浪人・龍
+    </text>
+
+    <!-- Subtitle Headline -->
+    <text x="0" y="96" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold" fill="#38bdf8" letter-spacing="1">
+      FOUNDER &amp; LEAD ARCHITECT @ STRAXONLABS
+    </text>
+
+    <text x="0" y="118" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94a3b8" letter-spacing="0.5">
+      Spatial 3D CAD • Autonomous AI Swarms • Cyber Defense SOC
+    </text>
+
+    <!-- Cyber Divider Trace -->
+    <g transform="translate(0, 134)">
+      <line x1="0" y1="0" x2="440" y2="0" stroke="url(#katanaBeam)" stroke-width="1.5" />
+      <polygon points="440,-3 446,0 440,3" fill="#00f5ff" />
+      <circle cx="0" cy="0" r="3" fill="#ffb829" />
+    </g>
+
+    <!-- Code of Bushido Matrix (Japanese Samurai Engineering Principles) -->
+    <g transform="translate(0, 155)">
+      <text x="0" y="14" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="bold" fill="#a855f7" letter-spacing="2">
+        [CODE OF THE CYBER RONIN // 侍の規律]
+      </text>
+
+      <!-- Bushido Pillars Grid -->
+      <g transform="translate(0, 30)">
+        <!-- 義 GI - Integrity -->
+        <rect x="0" y="0" width="105" height="48" rx="8" fill="#090e1c" stroke="#8052ff" stroke-width="1" stroke-opacity="0.4" />
+        <text x="10" y="20" font-family="'Noto Serif JP', serif" font-weight="bold" font-size="14" fill="#ffb829">義 GI</text>
+        <text x="10" y="36" font-family="'JetBrains Mono', monospace" font-size="9" fill="#cbd5e1">100% Integrity</text>
+
+        <!-- 勇 YU - Courage -->
+        <rect x="115" y="0" width="105" height="48" rx="8" fill="#090e1c" stroke="#8052ff" stroke-width="1" stroke-opacity="0.4" />
+        <text x="125" y="20" font-family="'Noto Serif JP', serif" font-weight="bold" font-size="14" fill="#00f5ff">勇 YU</text>
+        <text x="125" y="36" font-family="'JetBrains Mono', monospace" font-size="9" fill="#cbd5e1">Zero Fear R&amp;D</text>
+
+        <!-- 仁 JIN - Benevolence -->
+        <rect x="230" y="0" width="105" height="48" rx="8" fill="#090e1c" stroke="#8052ff" stroke-width="1" stroke-opacity="0.4" />
+        <text x="240" y="20" font-family="'Noto Serif JP', serif" font-weight="bold" font-size="14" fill="#ff007a">仁 JIN</text>
+        <text x="240" y="36" font-family="'JetBrains Mono', monospace" font-size="9" fill="#cbd5e1">Client Mastery</text>
+
+        <!-- 誠 MAKOTO - Truth -->
+        <rect x="345" y="0" width="105" height="48" rx="8" fill="#090e1c" stroke="#8052ff" stroke-width="1" stroke-opacity="0.4" />
+        <text x="355" y="20" font-family="'Noto Serif JP', serif" font-weight="bold" font-size="14" fill="#10b981">誠 MAKOTO</text>
+        <text x="355" y="36" font-family="'JetBrains Mono', monospace" font-size="9" fill="#cbd5e1">Locked 60 FPS</text>
+      </g>
+    </g>
+
+    <!-- Real-Time Production Telemetry Readouts -->
+    <g transform="translate(0, 252)">
+      <rect x="0" y="0" width="450" height="74" rx="10" fill="#060914" stroke="#ffffff" stroke-width="1" stroke-opacity="0.12" />
+
+      <!-- Metric 1 -->
+      <g transform="translate(18, 16)">
+        <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#64748b" letter-spacing="1">FLAGSHIP PLATFORM</text>
+        <text x="0" y="32" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold" fill="#00f5ff">straxon.online ↗</text>
+      </g>
+
+      <line x1="165" y1="12" x2="165" y2="62" stroke="#ffffff" stroke-opacity="0.1" />
+
+      <!-- Metric 2 -->
+      <g transform="translate(185, 16)">
+        <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#64748b" letter-spacing="1">SPRINT SLA</text>
+        <text x="0" y="32" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold" fill="#ffb829">14-Day Delivery</text>
+      </g>
+
+      <line x1="315" y1="12" x2="315" y2="62" stroke="#ffffff" stroke-opacity="0.1" />
+
+      <!-- Metric 3 -->
+      <g transform="translate(335, 16)">
+        <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#64748b" letter-spacing="1">DEFENSE MATRIX</text>
+        <text x="0" y="32" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold" fill="#10b981">Zero-Trust SOC</text>
+      </g>
+    </g>
+
+    <!-- Quick Uplink Terminal Prompt -->
+    <g transform="translate(0, 344)">
+      <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">
+        <tspan fill="#8052ff" font-weight="bold">swaraj@straxon</tspan>:<tspan fill="#00f5ff">~</tspan>$ katana --strike --target enterprise-solutions --immersion ultra
+      </text>
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- RIGHT HERO CANVAS: THE ANIMATED CYBER RONIN DRAGON & KATANA    -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <g class="dragon-rig">
+    <!-- Floating Embers / Cherry Blossom Cyber Sparks -->
+    <g opacity="0.8">
+      <circle cx="820" cy="360" r="3" fill="#ffb829" class="ember-1" />
+      <circle cx="890" cy="380" r="2.5" fill="#ff007a" class="ember-2" />
+      <circle cx="940" cy="340" r="3.5" fill="#00f5ff" class="ember-3" />
+      <circle cx="780" cy="390" r="2" fill="#8052ff" class="ember-1" />
+      <circle cx="1020" cy="370" r="2.8" fill="#ffb829" class="ember-2" />
+      <circle cx="860" cy="420" r="3" fill="#00f5ff" class="ember-3" />
+    </g>
+
+    <!-- Dragon Coiling Body (Outer Silhouette & Scales) -->
+    <!-- Segment 1: Tail Coil Backstage -->
+    <path d="M 1120 420 C 1170 340, 1150 250, 1080 200 C 1010 150, 930 180, 890 230 C 850 280, 880 360, 960 380 C 1040 400, 1090 350, 1080 290"
+          fill="none" stroke="url(#scaleGrad)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" opacity="0.65" />
+
+    <!-- Coiling Dorsal Spikes (Tail & Lower Body) -->
+    <path d="M 1110 370 L 1140 360 L 1125 385 Z" fill="#ff007a" opacity="0.8" />
+    <path d="M 1130 320 L 1165 305 L 1145 335 Z" fill="#ffb829" opacity="0.8" />
+    <path d="M 1105 250 L 1135 225 L 1118 265 Z" fill="#00f5ff" opacity="0.8" />
+    <path d="M 1045 190 L 1065 155 L 1052 198 Z" fill="#8052ff" opacity="0.9" />
+    <path d="M 965 170 L 975 130 L 968 178 Z" fill="#ff007a" opacity="0.9" />
+    <path d="M 905 195 L 895 160 L 910 202 Z" fill="#ffb829" opacity="0.9" />
+
+    <!-- Segment 2: Massive Main Serpentine Torso Arch -->
+    <path d="M 880 270 C 830 320, 750 350, 680 320 C 620 290, 630 200, 690 150 C 760 100, 870 110, 930 170 C 970 210, 980 270, 940 330 C 900 390, 810 420, 730 410"
+          fill="none" stroke="url(#scaleGrad)" stroke-width="44" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Dragon Belly Armor Plates (Cybernetic Titanium Gold Plates) -->
+    <path d="M 870 260 C 825 305, 755 335, 690 310 C 635 285, 642 205, 700 160 C 765 115, 860 125, 915 180 C 950 215, 960 265, 925 320"
+          fill="none" stroke="url(#goldFire)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.75" />
+
+    <!-- Main Torso Cyber Spikes -->
+    <path d="M 695 130 L 705 85 L 715 135 Z" fill="#00f5ff" filter="url(#coreGlow)" />
+    <path d="M 770 105 L 785 60 L 790 112 Z" fill="#8052ff" filter="url(#coreGlow)" />
+    <path d="M 845 105 L 870 65 L 865 118 Z" fill="#ff007a" filter="url(#coreGlow)" />
+    <path d="M 915 135 L 945 95 L 930 148 Z" fill="#ffb829" filter="url(#coreGlow)" />
+
+    <!-- Segment 3: Dragon Forearm Claws (Cyber Mech Paws) -->
+    <g transform="translate(680, 260)">
+      <!-- Arm -->
+      <path d="M 0 0 C 20 40, -10 80, -40 100" fill="none" stroke="#0e1a38" stroke-width="18" stroke-linecap="round" />
+      <path d="M 0 0 C 20 40, -10 80, -40 100" fill="none" stroke="#00f5ff" stroke-width="2" stroke-dasharray="4,4" class="circuit-line" />
+      <!-- 3 Razor Claws -->
+      <path d="M -40 100 L -65 115 L -45 95 Z" fill="#ffffff" filter="url(#laserGlow)" />
+      <path d="M -40 100 L -60 130 L -35 105 Z" fill="#00f5ff" filter="url(#laserGlow)" />
+      <path d="M -40 100 L -45 135 L -25 105 Z" fill="#8052ff" filter="url(#laserGlow)" />
+    </g>
+
+    <!-- ═════════════════════════════════════════════════════════════ -->
+    <!-- DRAGON HEAD & SAMURAI RONIN HELMET / HORNS                   -->
+    <!-- ═════════════════════════════════════════════════════════════ -->
+    <g transform="translate(930, 160)">
+      <!-- Head Base Skull (Cyber Titanium Armor) -->
+      <path d="M -20 -10 C 20 -40, 90 -30, 130 10 C 150 30, 170 80, 140 110 C 110 135, 50 130, 10 115 C -20 105, -50 85, -60 50 C -70 15, -50 0, -20 -10 Z"
+            fill="#091124" stroke="url(#dragonHoloGrad)" stroke-width="3.5" filter="url(#laserGlow)" />
+
+      <!-- Ronin Crest (Samurai Kabuto Maedate Crescent Gold Horn) -->
+      <path d="M 20 -30 C 60 -100, 140 -120, 190 -95 C 130 -80, 80 -60, 45 -20 Z"
+            fill="url(#goldFire)" filter="url(#coreGlow)" />
+      <!-- Twin Rear Horn (Cyber Prism) -->
+      <path d="M -10 -25 C -40 -85, -100 -115, -135 -105 C -85 -85, -45 -60, -25 -15 Z"
+            fill="#8052ff" stroke="#00f5ff" stroke-width="1.5" filter="url(#coreGlow)" />
+
+      <!-- Dragon Snout & Upper Jaw -->
+      <path d="M 80 20 C 130 30, 190 60, 205 90 C 180 105, 140 105, 110 100 Z"
+            fill="#0d1b38" stroke="#00f5ff" stroke-width="2" />
+
+      <!-- Menacing Cyber Fangs -->
+      <polygon points="120,102 128,128 136,102" fill="#ffffff" filter="url(#laserGlow)" />
+      <polygon points="150,102 160,132 170,98" fill="#00f5ff" filter="url(#laserGlow)" />
+      <polygon points="185,92 195,118 200,88" fill="#ffffff" filter="url(#laserGlow)" />
+
+      <!-- Lower Jaw -->
+      <path d="M 70 95 C 110 120, 160 135, 190 120 C 160 145, 110 150, 60 130 Z"
+            fill="#070c18" stroke="#ff007a" stroke-width="2" />
+      <polygon points="135,112 142,92 148,114" fill="#ffffff" />
+      <polygon points="168,110 174,90 180,112" fill="#ffb829" />
+
+      <!-- Piercing Neon Eyes (Cyan Laser Core with Saffron Halo) -->
+      <g transform="translate(95, 38)">
+        <polygon points="0,10 35,0 48,12 25,20" fill="#030712" stroke="#00f5ff" stroke-width="2" />
+        <ellipse cx="24" cy="11" rx="14" ry="6" fill="url(#dragonEyeGlow)" class="eye-pulse" />
+        <circle cx="24" cy="11" r="3.5" fill="#ffffff" />
+        <!-- Eyebrow Horn Brow Ridge -->
+        <path d="M -8 8 L 38 -4 L 55 10" fill="none" stroke="#ffb829" stroke-width="3" stroke-linecap="round" />
+      </g>
+
+      <!-- Whiskers (Drifting Cyber Tendrils with Pulsing Energy) -->
+      <path d="M 160 70 C 220 50, 270 90, 310 140 C 330 165, 340 210, 310 240 C 280 270, 240 250, 230 210 C 220 170, 250 140, 275 130"
+            fill="none" stroke="#00f5ff" stroke-width="3" stroke-linecap="round" filter="url(#laserGlow)" opacity="0.9" />
+      <path d="M 140 85 C 190 85, 230 130, 250 180 C 265 220, 250 260, 220 280"
+            fill="none" stroke="#ffb829" stroke-width="2" stroke-linecap="round" opacity="0.75" />
+    </g>
+
+    <!-- ═════════════════════════════════════════════════════════════ -->
+    <!-- THE RONIN KATANA: DIAGONAL HIGH-FREQUENCY LASER BLADE        -->
+    <!-- ═════════════════════════════════════════════════════════════ -->
+    <g transform="translate(560, 340) rotate(-35)">
+      <!-- Katana Blade Edge Glow Aura -->
+      <line x1="-80" y1="0" x2="480" y2="0" stroke="#00f5ff" stroke-width="12" stroke-linecap="round" opacity="0.4" filter="url(#coreGlow)" />
+      <!-- Razor Titanium Edge -->
+      <line x1="-80" y1="0" x2="480" y2="0" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" />
+      <!-- Animated Plasma Streak Passing Over Edge -->
+      <line x1="-80" y1="0" x2="480" y2="0" stroke="url(#katanaBeam)" stroke-width="6" stroke-linecap="round" class="blade-spark" />
+
+      <!-- Katana Tsuba (Circular Handguard) with Dragon Engraving -->
+      <ellipse cx="-80" cy="0" rx="14" ry="24" fill="#0a0f24" stroke="#ffb829" stroke-width="3" />
+      <ellipse cx="-80" cy="0" rx="7" ry="14" fill="#ffb829" opacity="0.5" />
+
+      <!-- Tsuka (Braided Samurai Hilt) -->
+      <rect x="-200" y="-8" width="120" height="16" rx="4" fill="#050811" stroke="#8052ff" stroke-width="2" />
+      <!-- Diamond Tsuka-Ito Wrap Patterns -->
+      <polygon points="-190,0 -180,-7 -170,0 -180,7" fill="#ffb829" />
+      <polygon points="-165,0 -155,-7 -145,0 -155,7" fill="#ffb829" />
+      <polygon points="-140,0 -130,-7 -120,0 -130,7" fill="#ffb829" />
+      <polygon points="-115,0 -105,-7 -95,0 -105,7" fill="#ffb829" />
+      <!-- Kashira (Pommel Cap) -->
+      <rect x="-210" y="-9" width="12" height="18" rx="3" fill="#ffb829" />
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- BORDER TELEMETRY & CORNER ACCENT BRACKETS                      -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- Top Left Bracket -->
+  <path d="M 15 45 L 15 15 L 45 15" fill="none" stroke="#00f5ff" stroke-width="2.5" />
+  <!-- Top Right Bracket -->
+  <path d="M 1155 15 L 1185 15 L 1185 45" fill="none" stroke="#8052ff" stroke-width="2.5" />
+  <!-- Bottom Left Bracket -->
+  <path d="M 15 435 L 15 465 L 45 465" fill="none" stroke="#8052ff" stroke-width="2.5" />
+  <!-- Bottom Right Bracket -->
+  <path d="M 1155 465 L 1185 465 L 1185 435" fill="none" stroke="#00f5ff" stroke-width="2.5" />
+
+  <!-- Bottom Telemetry HUD Line -->
+  <g transform="translate(60, 452)" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748b">
+    <text x="0" y="0">LATENCY: <tspan fill="#10b981">0.12ms</tspan></text>
+    <text x="140" y="0">GPU SHADERS: <tspan fill="#00f5ff">10 ACTIVE (WARP TUNNEL)</tspan></text>
+    <text x="400" y="0">SECURITY HASH: <tspan fill="#ffb829">0x7E3A9F_RONIN</tspan></text>
+    <text x="700" y="0">COPYRIGHT © 2026 SWARAJ PANTI // STRAXONLABS</text>
+  </g>
+</svg>
