@@ -18,6 +18,7 @@
 <p align="center">
   <a href="https://share.google/ioWTTPZ84rcw81iVs"><img src="https://img.shields.io/badge/Google_Verified-5.0_★_(48_Reviews)-FBBC05?style=for-the-badge&logo=google&logoColor=black" alt="Google 5.0 Star Reviews" /></a>
   <a href="https://www.straxon.online/"><img src="https://img.shields.io/badge/Flagship_Ecosystem-straxon.online-00d2e6?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Straxon Online" /></a>
+  <a href="https://www.straxon.online/#mascot-studio"><img src="https://img.shields.io/badge/🤖_Mascot_Copilot-3--Bot_Crew_Live-ffb829?style=for-the-badge&logo=probot&logoColor=black" alt="Straxon Mascot Copilot" /></a>
   <img src="https://img.shields.io/badge/Security_Clearance-Level_4_%5BCyber_Ronin%5D-7928ca?style=for-the-badge&logo=matrix&logoColor=00f5ff" alt="Clearance" />
   <a href="https://wa.me/918335846171?text=Hello%20Swaraj,%20I%20would%20like%20to%20discuss%20a%20high-impact%20project%20architecture."><img src="https://img.shields.io/badge/Status-🟢_Available_for_Contracts-00f0ff?style=for-the-badge&logo=statuspage&logoColor=black" alt="Status" /></a>
   <img src="https://komarev.com/ghpvc/?username=PythonWTFFF&style=for-the-badge&color=00d2e6&label=SYSTEM+ACCESSES" alt="Access Count" />
@@ -26,6 +27,7 @@
 <!-- Recruiter & Client Priority Quick-Action Launchpad -->
 <p align="center">
   <a href="https://www.straxon.online/"><img src="https://img.shields.io/badge/🌐_Flagship_App-www.straxon.online-00f0ff?style=flat-square&logo=googlechrome&logoColor=black" alt="straxon.online" /></a>
+  <a href="https://www.straxon.online/#mascot-studio"><img src="https://img.shields.io/badge/🤖_Mascot_Studio-4_Tech_Labs-ffb829?style=flat-square&logo=probot&logoColor=black" alt="Mascot Studio" /></a>
   <a href="https://www.straxon.online/site-customizer"><img src="https://img.shields.io/badge/🎨_Live_Store_Designer-10_GPU_Shaders-8052ff?style=flat-square&logo=three.js&logoColor=white" alt="Live Store Designer" /></a>
   <a href="https://wa.me/918335846171?text=Hello%20Swaraj,%20I%20would%20like%20to%20discuss%20a%20high-impact%20project%20architecture."><img src="https://img.shields.io/badge/💬_WhatsApp-Direct_Founder_Line-25D366?style=flat-square&logo=whatsapp&logoColor=white" alt="WhatsApp Direct" /></a>
   <a href="mailto:straxonlab@gmail.com"><img src="https://img.shields.io/badge/✉️_Email-straxonlab@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email Direct" /></a>
@@ -35,6 +37,7 @@
 
 <p align="center">
   <a href="https://www.straxon.online/"><b>🌐 www.straxon.online</b></a> •
+  <a href="https://www.straxon.online/#mascot-studio"><b>🤖 Mascot Studio</b></a> •
   <a href="https://www.straxon.online/site-customizer"><b>🎨 Live 3D Studio</b></a> •
   <a href="https://straxonlabs10.vercel.app/"><b>🚀 Mirror Platform</b></a> •
   <a href="https://w.swaraj-0aa.workers.dev/"><b>🤖 W Neural OS</b></a> •
@@ -127,6 +130,7 @@
 | Platform & Status | Domain & Core Innovations | Production Uplink |
 | :--- | :--- | :--- |
 | **🌐 StraxonLabs Platform**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-10b981?style=flat-square&logo=three.js" alt="Live" /> | **Next-Gen Spatial 3D CAD & Autonomous AI Ecosystem:** Universal Cyber Dock, 8 Autonomous SaaS Engines, parametric 3D CAD modeling, procedural GLSL shaders, Web Audio synth & offline-resilient PWA 2.0. | [**🚀 straxon.online ↗**](https://www.straxon.online/)<br/><sub>[Vercel Mirror ↗](https://straxonlabs10.vercel.app/)</sub> |
+| **🤖 Straxon Mascot Copilot Studio**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-ffb829?style=flat-square&logo=probot" alt="Live" /> | **Living Architecture & Design Copilot:** 3-Mascot crew (Sparky, The Strategist, Guardian Shield), real-time Obsidian shader slider token generator, React 19 component scaffolder, Cedar zero-trust & MSMED Act dispute engine, and 1-click JSON spec synthesizer. | [**🤖 Launch Mascot Studio ↗**](https://www.straxon.online/#mascot-studio)<br/><sub>[Shortcut: Alt+M]</sub> |
 | **🎨 Live Site Customizer Studio**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-8052ff?style=flat-square&logo=three.js" alt="Live" /> | **Live Visual Storefront & 3D Site Architect:** Interactive multi-device preview (iPhone 16 Pro, iPad, Desktop), 10 WebGL GPU shaders with Relativistic Warp Singularity, live cart simulation, and instant React+Tailwind export. | [**🎨 Launch Live Studio ↗**](https://www.straxon.online/site-customizer)<br/><sub>[Live Alias ↗](https://www.straxon.online/live-studio)</sub> |
 | **🛡️ Straxon Cyber SOC**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-10b981?style=flat-square&logo=cloudflare" alt="Live" /> | **Enterprise SOC Threat Visualizer & Defense Mesh:** 3D interactive cyber attack origin globe, ML-powered EDR telemetry (Isolation Forest anomaly detection), live DDoS simulation & Zero-Trust mTLS. | [**🛡️ Launch Cyber SOC ↗**](https://tanstack-start-app.hybridpython64.workers.dev/)<br/><sub>[Vercel Mirror ↗](https://straxon-secure.vercel.app/)</sub> |
 | **🤖 W Neural OS v3.0**<br/><img src="https://img.shields.io/badge/Status-LIVE_PRODUCTION-10b981?style=flat-square&logo=cloudflare" alt="Live" /> | **Autonomous Multi-Agent AI Operating System:** Cloudflare Edge Worker AI orchestration, browser-native WebLLM inference, task handoff state machines & sub-millisecond TF-IDF vector RAG retrieval. | [**🤖 Launch Neural OS ↗**](https://w.swaraj-0aa.workers.dev/) |

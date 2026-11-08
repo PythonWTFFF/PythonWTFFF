@@ -18,9 +18,9 @@
 
     <!-- Solar Halo Corona -->
     <radialGradient id="sunHalo" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff007a" stop-opacity="0.5" />
-      <stop offset="50%" stop-color="#ffb829" stop-opacity="0.22" />
-      <stop offset="80%" stop-color="#8052ff" stop-opacity="0.08" />
+      <stop offset="0%" stop-color="#ff007a" stop-opacity="0.55" />
+      <stop offset="45%" stop-color="#ffb829" stop-opacity="0.25" />
+      <stop offset="75%" stop-color="#8052ff" stop-opacity="0.12" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
 
@@ -57,9 +57,9 @@
     </linearGradient>
 
     <!-- Intense Bloom Filters -->
-    <filter id="intenseGlow" x="-30%" y="-30%" width="160%" height="160%">
+    <filter id="intenseGlow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="4" result="b1" />
-      <feGaussianBlur stdDeviation="12" result="b2" />
+      <feGaussianBlur stdDeviation="14" result="b2" />
       <feMerge>
         <feMergeNode in="b2" />
         <feMergeNode in="b1" />
@@ -71,6 +71,14 @@
       <feGaussianBlur stdDeviation="2.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="dragonAuraGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="aura" />
+      <feMerge>
+        <feMergeNode in="aura" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
@@ -93,10 +101,10 @@
       100% { stroke-dashoffset: 0; opacity: 0.8; }
     }
     @keyframes eyeFlicker {
-      0%, 100% { opacity: 1; filter: drop-shadow(0 0 8px #00f5ff); }
+      0%, 100% { opacity: 1; filter: drop-shadow(0 0 10px #00f5ff); transform: scale(1); }
       48% { opacity: 0.95; }
-      50% { opacity: 0.35; }
-      52% { opacity: 1; filter: drop-shadow(0 0 16px #ff0055); }
+      50% { opacity: 0.4; transform: scale(0.92); }
+      52% { opacity: 1; filter: drop-shadow(0 0 18px #ff0055); transform: scale(1.08); }
     }
     @keyframes emberDrift1 {
       0% { transform: translate(0, 0) scale(0.6); opacity: 0; }
@@ -124,6 +132,17 @@
       0% { stroke-dashoffset: 100; }
       100% { stroke-dashoffset: 0; }
     }
+    @keyframes lightningFlash {
+      0%, 100% { opacity: 0.15; stroke-dashoffset: 200; }
+      35% { opacity: 0.9; stroke-dashoffset: 50; }
+      50% { opacity: 0.3; }
+      70% { opacity: 1; stroke-dashoffset: 0; }
+      85% { opacity: 0.2; }
+    }
+    @keyframes auraBreathe {
+      0%, 100% { opacity: 0.4; stroke-width: 44px; }
+      50% { opacity: 0.8; stroke-width: 52px; }
+    }
     .dragon-unit { animation: dragonFloat 6s ease-in-out infinite; transform-origin: 730px 180px; }
     .blade-sparkle { stroke-dasharray: 350; animation: bladePulse 3s linear infinite; }
     .eye-laser { animation: eyeFlicker 3.6s infinite; }
@@ -132,6 +151,8 @@
     .sun-glow { animation: sunPulse 6.8s ease-in-out infinite; transform-origin: 730px 170px; }
     .scan-beam { animation: scanSweep 5s ease-in-out infinite; }
     .conduit-line { stroke-dasharray: 6 4; animation: conduitFlow 2s linear infinite; }
+    .lightning-spark { stroke-dasharray: 80; animation: lightningFlash 2.4s ease-in-out infinite; }
+    .dragon-aura-path { animation: auraBreathe 4.5s ease-in-out infinite; }
   </style>
 
   <!-- Deep Obsidian Background -->
@@ -165,7 +186,7 @@
   <!-- ═══════════════════════════════════════════════════════════════ -->
   <!-- LEFT COCKPIT: IDENTITY, PROTOCOL & CYBER RONIN CREED MATRIX     -->
   <!-- ═══════════════════════════════════════════════════════════════ -->
-  <g transform="translate(48, 42)">
+  <g transform="translate(48, 38)">
     <!-- Watermark Circuit Grid Accents -->
     <g opacity="0.08" stroke="#00f5ff" stroke-width="1">
       <path d="M 0 30 L 120 30 L 150 60 L 380 60" fill="none" />
@@ -174,25 +195,33 @@
       <circle cx="250" cy="150" r="3" fill="#ff007a" />
     </g>
 
-    <!-- Protocol Status Pill -->
+    <!-- Protocol Status Pill with Straxon Mascot Telemetry Badge -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="310" height="24" rx="12" fill="#8052ff" fill-opacity="0.18" stroke="#8052ff" stroke-width="1.2" />
+      <rect x="0" y="0" width="360" height="24" rx="12" fill="#8052ff" fill-opacity="0.18" stroke="#8052ff" stroke-width="1.2" />
       <circle cx="12" cy="12" r="4" fill="#00f5ff">
         <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite" />
       </circle>
-      <text x="24" y="16" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9.5" font-weight="bold" fill="#00f5ff" letter-spacing="1.5">
-        STRAXON // CYBER RONIN PROTOCOL
+      <text x="24" y="16" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9" font-weight="bold" fill="#00f5ff" letter-spacing="1.2">
+        STRAXON // CYBER RONIN &amp; MASCOT COPILOT
       </text>
+      <!-- Mini Mascot Online Indicator -->
+      <g transform="translate(262, 4)">
+        <rect x="0" y="0" width="90" height="16" rx="8" fill="#10b981" fill-opacity="0.25" stroke="#10b981" stroke-width="0.8" />
+        <circle cx="8" cy="8" r="2.5" fill="#34d399" />
+        <text x="16" y="11.5" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="bold" fill="#34d399">
+          3-BOT CREW
+        </text>
+      </g>
     </g>
 
     <!-- Main Title & Lead Architect Badge -->
-    <g transform="translate(0, 56)">
+    <g transform="translate(0, 54)">
       <text x="0" y="0" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="36" fill="url(#textNeon)" letter-spacing="-0.5">
         SWARAJ PANTI
       </text>
       <!-- Cyber Holographic Badge -->
       <g transform="translate(295, -28)">
-        <rect x="0" y="0" width="118" height="30" rx="8" fill="#0f172a" stroke="#00f5ff" stroke-width="1.2" filter="url(#bladeGlow)" />
+        <rect x="0" y="0" width="128" height="30" rx="8" fill="#0f172a" stroke="#00f5ff" stroke-width="1.2" filter="url(#bladeGlow)" />
         <circle cx="12" cy="15" r="3" fill="#10b981">
           <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite" />
         </circle>
@@ -203,24 +232,24 @@
     </g>
 
     <!-- Subtitle Role -->
-    <text x="0" y="82" font-family="'JetBrains Mono', monospace" font-size="12.5" font-weight="700" fill="#38bdf8" letter-spacing="0.8">
+    <text x="0" y="80" font-family="'JetBrains Mono', monospace" font-size="12.5" font-weight="700" fill="#38bdf8" letter-spacing="0.8">
       FOUNDER &amp; CHIEF SYSTEMS ARCHITECT @ STRAXONLABS
     </text>
 
     <!-- Weaponry & Runtimes Pill Strip -->
-    <text x="0" y="104" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8" letter-spacing="0.4">
-      Spatial 3D CAD • Autonomous AI Swarms • Zero-Trust SOC Defense
+    <text x="0" y="102" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8" letter-spacing="0.4">
+      Spatial 3D CAD • Autonomous AI Swarms • Zero-Trust Cedar SOC
     </text>
 
     <!-- Divider Line with Saffron Energy Spark -->
-    <g transform="translate(0, 118)">
-      <line x1="0" y1="0" x2="420" y2="0" stroke="url(#bladeLaser)" stroke-width="1.5" />
-      <polygon points="420,-3 426,0 420,3" fill="#00f5ff" />
+    <g transform="translate(0, 116)">
+      <line x1="0" y1="0" x2="424" y2="0" stroke="url(#bladeLaser)" stroke-width="1.5" />
+      <polygon points="424,-3 430,0 424,3" fill="#00f5ff" />
       <circle cx="0" cy="0" r="3" fill="#ffb829" />
     </g>
 
-    <!-- Cyber Ronin 4 Architectural Pillars (Zero Japanese Typo, 100% English Cyber Terminology) -->
-    <g transform="translate(0, 136)">
+    <!-- Cyber Ronin 4 Architectural Pillars (100% English Cyber Terminology) -->
+    <g transform="translate(0, 134)">
       <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="bold" fill="#c084fc" letter-spacing="2">
         [ THE CYBER RONIN CREED // ZERO COMPROMISE ]
       </text>
@@ -230,7 +259,7 @@
         <g transform="translate(0, 0)">
           <rect x="0" y="0" width="100" height="42" rx="7" fill="#060b18" stroke="#ffb829" stroke-width="1" stroke-opacity="0.6" />
           <text x="8" y="17" font-family="'JetBrains Mono', monospace" font-weight="900" font-size="11" fill="#ffb829">PRECISION</text>
-          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Sub-ms Edge</text>
+          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Sub-12ms INP</text>
         </g>
         <!-- 2. VALOR -->
         <g transform="translate(108, 0)">
@@ -248,13 +277,13 @@
         <g transform="translate(324, 0)">
           <rect x="0" y="0" width="100" height="42" rx="7" fill="#060b18" stroke="#10b981" stroke-width="1" stroke-opacity="0.6" />
           <text x="8" y="17" font-family="'JetBrains Mono', monospace" font-weight="900" font-size="11" fill="#10b981">SECURITY</text>
-          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Zero-Trust SOC</text>
+          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Cedar Zero-Trust</text>
         </g>
       </g>
     </g>
 
     <!-- Telemetry Status Cockpit -->
-    <g transform="translate(0, 220)">
+    <g transform="translate(0, 222)">
       <rect x="0" y="0" width="424" height="52" rx="8" fill="#040813" stroke="#1e293b" stroke-width="1" />
       <!-- Col 1 -->
       <g transform="translate(14, 12)">
@@ -264,8 +293,8 @@
       <line x1="145" y1="10" x2="145" y2="42" stroke="#1e293b" />
       <!-- Col 2 -->
       <g transform="translate(160, 12)">
-        <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b" letter-spacing="1">SPRINT SLA</text>
-        <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" fill="#ffb829">14-Day Delivery</text>
+        <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b" letter-spacing="1">COPILOT CREW</text>
+        <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" fill="#ffb829">Sparky &amp; Nexus</text>
       </g>
       <line x1="285" y1="10" x2="285" y2="42" stroke="#1e293b" />
       <!-- Col 3 -->
@@ -280,8 +309,12 @@
   <!-- RIGHT HERO CANVAS: THE MAJESTIC ANIMATED CYBER RONIN DRAGON    -->
   <!-- ═══════════════════════════════════════════════════════════════ -->
   <g class="dragon-unit">
+    <!-- Pulsing Outer Neon Dragon Aura Layer -->
+    <path d="M 720 230 C 670 280, 600 290, 560 250 C 520 210, 540 140, 600 100 C 670 60, 780 70, 840 120 C 880 155, 880 210, 850 260 C 820 310, 740 330, 670 320"
+          fill="none" stroke="#00f5ff" stroke-width="48" stroke-linecap="round" opacity="0.25" filter="url(#dragonAuraGlow)" class="dragon-aura-path" />
+
     <!-- Floating Cyber Embers & Energy Sparks -->
-    <g opacity="0.9">
+    <g opacity="0.95">
       <circle cx="680" cy="260" r="3.5" fill="#ff007a" class="ember-1" />
       <circle cx="740" cy="290" r="2.5" fill="#ffb829" class="ember-2" />
       <circle cx="820" cy="240" r="3" fill="#00f5ff" class="ember-1" />
@@ -292,6 +325,14 @@
       <polygon points="695,210 701,213 695,216 689,213" fill="#00f5ff" class="ember-2" />
       <polygon points="840,150 845,153 840,156 835,153" fill="#ffb829" class="ember-1" />
     </g>
+
+    <!-- Dynamic Lightning Particle Arcs (Crackling Energy across coils) -->
+    <path d="M 605 105 L 635 125 L 620 140 L 660 160"
+          fill="none" stroke="#00f5ff" stroke-width="1.8" filter="url(#bladeGlow)" class="lightning-spark" />
+    <path d="M 765 80 L 785 105 L 775 120 L 810 135"
+          fill="none" stroke="#ffb829" stroke-width="1.8" filter="url(#bladeGlow)" class="lightning-spark" />
+    <path d="M 850 160 L 870 190 L 855 210 L 880 235"
+          fill="none" stroke="#ff007a" stroke-width="1.8" filter="url(#bladeGlow)" class="lightning-spark" />
 
     <!-- ── DRAGON BODY SERPENTINE COILS ── -->
     <!-- Lower Tail Coil (S-Curve Backstage) -->
@@ -361,15 +402,16 @@
       <polygon points="118,96 124,78 130,98" fill="#ffffff" />
       <polygon points="146,94 152,76 158,96" fill="#ffb829" />
 
-      <!-- Piercing Neon Cyan Dragon Eye with HUD Reticle -->
+      <!-- Piercing Neon Cyan Dragon Eye with HUD Reticle & Cybernetic Pulse -->
       <g transform="translate(80, 32)">
         <polygon points="0,8 30,0 40,10 20,16" fill="#020612" stroke="#00f5ff" stroke-width="1.8" />
         <ellipse cx="20" cy="9" rx="11" ry="5" fill="#00f5ff" class="eye-laser" />
-        <circle cx="20" cy="9" r="3" fill="#ffffff" />
+        <circle cx="20" cy="9" r="3.5" fill="#ffffff" />
         <!-- Horn Brow Ridge -->
         <path d="M -6 6 L 32 -4 L 46 8" fill="none" stroke="#ffb829" stroke-width="2.5" stroke-linecap="round" />
-        <!-- Micro Reticle Crosshair -->
-        <circle cx="20" cy="9" r="7" fill="none" stroke="#ff007a" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.8" />
+        <!-- Micro Reticle Crosshairs -->
+        <circle cx="20" cy="9" r="7.5" fill="none" stroke="#ff007a" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.85" />
+        <circle cx="20" cy="9" r="11" fill="none" stroke="#00f5ff" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.6" />
       </g>
 
       <!-- Whiskers (Drifting Plasma Arcs) -->
@@ -416,8 +458,8 @@
   <!-- Bottom Telemetry HUD Line (100% English Cyber Terminology) -->
   <g transform="translate(48, 342)" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b">
     <text x="0" y="0">SYSTEM: <tspan fill="#10b981">OPERATIONAL</tspan></text>
-    <text x="120" y="0">GPU SHADERS: <tspan fill="#00f5ff">10 ACTIVE (WARP TUNNEL)</tspan></text>
-    <text x="360" y="0">CREED: <tspan fill="#ffb829">PRECISION • VALOR • SOVEREIGNTY • INTEGRITY</tspan></text>
+    <text x="120" y="0">MASCOT COPILOT: <tspan fill="#ffb829">SPARKY &amp; NEXUS ONLINE</tspan></text>
+    <text x="350" y="0">CREED: <tspan fill="#00f5ff">PRECISION • VALOR • SOVEREIGNTY • INTEGRITY</tspan></text>
     <text x="690" y="0">COPYRIGHT © 2026 SWARAJ PANTI // STRAXONLABS</text>
   </g>
 </svg>
