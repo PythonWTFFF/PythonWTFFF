@@ -88,6 +88,39 @@
       <line x1="0" y1="20" x2="40" y2="20" stroke="#8052ff" stroke-width="0.8" opacity="0.3" />
       <line x1="20" y1="0" x2="20" y2="20" stroke="#00f5ff" stroke-width="0.8" opacity="0.25" />
     </pattern>
+
+    <!-- Quantum Arc Reactor Plasma Gradients -->
+    <radialGradient id="corePlasmaGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#00f5ff" />
+      <stop offset="70%" stop-color="#ff007a" />
+      <stop offset="100%" stop-color="#8052ff" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Dorsal Fin Bioluminescent Cyber Mesh -->
+    <linearGradient id="wingSailGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#09132e" stop-opacity="0.2" />
+      <stop offset="40%" stop-color="#8052ff" stop-opacity="0.45" />
+      <stop offset="80%" stop-color="#00f5ff" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Gravitational Singularity Orb -->
+    <radialGradient id="orbRadialGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#00f5ff" />
+      <stop offset="65%" stop-color="#8052ff" />
+      <stop offset="90%" stop-color="#040817" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Dragon Cosmic Breath Plasma Stream -->
+    <linearGradient id="breathLaser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#00f5ff" />
+      <stop offset="60%" stop-color="#ffb829" />
+      <stop offset="100%" stop-color="#ff0055" stop-opacity="0" />
+    </linearGradient>
   </defs>
 
   <style>
@@ -143,6 +176,30 @@
       0%, 100% { opacity: 0.4; stroke-width: 44px; }
       50% { opacity: 0.8; stroke-width: 52px; }
     }
+    @keyframes reactorSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes reactorCorePulse {
+      0%, 100% { transform: scale(1); opacity: 0.85; filter: drop-shadow(0 0 8px #00f5ff); }
+      50% { transform: scale(1.28); opacity: 1; filter: drop-shadow(0 0 16px #ff007a); }
+    }
+    @keyframes whiskerSway {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-3.5deg); }
+    }
+    @keyframes plasmaBreathPulse {
+      0%, 100% { stroke-dashoffset: 240; opacity: 0.3; stroke-width: 3px; }
+      50% { opacity: 0.95; stroke-width: 7.5px; stroke-dashoffset: 0; }
+    }
+    @keyframes orbSatellite {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes badgePulseGlow {
+      0%, 100% { stroke: #00f5ff; stroke-width: 1.2px; }
+      50% { stroke: #8052ff; stroke-width: 1.8px; }
+    }
     .dragon-unit { animation: dragonFloat 6s ease-in-out infinite; transform-origin: 730px 180px; }
     .blade-sparkle { stroke-dasharray: 350; animation: bladePulse 3s linear infinite; }
     .eye-laser { animation: eyeFlicker 3.6s infinite; }
@@ -153,6 +210,12 @@
     .conduit-line { stroke-dasharray: 6 4; animation: conduitFlow 2s linear infinite; }
     .lightning-spark { stroke-dasharray: 80; animation: lightningFlash 2.4s ease-in-out infinite; }
     .dragon-aura-path { animation: auraBreathe 4.5s ease-in-out infinite; }
+    .reactor-ring { animation: reactorSpin 9s linear infinite; transform-origin: 630px 175px; }
+    .reactor-core { animation: reactorCorePulse 2.6s ease-in-out infinite; transform-origin: 630px 175px; }
+    .whisker-move { animation: whiskerSway 4.2s ease-in-out infinite; transform-origin: 130px 65px; }
+    .plasma-breath { stroke-dasharray: 120; animation: plasmaBreathPulse 2.8s ease-in-out infinite; }
+    .orb-ring { animation: orbSatellite 7s linear infinite; transform-origin: 565px 285px; }
+    .badge-glow-box { animation: badgePulseGlow 3s ease-in-out infinite; }
   </style>
 
   <!-- Deep Obsidian Background -->
@@ -219,14 +282,18 @@
       <text x="0" y="0" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="36" fill="url(#textNeon)" letter-spacing="-0.5">
         SWARAJ PANTI
       </text>
-      <!-- Cyber Holographic Badge -->
-      <g transform="translate(295, -28)">
-        <rect x="0" y="0" width="128" height="30" rx="8" fill="#0f172a" stroke="#00f5ff" stroke-width="1.2" filter="url(#bladeGlow)" />
+      <!-- Cyber Holographic Lead Architect Badge -->
+      <g transform="translate(285, -28)">
+        <rect x="0" y="0" width="144" height="30" rx="8" fill="#070c1a" stroke="#00f5ff" stroke-width="1.2" filter="url(#bladeGlow)" class="badge-glow-box" />
         <circle cx="12" cy="15" r="3" fill="#10b981">
           <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite" />
         </circle>
-        <text x="22" y="19" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" fill="#00f5ff" letter-spacing="1">
-          LEAD ARCHITECT
+        <circle cx="12" cy="15" r="5.5" fill="none" stroke="#10b981" stroke-width="0.8" opacity="0.6">
+          <animate attributeName="r" values="3;7;3" dur="2s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <text x="22" y="19" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" fill="#00f5ff" letter-spacing="0.8">
+          LEAD ARCHITECT // v4.3
         </text>
       </g>
     </g>
@@ -238,7 +305,7 @@
 
     <!-- Weaponry & Runtimes Pill Strip -->
     <text x="0" y="102" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8" letter-spacing="0.4">
-      Spatial 3D CAD • Autonomous AI Swarms • Zero-Trust Cedar SOC
+      12 GPU Engines • Autonomous AI Swarms • Zero-Trust Cedar SOC
     </text>
 
     <!-- Divider Line with Saffron Energy Spark -->
@@ -294,13 +361,13 @@
       <!-- Col 2 -->
       <g transform="translate(160, 12)">
         <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b" letter-spacing="1">COPILOT CREW</text>
-        <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" fill="#ffb829">Sparky &amp; Nexus</text>
+        <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#ffb829">Sparky &amp; Crew (Alt+M)</text>
       </g>
       <line x1="285" y1="10" x2="285" y2="42" stroke="#1e293b" />
       <!-- Col 3 -->
       <g transform="translate(300, 12)">
-        <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b" letter-spacing="1">DEFENSE</text>
-        <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" fill="#10b981">Zero-Trust SOC</text>
+        <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b" letter-spacing="1">ENGINE</text>
+        <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" fill="#10b981">12 GPU Shaders</text>
       </g>
     </g>
   </g>
@@ -358,16 +425,42 @@
     <path d="M 705 220 C 660 265, 600 270, 565 240 C 535 205, 555 145, 610 110 C 670 75, 765 85, 820 130"
           fill="none" stroke="#00f5ff" stroke-width="1.8" class="conduit-line" opacity="0.85" />
 
+    <!-- Dorsal Fin Bioluminescent Cyber Mesh Sails -->
+    <path d="M 615 85 L 625 45 L 685 65 L 700 25 L 760 65 L 780 30 L 825 95 L 850 60 L 838 106 L 615 85 Z"
+          fill="url(#wingSailGrad)" opacity="0.32" filter="url(#intenseGlow)" />
+
     <!-- Dorsal Spines (Bioluminescent Neon Crystal Fins) -->
     <polygon points="615,85 625,45 635,90" fill="#00f5ff" filter="url(#intenseGlow)" />
     <polygon points="685,65 700,25 705,72" fill="#8052ff" filter="url(#intenseGlow)" />
     <polygon points="760,65 780,30 775,76" fill="#ff007a" filter="url(#intenseGlow)" />
     <polygon points="825,95 850,60 838,106" fill="#ffb829" filter="url(#intenseGlow)" />
 
+    <!-- ── DRAGON CHEST QUANTUM ARC REACTOR ── -->
+    <g transform="translate(630, 175)">
+      <!-- Outer Rotating Hex/Ring Containment -->
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#00f5ff" stroke-width="1.4" stroke-dasharray="6,4" class="reactor-ring" />
+      <circle cx="0" cy="0" r="14" fill="#030713" stroke="#ff007a" stroke-width="1.2" />
+      <!-- Pulsating Core -->
+      <circle cx="0" cy="0" r="9" fill="url(#corePlasmaGrad)" class="reactor-core" />
+      <circle cx="0" cy="0" r="3.5" fill="#ffffff" filter="url(#bladeGlow)" />
+      <!-- Radial Micro Energy Spines -->
+      <line x1="0" y1="-18" x2="0" y2="-24" stroke="#00f5ff" stroke-width="1" />
+      <line x1="18" y1="0" x2="24" y2="0" stroke="#00f5ff" stroke-width="1" />
+      <line x1="0" y1="18" x2="0" y2="24" stroke="#ff007a" stroke-width="1" />
+      <line x1="-18" y1="0" x2="-24" y2="0" stroke="#ff007a" stroke-width="1" />
+    </g>
+
     <!-- Cyber Claws (Forelimb Paws) -->
     <g transform="translate(590, 210)">
       <path d="M 0 0 C 15 30, -5 60, -25 75" fill="none" stroke="#0e1b38" stroke-width="14" stroke-linecap="round" />
       <line x1="0" y1="0" x2="-25" y2="75" stroke="#00f5ff" stroke-width="1.5" stroke-dasharray="3,3" />
+      <!-- Clutched Gravitational Singularity Core Orb -->
+      <g transform="translate(-25, 82)">
+        <circle cx="0" cy="0" r="12" fill="url(#orbRadialGrad)" filter="url(#intenseGlow)" />
+        <ellipse cx="0" cy="0" rx="16" ry="6" fill="none" stroke="#00f5ff" stroke-width="1" stroke-dasharray="4,3" class="orb-ring" />
+        <ellipse cx="0" cy="0" rx="6" ry="16" fill="none" stroke="#ff007a" stroke-width="0.8" opacity="0.7" />
+        <circle cx="0" cy="0" r="2.5" fill="#ffffff" />
+      </g>
       <!-- Razor Talons -->
       <polygon points="-25,75 -45,86 -30,70" fill="#ffffff" filter="url(#bladeGlow)" />
       <polygon points="-25,75 -40,98 -20,80" fill="#00f5ff" filter="url(#bladeGlow)" />
@@ -390,6 +483,12 @@
       <!-- Dragon Snout & Upper Jaw -->
       <path d="M 70 15 C 110 25, 160 50, 175 75 C 150 90, 120 90, 95 85 Z"
             fill="#0b1736" stroke="#00f5ff" stroke-width="2" />
+
+      <!-- Cosmic Plasma Breath Stream -->
+      <path d="M 165 92 C 195 105, 220 85, 235 60 C 245 40, 230 15, 210 10 C 185 5, 175 25, 185 40"
+            fill="none" stroke="url(#breathLaser)" stroke-width="4.5" stroke-linecap="round" filter="url(#bladeGlow)" class="plasma-breath" />
+      <circle cx="215" cy="55" r="2.5" fill="#ffb829" class="ember-1" />
+      <circle cx="230" cy="35" r="2" fill="#00f5ff" class="ember-2" />
 
       <!-- Menacing Razor Fangs -->
       <polygon points="105,86 112,108 119,86" fill="#ffffff" filter="url(#bladeGlow)" />
@@ -414,11 +513,13 @@
         <circle cx="20" cy="9" r="11" fill="none" stroke="#00f5ff" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.6" />
       </g>
 
-      <!-- Whiskers (Drifting Plasma Arcs) -->
-      <path d="M 135 60 C 185 45, 230 80, 260 120 C 275 140, 280 180, 255 200 C 230 220, 200 200, 195 170"
-            fill="none" stroke="#00f5ff" stroke-width="2.5" stroke-linecap="round" opacity="0.9" filter="url(#bladeGlow)" />
-      <path d="M 120 72 C 160 72, 195 110, 210 150 C 220 185, 205 220, 180 235"
-            fill="none" stroke="#ffb829" stroke-width="1.8" stroke-linecap="round" opacity="0.8" />
+      <!-- Whiskers with Living Bio-Mechanical Undulation -->
+      <g class="whisker-move">
+        <path d="M 135 60 C 185 45, 230 80, 260 120 C 275 140, 280 180, 255 200 C 230 220, 200 200, 195 170"
+              fill="none" stroke="#00f5ff" stroke-width="2.5" stroke-linecap="round" opacity="0.9" filter="url(#bladeGlow)" />
+        <path d="M 120 72 C 160 72, 195 110, 210 150 C 220 185, 205 220, 180 235"
+              fill="none" stroke="#ffb829" stroke-width="1.8" stroke-linecap="round" opacity="0.8" />
+      </g>
     </g>
 
     <!-- ── THE CYBER KATANA: HIGH-FREQUENCY PLASMA BLADE ── -->
@@ -457,9 +558,9 @@
 
   <!-- Bottom Telemetry HUD Line (100% English Cyber Terminology) -->
   <g transform="translate(48, 342)" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b">
-    <text x="0" y="0">SYSTEM: <tspan fill="#10b981">OPERATIONAL</tspan></text>
-    <text x="120" y="0">MASCOT COPILOT: <tspan fill="#ffb829">SPARKY &amp; NEXUS ONLINE</tspan></text>
-    <text x="350" y="0">CREED: <tspan fill="#00f5ff">PRECISION • VALOR • SOVEREIGNTY • INTEGRITY</tspan></text>
-    <text x="690" y="0">COPYRIGHT © 2026 SWARAJ PANTI // STRAXONLABS</text>
+    <text x="0" y="0">SYSTEM: <tspan fill="#10b981">OPERATIONAL [v4.3]</tspan></text>
+    <text x="140" y="0">MASCOT COPILOT: <tspan fill="#ffb829">SPARKY • STRATEGIST • GUARDIAN LIVE</tspan></text>
+    <text x="440" y="0">CORE: <tspan fill="#00f5ff">12 GPU SHADERS • REACT 19 • SUB-12MS INP</tspan></text>
+    <text x="735" y="0">COPYRIGHT © 2026 STRAXONLABS</text>
   </g>
 </svg>
