@@ -200,8 +200,13 @@
       0%, 100% { stroke: #00f5ff; stroke-width: 1.2px; }
       50% { stroke: #8052ff; stroke-width: 1.8px; }
     }
+    @keyframes nameGlowPulse {
+      0%, 100% { filter: drop-shadow(0 0 8px rgba(0, 245, 255, 0.4)); }
+      50% { filter: drop-shadow(0 0 20px rgba(128, 82, 255, 0.8)) drop-shadow(0 0 32px rgba(0, 245, 255, 0.6)); }
+    }
     .dragon-unit { animation: dragonFloat 6s ease-in-out infinite; transform-origin: 730px 180px; }
     .blade-sparkle { stroke-dasharray: 350; animation: bladePulse 3s linear infinite; }
+    .name-glow { animation: nameGlowPulse 4s ease-in-out infinite; }
     .eye-laser { animation: eyeFlicker 3.6s infinite; }
     .ember-1 { animation: emberDrift1 5.2s linear infinite; }
     .ember-2 { animation: emberDrift2 6.5s linear infinite 1.5s; }
@@ -214,7 +219,7 @@
     .reactor-core { animation: reactorCorePulse 2.6s ease-in-out infinite; transform-origin: 630px 175px; }
     .whisker-move { animation: whiskerSway 4.2s ease-in-out infinite; transform-origin: 130px 65px; }
     .plasma-breath { stroke-dasharray: 120; animation: plasmaBreathPulse 2.8s ease-in-out infinite; }
-    .orb-ring { animation: orbSatellite 7s linear infinite; transform-origin: 565px 285px; }
+    .orb-ring { animation: orbSatellite 7s linear infinite; transform-origin: 565px 292px; }
     .badge-glow-box { animation: badgePulseGlow 3s ease-in-out infinite; }
   </style>
 
@@ -247,128 +252,56 @@
   <line x1="0" y1="0" x2="1000" y2="0" stroke="#00f5ff" stroke-width="1.2" opacity="0.35" class="scan-beam" />
 
   <!-- ═══════════════════════════════════════════════════════════════ -->
-  <!-- LEFT COCKPIT: IDENTITY, PROTOCOL & CYBER RONIN CREED MATRIX     -->
+  <!-- LEFT HERO SECTION: CLEAN, MINIMAL, ANIMATED NAME & TITLE       -->
   <!-- ═══════════════════════════════════════════════════════════════ -->
-  <g transform="translate(48, 38)">
-    <!-- Watermark Circuit Grid Accents -->
-    <g opacity="0.08" stroke="#00f5ff" stroke-width="1">
-      <path d="M 0 30 L 120 30 L 150 60 L 380 60" fill="none" />
-      <path d="M 50 120 L 220 120 L 250 150 L 400 150" fill="none" />
-      <circle cx="150" cy="60" r="3" fill="#00f5ff" />
-      <circle cx="250" cy="150" r="3" fill="#ff007a" />
+  <g transform="translate(60, 110)">
+    <!-- Watermark Circuit Trace Ambient Lines -->
+    <g opacity="0.12" stroke="#00f5ff" stroke-width="1">
+      <path d="M 0 -30 L 80 -30 L 110 0 L 280 0" fill="none" />
+      <circle cx="110" cy="0" r="3" fill="#00f5ff" />
+      <circle cx="280" cy="0" r="2.5" fill="#ff007a" />
     </g>
 
-    <!-- Protocol Status Pill with Straxon Mascot Telemetry Badge -->
+    <!-- Status Pulse Beacon (Clean & Minimal) -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="360" height="24" rx="12" fill="#8052ff" fill-opacity="0.18" stroke="#8052ff" stroke-width="1.2" />
-      <circle cx="12" cy="12" r="4" fill="#00f5ff">
-        <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite" />
+      <circle cx="6" cy="6" r="3" fill="#10b981">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite" />
       </circle>
-      <text x="24" y="16" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9" font-weight="bold" fill="#00f5ff" letter-spacing="1.2">
-        STRAXON // CYBER RONIN &amp; MASCOT COPILOT
+      <circle cx="6" cy="6" r="6" fill="none" stroke="#10b981" stroke-width="0.8">
+        <animate attributeName="r" values="3;9;3" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="20" y="9.5" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" fill="#00f5ff" letter-spacing="2">
+        STRAXON // CYBER RONIN
       </text>
-      <!-- Mini Mascot Online Indicator -->
-      <g transform="translate(262, 4)">
-        <rect x="0" y="0" width="90" height="16" rx="8" fill="#10b981" fill-opacity="0.25" stroke="#10b981" stroke-width="0.8" />
-        <circle cx="8" cy="8" r="2.5" fill="#34d399" />
-        <text x="16" y="11.5" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="bold" fill="#34d399">
-          3-BOT CREW
-        </text>
-      </g>
     </g>
 
-    <!-- Main Title & Lead Architect Badge -->
-    <g transform="translate(0, 54)">
-      <text x="0" y="0" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="36" fill="url(#textNeon)" letter-spacing="-0.5">
+    <!-- Commanding Animated Name: SWARAJ PANTI -->
+    <g transform="translate(0, 50)" class="name-glow">
+      <text x="0" y="0" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-weight="900" font-size="46" fill="url(#textNeon)" letter-spacing="-0.5" filter="url(#bladeGlow)">
         SWARAJ PANTI
       </text>
-      <!-- Cyber Holographic Lead Architect Badge -->
-      <g transform="translate(285, -28)">
-        <rect x="0" y="0" width="144" height="30" rx="8" fill="#070c1a" stroke="#00f5ff" stroke-width="1.2" filter="url(#bladeGlow)" class="badge-glow-box" />
-        <circle cx="12" cy="15" r="3" fill="#10b981">
-          <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite" />
-        </circle>
-        <circle cx="12" cy="15" r="5.5" fill="none" stroke="#10b981" stroke-width="0.8" opacity="0.6">
-          <animate attributeName="r" values="3;7;3" dur="2s" repeatCount="indefinite" />
-          <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" />
-        </circle>
-        <text x="22" y="19" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" fill="#00f5ff" letter-spacing="0.8">
-          LEAD ARCHITECT // v4.3
-        </text>
-      </g>
     </g>
 
-    <!-- Subtitle Role -->
-    <text x="0" y="80" font-family="'JetBrains Mono', monospace" font-size="12.5" font-weight="700" fill="#38bdf8" letter-spacing="0.8">
-      FOUNDER &amp; CHIEF SYSTEMS ARCHITECT @ STRAXONLABS
-    </text>
-
-    <!-- Weaponry & Runtimes Pill Strip -->
-    <text x="0" y="102" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8" letter-spacing="0.4">
-      12 GPU Engines • Autonomous AI Swarms • Zero-Trust Cedar SOC
-    </text>
-
-    <!-- Divider Line with Saffron Energy Spark -->
-    <g transform="translate(0, 116)">
-      <line x1="0" y1="0" x2="424" y2="0" stroke="url(#bladeLaser)" stroke-width="1.5" />
-      <polygon points="424,-3 430,0 424,3" fill="#00f5ff" />
-      <circle cx="0" cy="0" r="3" fill="#ffb829" />
+    <!-- Animated High-Frequency Laser Baseline Beam -->
+    <g transform="translate(0, 68)">
+      <line x1="0" y1="0" x2="380" y2="0" stroke="url(#bladeLaser)" stroke-width="2" class="blade-sparkle" />
+      <circle cx="0" cy="0" r="3.5" fill="#00f5ff" filter="url(#intenseGlow)" />
+      <polygon points="380,-3.5 388,0 380,3.5" fill="#ff007a" filter="url(#bladeGlow)" />
     </g>
 
-    <!-- Cyber Ronin 4 Architectural Pillars (100% English Cyber Terminology) -->
-    <g transform="translate(0, 134)">
-      <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="bold" fill="#c084fc" letter-spacing="2">
-        [ THE CYBER RONIN CREED // ZERO COMPROMISE ]
+    <!-- Clean Title: FOUNDER & CHIEF SYSTEMS ARCHITECT -->
+    <g transform="translate(0, 100)">
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="14.5" font-weight="800" fill="#00f5ff" letter-spacing="1.5">
+        FOUNDER &amp; CHIEF SYSTEMS ARCHITECT
       </text>
-
-      <g transform="translate(0, 22)">
-        <!-- 1. PRECISION -->
-        <g transform="translate(0, 0)">
-          <rect x="0" y="0" width="100" height="42" rx="7" fill="#060b18" stroke="#ffb829" stroke-width="1" stroke-opacity="0.6" />
-          <text x="8" y="17" font-family="'JetBrains Mono', monospace" font-weight="900" font-size="11" fill="#ffb829">PRECISION</text>
-          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Sub-12ms INP</text>
-        </g>
-        <!-- 2. VALOR -->
-        <g transform="translate(108, 0)">
-          <rect x="0" y="0" width="100" height="42" rx="7" fill="#060b18" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.6" />
-          <text x="8" y="17" font-family="'JetBrains Mono', monospace" font-weight="900" font-size="11" fill="#00f5ff">VALOR</text>
-          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Spatial 3D CAD</text>
-        </g>
-        <!-- 3. SOVEREIGN -->
-        <g transform="translate(216, 0)">
-          <rect x="0" y="0" width="100" height="42" rx="7" fill="#060b18" stroke="#ff007a" stroke-width="1" stroke-opacity="0.6" />
-          <text x="8" y="17" font-family="'JetBrains Mono', monospace" font-weight="900" font-size="11" fill="#ff007a">SOVEREIGN</text>
-          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">100% IP Handover</text>
-        </g>
-        <!-- 4. SECURITY -->
-        <g transform="translate(324, 0)">
-          <rect x="0" y="0" width="100" height="42" rx="7" fill="#060b18" stroke="#10b981" stroke-width="1" stroke-opacity="0.6" />
-          <text x="8" y="17" font-family="'JetBrains Mono', monospace" font-weight="900" font-size="11" fill="#10b981">SECURITY</text>
-          <text x="8" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8">Cedar Zero-Trust</text>
-        </g>
-      </g>
     </g>
 
-    <!-- Telemetry Status Cockpit -->
-    <g transform="translate(0, 222)">
-      <rect x="0" y="0" width="424" height="52" rx="8" fill="#040813" stroke="#1e293b" stroke-width="1" />
-      <!-- Col 1 -->
-      <g transform="translate(14, 12)">
-        <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b" letter-spacing="1">FLAGSHIP</text>
-        <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" fill="#00f5ff">straxon.online ↗</text>
-      </g>
-      <line x1="145" y1="10" x2="145" y2="42" stroke="#1e293b" />
-      <!-- Col 2 -->
-      <g transform="translate(160, 12)">
-        <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b" letter-spacing="1">COPILOT CREW</text>
-        <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#ffb829">Sparky &amp; Crew (Alt+M)</text>
-      </g>
-      <line x1="285" y1="10" x2="285" y2="42" stroke="#1e293b" />
-      <!-- Col 3 -->
-      <g transform="translate(300, 12)">
-        <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b" letter-spacing="1">ENGINE</text>
-        <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" fill="#10b981">12 GPU Shaders</text>
-      </g>
+    <!-- Clean Organization Affiliation: @ STRAXONLABS -->
+    <g transform="translate(0, 124)">
+      <text x="0" y="0" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#94a3b8" letter-spacing="1.2">
+        @ STRAXONLABS • <tspan fill="#8052ff">SPATIAL 3D &amp; AUTONOMOUS AI</tspan>
+      </text>
     </g>
   </g>
 
@@ -556,11 +489,11 @@
   <path d="M 12 324 L 12 348 L 36 348" fill="none" stroke="#8052ff" stroke-width="2" />
   <path d="M 964 348 L 988 348 L 988 324" fill="none" stroke="#00f5ff" stroke-width="2" />
 
-  <!-- Bottom Telemetry HUD Line (100% English Cyber Terminology) -->
-  <g transform="translate(48, 342)" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b">
-    <text x="0" y="0">SYSTEM: <tspan fill="#10b981">OPERATIONAL [v4.3]</tspan></text>
-    <text x="140" y="0">MASCOT COPILOT: <tspan fill="#ffb829">SPARKY • STRATEGIST • GUARDIAN LIVE</tspan></text>
-    <text x="440" y="0">CORE: <tspan fill="#00f5ff">12 GPU SHADERS • REACT 19 • SUB-12MS INP</tspan></text>
+  <!-- Bottom Telemetry HUD Line -->
+  <g transform="translate(60, 342)" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b">
+    <text x="0" y="0">SYSTEM: <tspan fill="#10b981">OPERATIONAL</tspan></text>
+    <text x="130" y="0">RUNTIME: <tspan fill="#00f5ff">12 GPU ENGINES • SPATIAL 3D CAD</tspan></text>
+    <text x="450" y="0">ONLINE: <tspan fill="#ffb829">straxon.online ↗</tspan></text>
     <text x="735" y="0">COPYRIGHT © 2026 STRAXONLABS</text>
   </g>
 </svg>
